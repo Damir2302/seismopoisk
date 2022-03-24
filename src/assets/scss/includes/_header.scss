@@ -223,7 +223,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
-        color: #C1C1C1;
+        color: #fff;
     }
 
     @include breakpoint(hd) {
@@ -237,7 +237,7 @@
 }
 
 .navbar__menu-item:hover .navbar__menu-link {
-    color: #fff;
+    color: #C1C1C1;
 }
 
 .navbar__submenu {
@@ -294,6 +294,10 @@
         font-size: 20px;
         line-height: 24px;
     }
+}
+
+.navbar__submenu-link:hover {
+    color: #D4DAEC;
 }
 
 .header__menu-btn {

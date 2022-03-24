@@ -697,7 +697,7 @@ $hdplus: 1700px;
     }
 }
 
-.projects__image{
+.projects__image {
     margin: 16px 0 0;
 
     @include breakpoint(md) {
@@ -720,6 +720,13 @@ $hdplus: 1700px;
     @include breakpoint(hd) {
         min-width: 600px;
         max-height: 716px;
+    }
+}
+
+.projects__about-image {
+    
+    @include breakpoint(lg) {
+        object-fit: cover;
     }
 }
 
@@ -762,11 +769,19 @@ $hdplus: 1700px;
 
 .benefits__wrapper {
     padding: 60px 0 40px;
+    position: relative;
 
     @include breakpoint(md) {
+        margin: 0 auto;
         padding: 80px 0;
         display: flex;
         justify-content: center;
+        max-width: 688px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0;
+        max-width: 100%;
     }
 
     @include breakpoint(xl) {
@@ -780,14 +795,44 @@ $hdplus: 1700px;
     position: relative;
 
     @include breakpoint(md) {
+        margin: 0;
+        padding: 0 20px 0 0;
         position: absolute;
+        left: 0;
+        width: 344px;
+    }
+
+    @include breakpoint(lg) {
+        width: 512px;
+    }
+
+    @include breakpoint(hd) {
+        width: 576px;
     }
 }
 
 .benefits__main-title {
     margin: 0 0 16px;
+    font-weight: 500;
     font-size: 25px;
     line-height: 28px;
+
+    @include breakpoint(md) {
+        padding-right: 10px;
+        font-size: 35px;
+        line-height: 39px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 0;
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 50px;
+        line-height: 55px;
+    }
 }
 
 .benefits__main-text {
@@ -795,14 +840,57 @@ $hdplus: 1700px;
     font-size: 15px;
     line-height: 27px;
     z-index: 1;
+
+    @include breakpoint(md) {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 420px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 22px;
+        line-height: 39px;
+        max-width: 100%;
+    }
 }
 
 .benefits__main-bg {
     position: absolute;
     left: 0;
-    bottom: -80vw;
+    bottom: -256px;
+    display: none;
+    width: auto;
     height: auto;
     z-index: 0;
+
+    @include breakpoint(md) {
+        left: 125px;
+        bottom: -175px;
+        display: block;
+        max-width: 450px;
+        object-fit: none;
+    }
+
+    @include breakpoint(xl) {
+        left: 245px;
+        bottom: -210px;
+        max-width: 460px;
+    }
+
+    @include breakpoint(hd) {
+        bottom: -230px;
+    }
+}
+
+.benefits__main-bg--mobile {
+    display: block;
+
+    @include breakpoint(md) {
+        display: none;
+    }
 }
 
 .benefits__block {
@@ -843,6 +931,8 @@ $hdplus: 1700px;
     }
 
     @include breakpoint(xl) {
+        padding-bottom: 64px;
+        height: 328px;
         max-width: 600px;
     }
 }
@@ -889,11 +979,35 @@ $hdplus: 1700px;
     }
 }
 
+.about-section {
+    background: #F3F3F3;
+
+    @include breakpoint(md) {
+        background: linear-gradient(147.3deg, #c1ddff 0%, #ecf5ff 71.52%);
+    }
+}
+
 .hompage-c-title {
     margin: 0 0 16px;
     font-size: 25px;
     line-height: 28px;
     color: #273A4A;
+
+    @include breakpoint(md) {
+        font-size: 35px;
+        line-height: 39px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 0 28px;
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 50px;
+        line-height: 55px;
+    }
 }
 
 .hompage-c-subtitle {
@@ -901,26 +1015,90 @@ $hdplus: 1700px;
     max-width: 375px;
     line-height: 27px;
     color: #575E6A;
+
+    @include breakpoint(md) {
+        margin: 0 0 60px;
+        max-width: 502px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 22px;
+        line-height: 39px;
+    }
+
+    @include breakpoint(hd) {
+        margin: 0 0 70px;
+        max-width: 505px;
+    }
+}
+
+.news-section .hompage-c-subtitle {
+
+    @include breakpoint(md) {
+        max-width: 650px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 576px;
+    }
 }
 
 .partners-section {
-    padding: 75px 0 52px;
-    background: #F3F3F3;
+    padding: 75px 0 0;
+
+    @include breakpoint(xl) {
+        padding: 120px 0 0;
+    }
+
+    @include breakpoint(hd) {
+        padding: 150px 0 0;
+    }
+    
 }
 
 .partners__wrapper {
+    padding: 0 0 50px;
     position: relative;
+    overflow: hidden;
+
+    @include breakpoint(md) {
+        padding: 0 0 80px;
+        display: flex;
+    }
+
+    @include breakpoint(lg) {
+        padding: 0 0 90px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 0 0 100px;
+    }
+}
+
+.partners__block {
     display: flex;
     flex-wrap: wrap;
+
+    @include breakpoint(md) {
+        width: 50%;
+    }
 }
 
 .partners-bg {
     position: absolute;
-    right: 0;
-    bottom: -55px;
+    right: -60px;
+    bottom: 0px;
     width: auto;
     height: auto;
+    max-width: 350px;
     z-index: 0;
+
+    @include breakpoint(hd) {
+        right: -70px;
+        max-width: 400px;
+    }
 }
 
 .partners__tile {
@@ -930,15 +1108,27 @@ $hdplus: 1700px;
     display: flex;
     justify-content: center;
     width: 50%;
+
+    @include breakpoint(md) {
+        padding: 44.5px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 76px 0;
+    }
+
+    @include breakpoint(hd) {
+        padding: 92.5px 0;
+    }
 }
 
-.partners__tile:nth-child(2),
-.partners__tile:nth-child(7) {
+.partners__block:first-of-type .partners__tile:nth-child(2),
+.partners__block:last-of-type .partners__tile:nth-child(3) {
     background: #E2F1FF;
 }
 
-.partners__tile:nth-child(3),
-.partners__tile:nth-child(6) {
+.partners__block:first-of-type .partners__tile:nth-child(3),
+.partners__block:last-of-type .partners__tile:nth-child(2) {
     background: #D8F9E5;
 }
 
@@ -949,21 +1139,94 @@ $hdplus: 1700px;
 }
 
 .news-section {
-    padding: 45px 0 75px;
-    background: #F3F3F3;
+    padding: 45px 0 145px;
     position: relative;
-}
 
-.news-section .container {
-    padding-right: 0;
+    @include breakpoint(hd) {
+        padding: 150px 0 270px;
+    }
 }
 
 .news-text {
     position: absolute;
     left: 20px;
-    bottom: 0;
+    bottom: 75px;
     width: 884px;
     height: 75px;
+
+    @include breakpoint(md) {
+        left: 100px;
+    }
+
+    @include breakpoint(hd) {
+        left: 160px;
+        bottom: 185px;
+    }
+}
+
+.news__swiper  {
+
+    @include breakpoint(xl) {
+        padding-top: 40px;
+    }
+}
+
+.news__swiper-arrows {
+    display: none;
+
+    @include breakpoint(xl) {
+        position: absolute;
+        right: 45px;
+        justify-content: space-between;
+        display: flex;
+        width: calc(100% - 200px);
+        z-index: 9;
+    }
+}
+
+.swiper-arrow {
+    
+    @include breakpoint(xl) {
+        position: relative;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+    }
+}
+
+.swiper-arrow img  {
+    
+    @include breakpoint(xl) {
+        position: absolute;
+        left: -47px;
+        top: -45px;
+        width: auto;
+        height: auto;
+        animation: arrow-btn 20s linear infinite;
+    }
+}
+
+@keyframes arrow-btn {
+    100% { transform: rotate(360deg) }
+}
+
+.news__wrapper.swiper-wrapper {
+    margin-left: 20px;
+
+    @include breakpoint(md) {
+        margin-left: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 155px;
+    }
+}
+
+.news__wrapper .swiper-slide {
+
+    @include breakpoint(hd) {
+        max-width: 472px;
+    }
 }
 
 .news__slide {
@@ -975,6 +1238,19 @@ $hdplus: 1700px;
     flex-direction: column;
     height: 73.5vw;;
     box-sizing: border-box;
+
+    @include breakpoint(md) {
+        padding: 20px 30px 20px 20px;
+        height: 34.9vw;
+    }
+
+    @include breakpoint(xl) {
+        height: 21.27vw;
+    }
+
+    @include breakpoint(xl) {
+        padding: 30px;
+    }
 }
 
 .news__slide::before {
@@ -988,11 +1264,20 @@ $hdplus: 1700px;
     z-index: 0;
 }
 
+.news__wrapper .swiper-slide-duplicate:nth-child(3) {
+    visibility: hidden;
+    opacity: 0;
+}
+
 .news__date {
     margin: auto 0 0;
     position: relative;
     font-size: 15px;
     line-height: 26px;
+
+    @include breakpoint(md) {
+        font-size: 16px;
+    }
 }
 
 .news__desc {
@@ -1001,4 +1286,13 @@ $hdplus: 1700px;
     font-weight: 500;
     font-size: 15px;
     line-height: 21px;
+
+    @include breakpoint(md) {
+        font-size: 16px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }

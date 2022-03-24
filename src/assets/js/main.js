@@ -23,19 +23,35 @@ $(document).ready(function() {
     if ($('.news__swiper').length) {
       let news_block = new Swiper('.news__swiper', {
         direction: 'horizontal',
-        freeMode: true,
-        slidesPerView: 1.212,
+        loop: true,
+        slidesPerView: 1.288,
         spaceBetween: 20,
-        breakpoints: {
-          1024: {
-             slidesPerView: 3
-          },
-        }
-      });
 
-      if ($(window).width() > 1259) {
-        news_block.destroy();
-      }
+        breakpoints: {
+
+          768: {
+            slidesPerView: 2.618,
+            spaceBetween: 15,
+          },
+
+          1260: {
+            slidesPerView: 2.6,
+            spaceBetween: 20,
+          },
+
+          1400: {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+          }
+
+        },
+
+        navigation: {
+          nextEl: '.swiper-arrow-next',
+          prevEl: '.swiper-arrow-prev',
+        }
+
+      });
     }
 
 });

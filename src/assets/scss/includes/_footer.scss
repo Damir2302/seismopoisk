@@ -1,5 +1,5 @@
 .footer {
-    padding: 110px 0 56px;
+    padding: 40px 0 56px;
     background: url('../images/footer-bg.jpg') no-repeat;
     background-size: cover;
     position: relative;
@@ -7,16 +7,47 @@
     @include breakpoint(md) {
         padding: 60px 0 48px;
     }
+
+    @include breakpoint(xl) {
+        padding: 75px 0 50px;
+    }
 }
 
 .footer-top-img {
-    background: #F3F3F3;
     position: absolute;
-    top: 0;
     left: -25px;
+    bottom: 100%;
     width: calc(100% + 25px);
     min-width: 512px;
     height: 80px;
+
+    @include breakpoint(md) {
+        top: -66px;
+        left: -65px;
+        height: auto;
+        max-width: 512px;
+    }
+
+    @include breakpoint(xl) {
+        left: -8px;
+    }
+
+    @include breakpoint(hd) {
+        top: unset;
+        left: 0;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+.footer-top-img img {
+
+    @include breakpoint(hd) {
+        width: auto;
+        height: auto;
+    }
 }
 
 .footer__top {

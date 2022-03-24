@@ -165,7 +165,8 @@ block main
                 .benefits__main
                     p.benefits__main-title Почему выбирают нас
                     p.benefits__main-text Высококвалифицированный персонал, уникальный опыт и передовые технологии позволяют успешно реализовывать геологоразведочные проекты любой сложности
-                    img.benefits__main-bg(src="assets/images/triangles-4-mob.png", alt="bg")
+                    img.benefits__main-bg.benefits__main-bg--mobile(src="assets/images/triangles-4-mob.png", alt="bg")
+                    img.benefits__main-bg(src="assets/images/triangles-4.png", alt="bg")
 
                 .benefits__block.benefits__block--single
 
@@ -189,56 +190,87 @@ block main
                         p.benefits__title Достижения OOO «Сейсмопоиск»
                         p.benefits__text Более 800 сотрудников в штате полевых сейсморазведочных партий в нашей компании
 
-    section.partners-section
+    section.about-section
+    
+        .partners-section
 
-        .container
+            .container
 
-            h2.hompage-c-title Наши партнёры
-            p.hompage-c-subtitle Уже 4 года с нами сотрудничают 4 постоянных партнёра. Это говорит о качестве и профессионализме наших услуг
+                h2.hompage-c-title Наши партнёры
+                p.hompage-c-subtitle Уже 4 года с нами сотрудничают 4 постоянных партнёра. Это говорит о качестве и профессионализме наших услуг
 
-            .partners__wrapper
-                img.partners-bg(src="assets/images/triangles-5.png", alt="bg")
+                .partners__wrapper
+                    img.partners-bg(src="assets/images/triangles-5.png", alt="bg")
 
-                .partners__tile
-                    img(src="assets/images/image 28.png", alt="img")
-                .partners__tile
-                    img(src="assets/images/image 29.png", alt="img")
-                .partners__tile
-                    img(src="assets/images/image 30.png", alt="img")
-                .partners__tile
-                    img(src="assets/images/image 31.png", alt="img")
-                .partners__tile
-                    img(src="assets/images/image 28.png", alt="img")
-                .partners__tile
-                    img(src="assets/images/image 31.png", alt="img")
-                .partners__tile
-                    img(src="assets/images/image 30.png", alt="img")
-                .partners__tile
-                    img(src="assets/images/image 29.png", alt="img")
+                    .partners__block
 
-    section.news-section
-        img.news-text(src="assets/images/novosty.png", alt="text")
+                        .partners__tile
+                            img(src="assets/images/image 28.png", alt="img")
+                        .partners__tile
+                            img(src="assets/images/image 29.png", alt="img")
+                        .partners__tile
+                            img(src="assets/images/image 30.png", alt="img")
+                        .partners__tile
+                            img(src="assets/images/image 31.png", alt="img")
 
-        .container
+                    .partners__block
+                    
+                        .partners__tile
+                            img(src="assets/images/image 28.png", alt="img")
+                        .partners__tile
+                            img(src="assets/images/image 31.png", alt="img")
+                        .partners__tile
+                            img(src="assets/images/image 30.png", alt="img")
+                        .partners__tile
+                            img(src="assets/images/image 29.png", alt="img")
 
-            h2.hompage-c-title Новости компании
-            p.hompage-c-subtitle У нас постоянно происходит, что-то новое и интересное. Следите за нашими новостями, чтобы быть вкурсе всех событий
+        .news-section
+            img.news-text(src="assets/images/novosty.png", alt="text")
+
+            .container
+
+                h2.hompage-c-title Новости компании
+                p.hompage-c-subtitle У нас постоянно происходит, что-то новое и интересное. Следите за нашими новостями, чтобы быть вкурсе всех событий
 
             .swiper.news__swiper
 
+                .news__swiper-arrows
+                    .swiper-arrow.swiper-arrow-prev
+                        +sprite('arrow-left')
+                        img(src="assets/images/left-btn.png", alt="left-btn")
+                    .swiper-arrow.swiper-arrow-next
+                        +sprite('arrow-right')
+                        img(src="assets/images/right-btn.png", alt="right-btn")
+
                 .swiper-wrapper.news__wrapper
 
-                    .swiper-slide.news__slide(style="background-image: url('assets/images/paul-trienekens-9goYHROaqMo-unsplash 1.jpg')")
+                    .swiper-slide
+                        a.news__slide(href="#" style="background-image: url('assets/images/paul-trienekens-9goYHROaqMo-unsplash 1.jpg')")
+                            p.news__date 29.03.2021
+                            p.news__desc Выполненили полевые сейсморазведочные работы МОГТ 2D на территории Муторайского и Кимчуканского УН
 
-                        p.news__date 29.03.2021
-                        p.news__desc Выполненили полевые сейсморазведочные работы МОГТ 2D на территории Муторайского и Кимчуканского УН
+                    .swiper-slide
+                        a.news__slide(href="#" style="background-image: url('assets/images/dominik-stahl-jQnW46KMicQ-unsplash 1.jpg')")
+                            p.news__date 29.03.2021
+                            p.news__desc Окончание полевого сезона 2020-2021 гг.
 
-                    .swiper-slide.news__slide(style="background-image: url('assets/images/dominik-stahl-jQnW46KMicQ-unsplash 1.jpg')")
+                    .swiper-slide
+                        a.news__slide(href="#" style="background-image: url('assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash 1.jpg')")
+                            p.news__date 29.03.2021
+                            p.news__desc Закончили проект по супервайзингу в Краснодарском крае
 
-                        p.news__date 29.03.2021
-                        p.news__desc Окончание полевого сезона 2020-2021 гг.
+                    .swiper-slide
+                        a.news__slide(href="#" style="background-image: url('assets/images/paul-trienekens-9goYHROaqMo-unsplash 1.jpg')")
+                            p.news__date 29.03.2021
+                            p.news__desc Выполненили полевые сейсморазведочные работы МОГТ 2D на территории Муторайского и Кимчуканского УН
 
-                    .swiper-slide.news__slide(style="background-image: url('assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash 1.jpg')")
+                    .swiper-slide
+                        a.news__slide(href="#" style="background-image: url('assets/images/dominik-stahl-jQnW46KMicQ-unsplash 1.jpg')")
+                            p.news__date 29.03.2021
+                            p.news__desc Окончание полевого сезона 2020-2021 гг.
 
-                        p.news__date 29.03.2021
-                        p.news__desc Закончили проект по супервайзингу в Краснодарском крае
+                    .swiper-slide
+                        a.news__slide(href="#" style="background-image: url('assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash 1.jpg')")
+                            p.news__date 29.03.2021
+                            p.news__desc Закончили проект по супервайзингу в Краснодарском крае
+                        
