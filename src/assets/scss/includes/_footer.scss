@@ -1,0 +1,250 @@
+.footer {
+    padding: 110px 0 56px;
+    background: url('../images/footer-bg.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @include breakpoint(md) {
+        padding: 60px 0 48px;
+    }
+}
+
+.footer-top-img {
+    background: #F3F3F3;
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: calc(100% + 25px);
+    min-width: 512px;
+    height: 80px;
+}
+
+.footer__top {
+
+    @include breakpoint(md) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    @include breakpoint(lg) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__top svg {
+    margin: 3px 7px 0 0;
+    min-width: 16px;
+    max-width: 16px;
+    max-height: 16px;
+}
+
+.footer__logo {
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+
+    @include breakpoint(lg) {
+        display: block;
+    }
+}
+
+.footer__logo img {
+    max-width: 200px;
+    max-height: 50px;
+}
+
+.footer__logo p {
+    margin: 9px 0 35px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #D4DAEC;
+
+    @include breakpoint(md) {
+        margin: 0;
+        margin-left: 28px;
+        max-width: 245px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 12px 0 0;
+        max-width: 315px;
+    }
+}
+
+.footer__contacts {
+
+    @include breakpoint(md) {
+        margin: 50px 0 0;
+        display: flex;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.footer__address {
+    margin: 0 0 20px;
+
+    @include breakpoint(md) {
+        margin: 0 0 12px;
+    }
+
+    @include breakpoint(lg) {
+        margin-left: 70px;
+        margin-right: auto;
+    }
+}
+
+.footer__address-block {
+    margin: 0 0 20px;
+    display: flex;
+
+    @include breakpoint(md) {
+        margin: 0 0 28px;
+        max-width: 320px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 100%;
+    }
+}
+
+.footer__address-block p {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer__communication {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    @include breakpoint(md) {
+        margin-left: 115px;
+        border: none;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0;
+        margin-left: 60px;
+    }
+
+    @include breakpoint(hd) {
+        margin-right: 60px;
+    }
+}
+
+.footer__communication a {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer__communication-item {
+    margin: 0 0 20px;
+    display: flex;
+}
+
+.footer__main {
+    padding: 0 0 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    @include breakpoint(md) {
+        margin: 32px 0 0;
+        padding: 0 0 32px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 20px 0 0;
+        padding: 0 0 45px;
+    }
+}
+
+.footer__menu-list {
+
+    @include breakpoint(md) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 460px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 930px;
+        max-height: 240px;
+        column-gap: 40px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 1085px;
+    }
+}
+
+.footer__menu-item {
+    margin: 20px 0 0;
+
+    @include breakpoint(md) {
+        max-width: 250px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: unset;
+    }
+}
+
+.footer__menu-item:nth-child(3) {
+
+    @include breakpoint(md) {
+        margin: 32px 0 0;
+    }
+
+    @include breakpoint(lg) {
+        margin: 20px 0 0;
+    }
+}
+
+.footer__menu-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 31px;
+}
+
+.footer__submenu {
+
+    @include breakpoint(lg) {
+        max-width: 250px;
+    }
+}
+
+.footer__submenu-link {
+    margin: 14px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #D4DAEC;
+}
+
+.footer__submenu-link:hover {
+    color: #1E7ABC;
+}
+
+.footer__bottom {
+    padding: 20px 0 0;
+    font-size: 16px;
+    line-height: 29px;
+    color: #D4DAEC;
+
+    @include breakpoint(md) {
+        padding: 32px 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-developer {
+    margin: 8px 0 0;
+    line-height: inherit;
+
+    @include breakpoint(md) {
+        margin: 0;
+    }
+}

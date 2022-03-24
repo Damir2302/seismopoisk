@@ -1,0 +1,244 @@
+---
+title: Сейсмопоиск
+---
+
+extends includes/_page
+
+block main
+
+    section#hero-section.hero-section
+        canvas#canvas.canvas
+
+        .left-line
+
+            .arrow-btn
+                span.arrow-btn-text SCROLL DOWN
+                +sprite('arr','','arrow-btn-element')
+                +sprite('arrow-down','','arrow-btn-arrow')
+
+        .hero__main
+
+            .container
+
+                .hero__main-logo
+                        img(src="assets/images/logo-text.png", alt="logo")
+                .hero__text
+                    h1 Геологоразведочные, камеральные работы и супервайзинг
+                    p.text-medium Мы готовим проекты на выполнение полевых сейсморазведочных работ МОГТ 2D и 3D, рецензиина проекты полевых сейсморазведочных работ.
+
+            .hero__image
+                //- img(src="assets/images/hero_main.jpg", alt="img")
+                video(src="assets/images/istockphoto-1144204289-640_adpp_is.mp4" oncontextmenu="return false;" muted loop autoplay)
+
+        .services-l-section
+
+            img.services-l-text(src="assets/images/uslugi.png", alt="text")
+
+            .container
+
+                .services-l__wrapper
+
+                    .services-l__block
+
+                        .services-l__item
+                            img.services-l__image(src="assets/images/nick-van-den-berg-tpyh8Eu7LgQ-unsplash_2.jpg", alt="img")
+                            .services-l__icon
+                                img(src="assets/images/truck.svg", alt="svg")
+                            p.services-l__title Сейсморазведочные работы
+                            p.services-l__text Выполнение полевых сейсморазведочных работ МОГТ 2D и МОГТ 3D осуществляется строго в соответствии с проектом на проведение работ.
+
+                        .services-l__item
+                            img.services-l__image(src="assets/images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg", alt="img")
+                            .services-l__icon
+                                +sprite('plan-building')
+                            p.services-l__title Камеральные работы
+                            p.services-l__text Обработка и интерпретация геофизических данных. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit est eros, viverra magna lacinia.
+
+                    .services-l__block
+
+                        .services-l__block-bg
+                            img(src="assets/images/triangles.png", alt="bg")
+
+                        .services-l__item
+                            img.services-l__image(src="assets/images/closeup-contractor-construction-site-pointing-plan-wooden-sleeper.jpg", alt="img")
+                            .services-l__icon
+                                +sprite('construction-project')
+                            p.services-l__title Супервайзинг сейсморазведочных работ
+                            p.services-l__text Необходимость супервайзерского контроля в современных условиях объясняется высокой стоимостью проведения геолого-разведочных работ
+
+                        .services-l__item
+                            img.services-l__image(src="assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash_1.jpg", alt="img")
+                            .services-l__icon
+                                +sprite('ecologic')
+                            p.services-l__title Экологическое проектирование
+                            p.services-l__text Осуществляем разработку: паспортов отходов, проекта НДВ, водохозяйственного баланса, схем систем водоснабжения и водоотведения
+
+    section.projects-section
+
+        img.projects-img(src="assets/images/triangles-2.png", alt="bg")
+
+        img.projects-text(src="assets/images/proyekty.png", alt="text")
+
+        .container
+
+            .projects__title
+
+                    h2 С 2018 года успешно завершили работу в разных регионах и округах России
+                    p.text-medium Мы являемся крупнейшей компанией в России по полевым сейморазведочным, камеральным работ и супервайзингу.
+
+            .projects__desc
+
+                .projects__info
+                    div
+                        p.projects__info-count 114
+                        p.projects__info-text проектов
+
+                    div
+                        p.projects__info-count 100+
+                        p.projects__info-text партнёров
+
+                    div
+                        p.projects__info-count 4
+                        p.projects__info-text года на рынке
+
+                .projects__map-list
+
+                    ul.map__list
+                        li.map__list-item
+                            span.map__list-color(style="background-color: #E7DE16;")
+                            span.map__list-text Полевые сейсморазведочные работы
+                        li.map__list-item
+                            span.map__list-color(style="background-color: #33E93B;")
+                            span.map__list-text Камеральные работы
+                        li.map__list-item
+                            span.map__list-color(style="background-color: #44C7FF;")
+                            span.map__list-text Супервайзинг
+                        li.map__list-item
+                            span.map__list-color(style="background-color: #DBDBDB;")
+                            span.map__list-text Перспективные проекты
+                        li.map__list-item
+                            span.map__list-color(style="background-color: #555555;")
+                            span.map__list-text Строительство площадок под буровые скважины
+
+            .projects__about
+
+                .projects__about-info
+
+                    .projects__about-title
+
+                        h2 Лучшие в геолого-разведочных работых
+                        p.text-medium Общество с ограниченной ответственностью «Сейсмопоиск» (ООО «Сейсмопоиск») образовано в 2018 году.
+
+                    .projects__about-activity
+
+                        p.activity-title Деятельность компании в области изучения недр и воспроизводства минерально-сырьевой базы:
+                        ul.activity-list
+                            li.activity-item
+                                +sprite('strokes', '', 'strokes-icon')
+                                span Геолого-разведочные работы
+                            li.activity-item
+                                +sprite('strokes', '', 'strokes-icon')
+                                span
+                                span Геофизические работы
+                            li.activity-item
+                                +sprite('strokes', '', 'strokes-icon')
+                                span
+                                span Геохимические работы
+                        a.activity-more(href="#") Узнать больше
+                            +sprite('arrow-right', '', 'arrow-right-link')
+                img.projects__about-activity-bg(src="assets/images/triangles-2.png", alt="bg")
+
+                .projects__image
+
+                    img.projects__about-image(src="assets/images/agriculture-iot-with-rice-field-background_1.jpg", alt="img")
+
+                    img.projects__about-bg(src="assets/images/triangles-2.png", alt="bg")
+
+    section.benefits-section
+
+        img.benefits-text(src="assets/images/about.png", alt="text")
+
+        .container
+
+            .benefits__wrapper
+
+                .benefits__main
+                    p.benefits__main-title Почему выбирают нас
+                    p.benefits__main-text Высококвалифицированный персонал, уникальный опыт и передовые технологии позволяют успешно реализовывать геологоразведочные проекты любой сложности
+                    img.benefits__main-bg(src="assets/images/triangles-4-mob.png", alt="bg")
+
+                .benefits__block.benefits__block--single
+
+                    .benefits__item
+                        .benefits__icon
+                            +sprite('benefits-1')
+                        p.benefits__title Преимущества работы у нас
+                        p.benefits__text Выполнено более 10 проектов на выполнение полевых сейсморазведочных работ
+
+                .benefits__block
+
+                    .benefits__item
+                        .benefits__icon
+                            +sprite('benefits-2')
+                        p.benefits__title Преимущества сотрудничества
+                        p.benefits__text Современная материально-техническая база решает комплексные задачи различного уровня сложности.
+
+                    .benefits__item
+                        .benefits__icon
+                            +sprite('benefits-3')
+                        p.benefits__title Достижения OOO «Сейсмопоиск»
+                        p.benefits__text Более 800 сотрудников в штате полевых сейсморазведочных партий в нашей компании
+
+    section.partners-section
+
+        .container
+
+            h2.hompage-c-title Наши партнёры
+            p.hompage-c-subtitle Уже 4 года с нами сотрудничают 4 постоянных партнёра. Это говорит о качестве и профессионализме наших услуг
+
+            .partners__wrapper
+                img.partners-bg(src="assets/images/triangles-5.png", alt="bg")
+
+                .partners__tile
+                    img(src="assets/images/image 28.png", alt="img")
+                .partners__tile
+                    img(src="assets/images/image 29.png", alt="img")
+                .partners__tile
+                    img(src="assets/images/image 30.png", alt="img")
+                .partners__tile
+                    img(src="assets/images/image 31.png", alt="img")
+                .partners__tile
+                    img(src="assets/images/image 28.png", alt="img")
+                .partners__tile
+                    img(src="assets/images/image 31.png", alt="img")
+                .partners__tile
+                    img(src="assets/images/image 30.png", alt="img")
+                .partners__tile
+                    img(src="assets/images/image 29.png", alt="img")
+
+    section.news-section
+        img.news-text(src="assets/images/novosty.png", alt="text")
+
+        .container
+
+            h2.hompage-c-title Новости компании
+            p.hompage-c-subtitle У нас постоянно происходит, что-то новое и интересное. Следите за нашими новостями, чтобы быть вкурсе всех событий
+
+            .swiper.news__swiper
+
+                .swiper-wrapper.news__wrapper
+
+                    .swiper-slide.news__slide(style="background-image: url('assets/images/paul-trienekens-9goYHROaqMo-unsplash 1.jpg')")
+
+                        p.news__date 29.03.2021
+                        p.news__desc Выполненили полевые сейсморазведочные работы МОГТ 2D на территории Муторайского и Кимчуканского УН
+
+                    .swiper-slide.news__slide(style="background-image: url('assets/images/dominik-stahl-jQnW46KMicQ-unsplash 1.jpg')")
+
+                        p.news__date 29.03.2021
+                        p.news__desc Окончание полевого сезона 2020-2021 гг.
+
+                    .swiper-slide.news__slide(style="background-image: url('assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash 1.jpg')")
+
+                        p.news__date 29.03.2021
+                        p.news__desc Закончили проект по супервайзингу в Краснодарском крае

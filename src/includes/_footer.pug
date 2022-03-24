@@ -1,0 +1,86 @@
+include _mixins
+block footer
+
+	footer#footer.footer
+
+		.footer-top-img
+			img(src="assets/images/triangles-6.png", alt="bg")
+
+		.container
+
+			.footer__top
+
+				.footer__logo
+					img(src="assets/images/logo-text.png", alt="logo")
+					p Геологоразведочные, камеральные работы и супервайзинг
+
+				.footer__contacts
+
+					.footer__address
+						.footer__address-block
+							+sprite('map-pin')
+							p 660075, Россия, Красноярский край, г. Красноярск,<br> ул. Железнодорожников, д. 17, помещение 18, комната 11
+						.footer__address-block
+							+sprite('map-pin')
+							p 660075, Россия, Красноярский край, г. Красноярск,<br> ул. Маерчака, д.10, 6 этаж БЦ "Баланс"
+
+					.footer__communication
+						.footer__communication-item
+							+sprite('phone')
+							a(href="tel:83912001285") 8 (391) 200-12-85
+						.footer__communication-item
+							+sprite('mail')
+							a(href="mailto:office@seismopoisk.ru") office@seismopoisk.ru
+
+			.footer__main
+
+				ul.footer__menu-list
+
+					li.footer__menu-item
+						a.footer__menu-link(href="#") О компании
+						ul.footer__submenu
+							li.footer__submenu-item
+								a.footer__submenu-link(href="#") Руководство
+							li.footer__submenu-item
+								a.footer__submenu-link(href="#") История компании
+							li.footer__submenu-item
+								a.footer__submenu-link(href="#") Операционная структура
+
+					li.footer__menu-item
+						a.footer__menu-link(href="#") Пресс-центр
+
+					li.footer__menu-item
+						a.footer__menu-link(href="#") Услуги
+						ul.footer__submenu
+							li.footer__submenu-item
+								a.footer__submenu-link(href="#") Сейсморазведочные работы
+							li.footer__submenu-item
+								a.footer__submenu-link(href="#") Супервайзинг сейсморазведочных работ
+							li.footer__submenu-item
+								a.footer__submenu-link(href="#") Камеральные работы
+							li.footer__submenu-item
+								a.footer__submenu-link(href="#") Экологическое проектирование
+
+					li.footer__menu-item
+						a.footer__menu-link(href="#") Устойчивое развитие
+						ul.footer__submenu
+							li.footer__submenu-item
+								a.footer__submenu-link(href="#") Охрана окружающей среды
+							li.footer__submenu-item
+								a.footer__submenu-link(href="#") Охрана труда и промышленная безопасность
+							li.footer__submenu-item
+								a.footer__submenu-link(href="#") Противодействие коррупции
+
+					li.footer__menu-item
+						a.footer__menu-link(href="#") Карьера
+						ul.footer__submenu
+							li.footer__submenu-item
+								a.footer__submenu-link(href="#") Вакансии
+
+					li.footer__menu-item
+						a.footer__menu-link(href="#") Контакты
+
+			.footer__bottom
+
+				p.footer-copyright Copyright © 2021 - 2022
+				a.footer-developer(href="#" target="_blank") Разработка сайта Di-project

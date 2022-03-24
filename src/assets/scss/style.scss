@@ -1,0 +1,13 @@
+@import 'base/normalize';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/ui';
+
+@import 'plugins/swiper-bundle';
+@import 'plugins/jquery-ui.min';
+
+@import 'includes/header';
+@import 'includes/footer';
+
+@import 'pages/homepage';

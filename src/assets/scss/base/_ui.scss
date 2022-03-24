@@ -1,0 +1,187 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    -webkit-text-size-adjust: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+
+    @include breakpoint(lg) {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+background: rgba(90, 90, 90, 0.2);
+}
+
+::-webkit-scrollbar-track {
+background: rgba(0, 0, 0, 0.2);
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 29px;
+    border-radius: 0;
+    border: 1px solid #e6e6e6;
+    padding: 0;
+    background: #fbfbf7;
+    font-family: open sans,sans-serif;
+    margin: 0;
+    font-size: 12px;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#page {
+    position: relative;
+    background-image: url('../images/bg-320px.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 320px;
+    min-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    @include breakpoint(md) {
+        background-image: url('../images/bg-768px.jpg');
+    }
+
+    @include breakpoint(lg) {
+        background-image: url('../images/bg-1024px.jpg');
+    }
+
+    @include breakpoint(xl) {
+        background-image: url('../images/bg-1260px.jpg');
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+
+    @include breakpoint(md) {
+        padding: 0 40px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 0 88px;
+    }
+
+    @include breakpoint(hd) {
+        box-sizing: content-box;
+    }
+}
+
+.button-style {
+    padding: 11px 32px;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 44px;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+}
+
+.button-style:hover {
+    opacity: .8;
+}
+
+.input-style {
+    width: 100%;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.input-style:focus {
+    border: 1px solid #D8D8D8;
+}
+
+h1 {
+    margin: 0 0 16px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    color: #fff;
+
+    @include breakpoint(md) {
+        margin: 0 0 28px;
+        font-size: 40px;
+        line-height: 43px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 65px;
+        line-height: 70px;
+    }
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 55px;
+    color: #273A4A;
+
+    @include breakpoint(md) {
+        font-size: 35px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 40px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 50px;
+    }
+}
+
+.text-medium {
+    font-size: 15px;
+    line-height: 24px;
+    color: #575E6A;
+
+    @include breakpoint(md) {
+        font-size: 22px;
+        line-height: 39px;
+    }
+}
+
+.hero-section {
+    padding: 20px 0 60px;
+    position: relative;
+
+    @include breakpoint(md) {
+        padding: 50px 0 80px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 50px 0 120px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 50px 0 150px;
+    }
+}

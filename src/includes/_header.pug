@@ -1,0 +1,80 @@
+include _mixins
+block header
+
+    header#header.header
+
+        .header__inner
+
+            .header__logo
+                img.logo-mobile(src="assets/images/logo-text.png", alt="logo")
+                img.logo-desktop(src="assets/images/logo.png", alt="logo")
+
+            nav.header__nav
+
+                .mobile-menu-close
+                    #closeSideMenu.close-menu-btn
+                        +sprite('close-icon')
+                    img.close-img(src="assets/images/close.png", alt="icon")
+
+                ul.navbar__menu
+
+                    li.navbar__menu-item
+                        a.navbar__menu-link(href="#") О компании
+                        ul.navbar__submenu
+                            li
+                                a.navbar__submenu-link(href="#") Руководство
+                            li
+                                a.navbar__submenu-link(href="#") История компании
+                            li
+                                a.navbar__submenu-link(href="#") Операционная структура
+                    li.navbar__menu-item
+                        a.navbar__menu-link(href="#") Услуги
+                        ul.navbar__submenu
+                            li
+                                a.navbar__submenu-link(href="#") Сейсморазведочные работы
+                            li
+                                a.navbar__submenu-link(href="#") Супервайзинг сейсморазведочных работ
+                            li
+                                a.navbar__submenu-link(href="#") Камеральные работы
+                            li
+                                a.navbar__submenu-link(href="#") Экологическое проектирование
+                    li.navbar__menu-item
+                        a.navbar__menu-link(href="#") Пресс-центр
+                    li.navbar__menu-item
+                        a.navbar__menu-link(href="#") Карьера
+                        ul.navbar__submenu
+                            li
+                                a.navbar__submenu-link(href="#") Вакансии
+                    li.navbar__menu-item
+                        a.navbar__menu-link(href="#") Устойчивое развитие
+                        ul.navbar__submenu
+                            li
+                                a.navbar__submenu-link(href="#") Охрана окружающей среды
+                            li
+                                a.navbar__submenu-link(href="#") Охрана труда и промышленная безопасность
+                            li
+                                a.navbar__submenu-link(href="#") Противодействие коррупции
+                    li.navbar__menu-item
+                        a.navbar__menu-link(href="#") Контакты
+
+
+                a.navbar__phone(href="tel:83912001285") 8 (391) 200-12-85
+                a.navbar__email(href="mailto:office@seismopoisk.ru") office@seismopoisk.ru
+
+                form.navbar-search-form
+                    input.navbar-search-input(type="search", name="search" placeholder="поиск")
+                    button.navbar-search-button
+                        +sprite('search')
+
+            #sideMenu.header__menu-btn
+                span.line.line-1
+                span.line.line-2
+                span.line.line-3
+
+            a.header__phone(href="tel:83912001285") 8 (391) 200-12-85
+            a.header__email(href="mailto:office@seismopoisk.ru") office@seismopoisk.ru
+
+            form.header-search-form
+                input.header-search-input(type="search", name="search" placeholder="поиск")
+                button.header-search-button
+                    +sprite('search-white')
