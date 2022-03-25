@@ -1,0 +1,29 @@
+.breadcrumbs {
+    display: none;
+
+    @include breakpoint(xl) {
+        padding: 34px 0;
+        background: linear-gradient(90deg, #05256F 0%, rgba(5, 37, 111, 0) 13.66%), linear-gradient(90deg, #04246E 52.63%, rgba(4, 36, 110, 0) 79.15%), url('../images/breadcrumbs-banner.jpg') no-repeat, #04246E;
+        background-position: right;
+    }
+}
+
+.breadcrumbs-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs-item {
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.breadcrumbs-separator {
+    margin: 0 5px;
+    color: #fff;
+}
+
+.page-title {
+    margin: 10px 0 0;
+}

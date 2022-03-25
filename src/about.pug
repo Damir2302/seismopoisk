@@ -1,0 +1,88 @@
+---
+title: Сейсмопоиск | О компании
+---
+
+extends includes/_page
+
+block main
+
+    #about-page
+
+        section.about-main
+
+            .left-line
+
+                .arrow-btn
+                    span.arrow-btn-text SCROLL DOWN
+                    +sprite('arr','','arrow-btn-element')
+                    +sprite('arrow-down','','arrow-btn-arrow')
+
+            include components/_breadcrumbs
+            +breadcrumbs('О компании')
+
+            .hero__main
+
+                .container
+
+                    .hero__main-logo
+                        img(src="assets/images/logo-text.png", alt="logo")
+                    .hero__text
+                        h1.about__title Сейсмопоиск - лучшие в геолого-разведочных работах в России
+                        p.text-medium Общество с ограниченной ответственностью «Сейсмопоиск» (ООО «Сейсмопоиск») образовано в 2018 году.
+
+                .hero__image
+                    img(src="assets/images/about-main.jpg", alt="img")
+
+        section.about-info
+
+            img.about-info-bg(src="assets/images/triangles-2.png", alt="bg")
+            img.about-info-text(src="assets/images/seysmopoisk.png", alt="text")
+
+            .container
+
+                .about-info__content
+
+                    .about-info__img-block
+                        img(src="assets/images/about-info-1.jpg", alt="img")
+
+                    .about-info__main
+
+                        h2 О  нашей компании
+                        p.about-info__text Общество с ограниченной ответственностью «Сейсмопоиск» (ООО «Сейсмопоиск») образовано в 2018 году. Основными видом деятельности являются геолого-разведочные, геофизические и геохимические работы в области изучения недр и воспроизводства минерально-сырьевой базы.
+
+                        img.about-info__img(src="assets/images/about-info-1.jpg", alt="img")
+
+                        h2 Миссия и ценности ООО «Сейсмопоиск»
+
+                        span.about-info__mission Миссия
+                        p Общество с ограниченной ответственностью «Сейсмопоиск» (ООО «Сейсмопоиск») образовано в 2018 году. Основными видом деятельности являются геолого-разведочные, геофизические и геохимические работы в области изучения недр и воспроизводства минерально-сырьевой базы.
+
+                        span.about-info__mission Ценности
+                        p Общество с ограниченной ответственностью «Сейсмопоиск» (ООО «Сейсмопоиск») образовано в 2018 году. Основными видом деятельности являются геолого-разведочные, геофизические и геохимические работы в области изучения недр и воспроизводства минерально-сырьевой базы.
+
+                .about-info__achievements
+
+                    .achievements-block
+
+                        .achievement-item.big-number
+                            p.achievement-number
+                                span 4
+                            span.achievement-text геологоразведочных проектов
+
+                        .achievement-item
+                            p.achievement-number
+                                span 100+
+                            span.achievement-text партнёров
+
+                    .achievements-block
+
+                        .achievement-item
+                            p.achievement-number
+                                span 800+
+                            span.achievement-text сотрудников в штате полевых сейсморазведочных партий
+
+                        .achievement-item
+                            p.achievement-number
+                                span 14
+                            span.achievement-text года на рынке
+

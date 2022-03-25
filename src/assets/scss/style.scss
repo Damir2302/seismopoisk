@@ -7,7 +7,10 @@
 @import 'plugins/swiper-bundle';
 @import 'plugins/jquery-ui.min';
 
+@import 'components/breadcrumbs';
+
 @import 'includes/header';
 @import 'includes/footer';
 
 @import 'pages/homepage';
+@import 'pages/about';

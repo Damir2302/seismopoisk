@@ -1,0 +1,123 @@
+.about-main {
+    padding: 20px 0 0;
+}
+
+.about__title {
+    font-size: 23px;
+    line-height: 25px;
+}
+
+.about-info {
+    padding: 66px 0 78px;
+    background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+    position: relative;
+}
+
+.about-info-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 153px;
+    height: 46px;
+}
+
+.about-info-text {
+    display: none;
+}
+
+.about-info__img-block {
+    display: none;
+}
+
+.about-info__main h2 {
+    font-size: 24px;
+    line-height: 26px;
+    color: #273A4A;
+}
+
+.about-info__main p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #575E6A;
+}
+
+.about-info__text {
+    margin: 15px 0 0;
+}
+
+.about-info__img {
+    margin: 53px 0 54px;
+}
+
+.about-info__mission {
+    margin: 32px 0 16px;
+    padding-left: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 26px;
+    color: #273A4A;
+}
+
+.about-info__mission::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #115EA0;
+}
+
+.about-info__mission::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    background: #115EA0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.about-info__achievements {
+    margin: 95px 0 0;
+}
+
+.achievement-item {
+    margin: 0 0 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-item:nth-child(even) {
+    align-items: flex-end;
+}
+
+.achievement-item.big-number {
+    flex-direction: row;
+}
+
+.achievement-number span {
+    background: linear-gradient(107.43deg, #115EA0 1.01%, #1C65B9 42.15%, #2A9BC3 77.5%, #38CEAC 112.26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 75px;
+}
+
+.big-number .achievement-number span {
+    font-size: 180px;
+    line-height: 145px;
+}
+
+.achievement-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #273A4A;
+}
