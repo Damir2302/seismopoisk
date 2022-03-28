@@ -122,6 +122,8 @@ $hdplus: 1700px;
 
 .hero__image {
     margin: 35px 0 0;
+    position: relative;
+    z-index: 1;
 
     @include breakpoint(md) {
         margin: 51px 0 0;
@@ -358,6 +360,10 @@ $hdplus: 1700px;
         max-width: 803px;
         max-height: 226px;
     }
+}
+
+#about-page .projects-img {
+    display: none;
 }
 
 .projects-text {
@@ -724,7 +730,7 @@ $hdplus: 1700px;
 }
 
 .projects__about-image {
-    
+
     @include breakpoint(lg) {
         object-fit: cover;
     }
@@ -987,6 +993,10 @@ $hdplus: 1700px;
     }
 }
 
+#about-page .about-section {
+    background: transparent;
+}
+
 .hompage-c-title {
     margin: 0 0 16px;
     font-size: 25px;
@@ -1055,7 +1065,7 @@ $hdplus: 1700px;
     @include breakpoint(hd) {
         padding: 150px 0 0;
     }
-    
+
 }
 
 .partners__wrapper {
@@ -1088,12 +1098,16 @@ $hdplus: 1700px;
 
 .partners-bg {
     position: absolute;
-    right: -60px;
+    right: -180px;
     bottom: 0px;
     width: auto;
     height: auto;
     max-width: 350px;
     z-index: 0;
+
+    @include breakpoint(md) {
+        right: -60px
+    }
 
     @include breakpoint(hd) {
         right: -70px;
@@ -1168,6 +1182,7 @@ $hdplus: 1700px;
 
     @include breakpoint(xl) {
         padding-top: 40px;
+        overflow: visible;
     }
 }
 
@@ -1176,26 +1191,35 @@ $hdplus: 1700px;
 
     @include breakpoint(xl) {
         position: absolute;
-        right: 45px;
+        right: -80px;
         justify-content: space-between;
         display: flex;
-        width: calc(100% - 200px);
+        width: calc(100% + 40px);
         z-index: 9;
+    }
+
+    @include breakpoint(hd) {
+        right: -95px;
+        width: 100%;
     }
 }
 
 .swiper-arrow {
-    
+
     @include breakpoint(xl) {
         position: relative;
         width: 28px;
         height: 28px;
         cursor: pointer;
     }
+
+    @include breakpoint(hd) {
+        right: 50px;
+    }
 }
 
 .swiper-arrow img  {
-    
+
     @include breakpoint(xl) {
         position: absolute;
         left: -47px;
@@ -1217,8 +1241,12 @@ $hdplus: 1700px;
         margin-left: 100px;
     }
 
+    @include breakpoint(lg) {
+        margin-left: 148px;
+    }
+
     @include breakpoint(xl) {
-        margin-left: 155px;
+        margin-left: 40px;
     }
 }
 
@@ -1245,7 +1273,7 @@ $hdplus: 1700px;
     }
 
     @include breakpoint(xl) {
-        height: 21.27vw;
+        height: 268px;
     }
 
     @include breakpoint(xl) {

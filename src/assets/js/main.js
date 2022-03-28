@@ -23,7 +23,6 @@ $(document).ready(function() {
     if ($('.news__swiper').length) {
       let news_block = new Swiper('.news__swiper', {
         direction: 'horizontal',
-        loop: true,
         slidesPerView: 1.288,
         spaceBetween: 20,
 
@@ -35,12 +34,7 @@ $(document).ready(function() {
           },
 
           1260: {
-            slidesPerView: 2.6,
-            spaceBetween: 20,
-          },
-
-          1400: {
-            slidesPerView: 'auto',
+            slidesPerView: 2.122,
             spaceBetween: 20,
           }
 

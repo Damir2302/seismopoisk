@@ -1,16 +1,29 @@
 .about-main {
     padding: 20px 0 0;
+
+    @include breakpoint(md) {
+        padding: 50px 0 0;
+    }
 }
 
 .about__title {
     font-size: 23px;
     line-height: 25px;
+
+    @include breakpoint(md) {
+        font-size: 40px;
+        line-height: 43px;
+    }
 }
 
 .about-info {
-    padding: 66px 0 78px;
+    padding: 66px 0 1200px;
     background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
     position: relative;
+
+    @include breakpoint(md) {
+        padding: 135px 0 100px;
+    }
 }
 
 .about-info-bg {
@@ -19,34 +32,72 @@
     right: 0;
     width: 153px;
     height: 46px;
-}
 
-.about-info-text {
-    display: none;
+    @include breakpoint(md) {
+        top: -18px;
+        width: 503px;
+        height: 125px;
+        z-index: 0;
+    }
 }
 
 .about-info__img-block {
     display: none;
 }
 
+.about-info__main {
+
+    @include breakpoint(md) {
+        max-width: 600px;
+    }
+}
+
 .about-info__main h2 {
     font-size: 24px;
     line-height: 26px;
     color: #273A4A;
+
+    @include breakpoint(md) {
+        font-size: 35px;
+        line-height: 39px;
+    }
 }
 
 .about-info__main p {
     font-size: 16px;
     line-height: 24px;
     color: #575E6A;
+
+    @include breakpoint(md) {
+        font-size: 18px;
+        line-height: 33px;
+    }
 }
 
 .about-info__text {
     margin: 15px 0 0;
+
+    @include breakpoint(md) {
+        max-width: 600px;
+    }
 }
 
-.about-info__img {
+.about-info__image {
     margin: 53px 0 54px;
+    position: relative;
+
+    @include breakpoint(md) {
+        max-width: 403px;
+    }
+}
+
+.about-info-text {
+    margin: 5px 0 0;
+    position: absolute;
+    top: 100%;
+    right: -100px;
+    max-width: 160px;
+    max-height: 372px;
 }
 
 .about-info__mission {
@@ -58,6 +109,10 @@
     font-size: 24px;
     line-height: 26px;
     color: #273A4A;
+
+    @include breakpoint(md) {
+        margin: 40px 0 16px;
+    }
 }
 
 .about-info__mission::before {
@@ -83,7 +138,28 @@
 }
 
 .about-info__achievements {
-    margin: 95px 0 0;
+    margin: 95px auto 0;
+    padding-bottom: 78px;
+    max-width: 280px;
+
+    @include breakpoint(md) {
+        max-width: unset;
+    }
+}
+
+.achievements-block {
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+}
+
+.achievements-block:last-child {
+
+    @include breakpoint(md) {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
 }
 
 .achievement-item {
@@ -93,11 +169,34 @@
 }
 
 .achievement-item:nth-child(even) {
-    align-items: flex-end;
+    margin-left: auto;
+    max-width: 120px;
+
+    @include breakpoint(md) {
+        margin-left: 0;
+    }
 }
 
 .achievement-item.big-number {
     flex-direction: row;
+
+    @include breakpoint(md) {
+        margin-left: 120px;
+    }
+}
+
+.achievements-block:first-child .achievement-item:last-child {
+
+    @include breakpoint(md) {
+        margin-left: 70px;
+    }
+}
+
+.achievements-block:last-child .achievement-item:first-child {
+
+    @include breakpoint(md) {
+        margin-left: 250px;
+    }
 }
 
 .achievement-number span {
@@ -120,4 +219,158 @@
     font-size: 16px;
     line-height: 24px;
     color: #273A4A;
+
+    @include breakpoint(md) {
+        max-width: 244px;
+    }
+}
+
+.big-number .achievement-text {
+
+    @include breakpoint(md) {
+        max-width: 164px;
+    }
+}
+
+.activity {
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    @include breakpoint(md) {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 30px;
+    }
+}
+
+.activity__info {
+    padding: 30px 20px;
+    background: #115EA0;
+
+    @include breakpoint(md) {
+        margin: 80px 0 0;
+        padding: 30px 25px;
+        width: 50%;
+    }
+}
+
+.activity__title {
+    margin: 0 0 30px;
+    color: #fff;
+
+    @include breakpoint(md) {
+        font-size: 24px;
+        line-height: 26px;
+    }
+}
+
+.activity__list {
+    padding: 0 0 10px;
+}
+
+.activity__list-item {
+    margin: 0 0 25px;
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.activity__list-item::before {
+    margin-right: 8px;
+    content: attr(data-index);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.activity-bg {
+    position: absolute;
+    left: 110px;
+    bottom: -70px;
+    width: auto;
+    height: auto;
+    z-index: 0;
+}
+
+.activity__image {
+    margin: 16px 0 0;
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint(md) {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+.activity__image img {
+
+    @include breakpoint(md) {
+        height: auto;
+    }
+}
+
+.activity-info-bottom-text {
+    position: absolute;
+    left: 20px;
+    width: 576px;
+    height: 65px;
+}
+
+.activity-info-text-2 {
+    display: none;
+}
+
+.table-history {
+    padding: 60px 0 40px;
+    background: linear-gradient(105.66deg, #074D89 1.71%, #115EA0 95.81%);
+    overflow-x: scroll;
+}
+
+.table-history .container {
+    padding: 0;
+}
+
+.table-history__title {
+    margin: 0 0 50px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.table-history__table {
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 830px;
+}
+
+.table-history__table thead th {
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.table-history__table tbody tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(33px);
+}
+
+.table-history__table tbody td {
+    padding: 20px;
+}
+
+.about-sections {
+    background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+}
+
+.projects-sec {
+    padding: 30px 0;
+    position: relative;
+}
+
+.projects-sec .container {
+    padding: 0;
 }
