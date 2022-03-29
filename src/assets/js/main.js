@@ -19,6 +19,23 @@ $(document).ready(function() {
       $('.header').css('background', 'transparent');
     });
 
+    // SHOW SEARCH INPUT
+    $('#searchInput').on('click', function(e) {
+      e.preventDefault();
+      $(this).addClass('hide-search-btn');
+      $('#searchBtn').removeClass('hide-search-btn');
+      $('.header-search-input').addClass('active');
+    });
+
+    $('#searchBtn').on('click', function(e) {
+      if (!$('#input-search').val().length) {
+        e.preventDefault();
+        $('#searchInput').removeClass('hide-search-btn');
+        $(this).addClass('hide-search-btn');
+        $('.header-search-input').removeClass('active');
+      }
+    });
+
     // NEWS SECTION SLIDER
     if ($('.news__swiper').length) {
       let news_block = new Swiper('.news__swiper', {

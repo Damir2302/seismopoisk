@@ -160,15 +160,6 @@ function cssWatch(cb) {
             includePaths: './node_modules/',
             outputStyle: 'compressed'
         }))
-        .pipe(pxtorem({
-            rootValue: 10,
-            unitPrecision: 5,
-            propList: ['top', 'left', 'right', 'bottom', 'font', 'font-size', 'line-height', 'letter-spacing', 'margin', 'margin-top', 'padding', 'height', 'min-height', 'max-height', 'width', 'max-width', 'flex'],
-            selectorBlackList: ['.fancybox-button'],
-            replace: true,
-            mediaQuery: false,
-            minPixelValue: 18
-        }))
         .pipe(rename({
             suffix: '.min',
             extname: ".css"

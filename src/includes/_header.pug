@@ -62,7 +62,7 @@ block header
                 a.navbar__email(href="mailto:office@seismopoisk.ru") office@seismopoisk.ru
 
                 form.navbar-search-form
-                    input.navbar-search-input(type="search", name="search" placeholder="поиск")
+                    input.navbar-search-input(type="search", name="search" placeholder="поиск" autocomplete="off")
                     button.navbar-search-button
                         +sprite('search')
 
@@ -75,6 +75,8 @@ block header
             a.header__email(href="mailto:office@seismopoisk.ru") office@seismopoisk.ru
 
             form.header-search-form
-                input.header-search-input(type="search", name="search" placeholder="поиск")
-                button.header-search-button
+                input#input-search.header-search-input(type="search", name="search" placeholder="поиск" autocomplete="off")
+                button#searchInput.header-search-button
                     +sprite('search-white')
+                button#searchBtn.header-search-button.hide-search-btn
+                    +sprite('search')

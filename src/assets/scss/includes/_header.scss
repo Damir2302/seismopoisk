@@ -446,6 +446,7 @@
     display: none;
 
     @include breakpoint(md) {
+        margin-right: 45px;
         padding: 0 15px;
         display: block;
         font-size: 16px;
@@ -455,21 +456,25 @@
 
     @include breakpoint(lg) {
         margin-top: 16px;
+        margin-right: 225px;
     }
 
     @include breakpoint(xl) {
         margin-top: 0;
+        margin-right: 65px;
         padding: 0 0 0 12px;
         font-size: 14px;
         line-height: 24px;
     }
 
     @include breakpoint(hd) {
+        margin-right: 106px;
         padding: 0 0 0 20px;
         font-size: 16px;
     }
 
     @include breakpoint(hdd) {
+        margin-right: 156px;
         padding: 0 0 0 36px;
         font-size: 20px;
     }
@@ -480,26 +485,56 @@
 
     @include breakpoint(md) {
         padding-left: 15px;
+        position: absolute;
+        right: 40px;
         display: flex;
-        border-left: 1px solid rgba(79, 134, 172, 0.2);
     }
 
     @include breakpoint(lg) {
         margin-top: 16px;
-        margin-left: 180px;
     }
 
     @include breakpoint(xl) {
         margin-top: 0;
-        margin-left: 20px;
+        top: 0;
+        right: 40px;
     }
 
     @include breakpoint(hd) {
-        margin-left: 50px;
+        top: unset;
+        right: 15px;
+    }
+}
+
+.header-search-form::before {
+
+    @include breakpoint(md) {
+        content: "";
+        background: rgba(79, 134, 172, 0.2);
+        position: absolute;
+        top: -30px;
+        right: 45px;
+        width: 1px;
+        height: 60px;
+        z-index: 1;
     }
 
-    @include breakpoint(hdd) {
-        margin-left: 100px;
+    @include breakpoint(lg) {
+        top: -40px;
+        right: 15px;
+        height: 76px;
+    }
+
+    @include breakpoint(xl) {
+        top: 0;
+        right: 15px;
+        height: 60px;
+    }
+
+    @include breakpoint(hd) {
+        top: -40px;
+        right: 60px;
+        height: 80px;
     }
 }
 
@@ -507,11 +542,56 @@
     display: none;
 
     @include breakpoint(md) {
+        padding: 18px 56px 18px 15px;
+        background: #fff;
+        position: absolute;
+        top: -30px;
+        right: -41px;
+        display: block;
         width: 0;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
-        color: #C9D9E3;
+        color: #888;
         border: none;
+        box-sizing: border-box;
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: 0;
+    }
+
+    @include breakpoint(lg) {
+        top: -38px;
+    }
+
+    @include breakpoint(xl) {
+        top: 0;
+    }
+
+    @include breakpoint(hd) {
+        padding: 28px 80px 28px 25px;
+        top: -40px;
+        right: -16px;
+        font-size: 20px;
+    }
+}
+
+.header-search-input.active {
+
+    @include breakpoint(md) {
+        width: 266px;
+        opacity: 1;
+    }
+
+    @include breakpoint(lg) {
+        width: 241px;
+    }
+
+    @include breakpoint(hd) {
+        width: 295px;
+    }
+
+    @include breakpoint(hdd) {
+        width: 385px;
     }
 }
 
@@ -526,14 +606,33 @@
     height: 30px;
 
     @include breakpoint(md) {
+        position: absolute;
+        top: -30px;
+        right: 0;
         display: flex;
         align-items: center;
         height: 60px;
+        z-index: 1;
+    }
+
+    @include breakpoint(lg) {
+        top: -35px;
+        right: -25px;
+    }
+
+    @include breakpoint(xl) {
+        top: 0;
     }
 
     @include breakpoint(hd) {
+        top: -30px;
+        right: 0;
         width: 40px;
     }
+}
+
+.header-search-button.hide-search-btn {
+    display: none;
 }
 
 .header-search-button svg {
@@ -543,5 +642,10 @@
         background: transparent;
         width: 30px;
         height: 30px;
+    }
+
+    @include breakpoint(hd) {
+        width: 40px;
+        height: 40px;
     }
 }
