@@ -1,0 +1,150 @@
+.management-content {
+    padding: 60px 0 150px;
+    background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+
+    @include breakpoint(md) {
+        padding: 60px 0 130px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 146px 0 160px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 100px 0 180px;
+    }
+}
+
+.managements {
+
+    @include breakpoint(md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @include breakpoint(lg) {
+        column-gap: 40px;
+    }
+}
+
+.management__block {
+
+    @include breakpoint(md) {
+        margin: 0 0 50px;
+        width: 47.8%;
+    }
+
+    @include breakpoint(lg) {
+        width: 30.1%;
+    }
+
+    @include breakpoint(lgx) {
+        width: 30.7%;
+    }
+}
+
+.management__block--main {
+
+    @include breakpoint(md) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0 0 126px;
+    }
+
+    @include breakpoint(hd) {
+        margin: 0 0 48px;
+    }
+}
+
+.management__block--main .management__image {
+
+    @include breakpoint(md) {
+        width: 47.8%;
+    }
+}
+
+.management__block--main .management__info {
+
+    @include breakpoint(md) {
+        width: 47.8%;
+    }
+}
+
+.management__image {
+    margin: 0 auto 20px;
+    max-width: 375px;
+
+    @include breakpoint(md) {
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+.management__title {
+    margin: 0 0 2px;
+    font-size: 22px;
+    line-height: 40px;
+    color: #808896;
+
+    @include breakpoint(md) {
+        font-size: 18px;
+        line-height: 33px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
+
+.management__block--main .management__title {
+
+    @include breakpoint(md) {
+        margin: 0 0 20px;
+    }
+}
+
+.management__name {
+    font-size: 20px;
+    line-height: 26px;
+    color: #273A4A;
+
+    @include breakpoint(md) {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 205px;
+    }
+}
+
+.management__block--main .management__name {
+
+    @include breakpoint(lg) {
+        max-width: 100%;
+    }
+}
+
+.management__text {
+    margin: 20px 0 45px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #575E6A;
+
+    @include breakpoint(md) {
+        margin: 20px 0 0;
+        font-size: 18px;
+        line-height: 33px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+        line-height: 40px;
+    }
+}

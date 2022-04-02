@@ -32,8 +32,16 @@ $(document).ready(function() {
         e.preventDefault();
         $('#searchInput').removeClass('hide-search-btn');
         $(this).addClass('hide-search-btn');
-        $('.header-search-input').removeClass('active');
+        $('#input-search').removeClass('active');
       }
+    });
+
+    $('html').click(function(e) {
+      if (!$(e.target).closest('.header-search-form').length) {
+          $('#searchInput').removeClass('hide-search-btn');
+          $('#searchBtn').addClass('hide-search-btn');
+          $('#input-search').removeClass('active');
+        }
     });
 
     // NEWS SECTION SLIDER

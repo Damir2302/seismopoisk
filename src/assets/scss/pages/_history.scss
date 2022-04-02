@@ -1,0 +1,109 @@
+.history-inner {
+    padding: 50px 0 140px;
+    background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+
+    @include breakpoint(md) {
+        padding: 60px 0 140px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 100px 0 150px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 100px 0 180px;
+    }
+}
+
+.history {
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+.history__wrapper {
+
+    @include breakpoint(md) {
+        display: flex;
+        column-gap: 30px;
+    }
+}
+
+.history__year {
+    padding: 20px 0;
+    max-width: 137px;
+    border-top: 1px solid #4B9FB7;
+
+    @include breakpoint(md) {
+        width: 33.333%;
+        max-width: 150px;
+    }
+
+    @include breakpoint(md) {
+        max-width: 137px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 160px;
+    }
+}
+
+.history__year h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #115EA0;
+}
+
+.history__list {
+
+    @include breakpoint(md) {
+        padding: 0 0 40px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 0 0 60px;
+    }
+}
+
+.history__block {
+    padding: 20px 0 40px;
+    border-top: 1px solid #4B9FB7;
+
+    @include breakpoint(md) {
+        display: flex;
+        column-gap: 60px;
+    }
+}
+
+.history__date p {
+    margin: 0 0 16px;
+    font-size: 22px;
+    line-height: 40px;
+    color: #273A4A;
+}
+
+.history__content p {
+    font-size: 15px;
+    line-height: 27px;
+    color: #575E6A;
+
+    @include breakpoint(md) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
+
+.history__images {
+    margin: 20px 0 0;
+    display: flex;
+    column-gap: 20px;
+}
+
+.history__images img {
+    min-width: 130px;
+}

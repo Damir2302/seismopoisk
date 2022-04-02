@@ -8,22 +8,22 @@
     }
 
     @include breakpoint(lg) {
-        padding: 24px 0 50px;
+        padding: 0 0 50px;
     }
 
     @include breakpoint(hd) {
-        padding: 25px 0 80px;
+        padding: 0 0 80px;
     }
 }
 
 .about-main .hero__main {
 
     @include breakpoint(lg) {
-        margin: 118px 0 0;
+        margin: 83px 0 0;
     }
 
     @include breakpoint(hd) {
-        margin: 182px 0 0;
+        margin: 142px 0 0;
     }
 }
 
@@ -617,7 +617,7 @@
 .table-history__container img {
     display: none;
 
-    @include breakpoint(lg) {
+    @include breakpoint(lgx) {
         position: absolute;
         top: -7px;
         right: -125px;
@@ -645,8 +645,16 @@
 
     @include breakpoint(lg) {
         padding: 150px 0 120px;
+    }
+
+    @include breakpoint(lgx) {
         overflow: hidden;
     }
+}
+
+.table-history::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .table-history .container {
