@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <title>Сейсмопоиск | Операционная структура</title>
+    <!-- Styles-->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Yandex Map-->
+  </head>
+  <body>
+    <div id="page">
+      <!-- Header::Start-->
+      <header class="header" id="header">
+        <div class="header__inner">
+          <div class="header__logo"><img class="logo-mobile" src="assets/images/logo-text.png" alt="logo"><img class="logo-desktop" src="assets/images/logo.png" alt="logo"></div>
+          <nav class="header__nav">
+            <div class="mobile-menu-close">
+              <div class="close-menu-btn" id="closeSideMenu">
+                      <svg>
+                        <use xlink:href="assets/sprites/sprites.svg#close-icon"></use>
+                      </svg>
+              </div><img class="close-img" src="assets/images/close.png" alt="icon">
+            </div>
+            <ul class="navbar__menu">
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="about.html">О компании</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Руководство</a></li>
+                  <li><a class="navbar__submenu-link" href="#">История компании</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Операционная структура</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Услуги</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Сейсморазведочные работы</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Супервайзинг сейсморазведочных работ</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Камеральные работы</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Экологическое проектирование</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Пресс-центр</a></li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Карьера</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Вакансии</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Устойчивое развитие</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Охрана окружающей среды</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Охрана труда и промышленная безопасность</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Противодействие коррупции</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Контакты</a></li>
+            </ul><a class="navbar__phone" href="tel:83912001285">8 (391) 200-12-85</a><a class="navbar__email" href="mailto:office@seismopoisk.ru">office@seismopoisk.ru</a>
+            <form class="navbar-search-form">
+              <input class="navbar-search-input" type="search" name="search" placeholder="поиск" autocomplete="off">
+              <button class="navbar-search-button">
+                      <svg>
+                        <use xlink:href="assets/sprites/sprites.svg#search"></use>
+                      </svg>
+              </button>
+            </form>
+          </nav>
+          <div class="header__menu-btn" id="sideMenu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></div><a class="header__phone" href="tel:83912001285">8 (391) 200-12-85</a><a class="header__email" href="mailto:office@seismopoisk.ru">office@seismopoisk.ru</a>
+          <form class="header-search-form">
+            <input class="header-search-input" id="input-search" type="search" name="search" placeholder="поиск" autocomplete="off">
+            <button class="header-search-button" id="searchInput">
+                    <svg>
+                      <use xlink:href="assets/sprites/sprites.svg#search-white"></use>
+                    </svg>
+            </button>
+            <button class="header-search-button hide-search-btn" id="searchBtn">
+                    <svg>
+                      <use xlink:href="assets/sprites/sprites.svg#search"></use>
+                    </svg>
+            </button>
+          </form>
+        </div>
+      </header>
+      <!-- Header::End-->
+      <!-- Main::Start-->
+      <main id="main" role="main">
+        <div id="structure-page">
+          <section class="structure-header">
+                        <div class="breadcrumbs">
+                          <div class="container">
+                            <div class="breadcrumbs-wrapper"><a class="breadcrumbs-item" href="/">Главная</a><span class="breadcrumbs-separator">
+                                      <svg>
+                                        <use xlink:href="assets/sprites/sprites.svg#separator"></use>
+                                      </svg></span><a class="breadcrumbs-item" href="#">О нас</a><span class="breadcrumbs-separator">
+                                      <svg>
+                                        <use xlink:href="assets/sprites/sprites.svg#separator"></use>
+                                      </svg></span>
+                              <div class="breadcrumbs-item">Операционная структура</div>
+                            </div>
+                          </div>
+                        </div>
+            <div class="container">
+              <div class="page-title">
+                <h1>Операционная структура</h1>
+              </div>
+            </div>
+          </section>
+          <section class="structure-inner">
+            <div class="container">
+              <!-- STRUCTURE MOBILE-->
+              <div class="structure-mobile">
+                <div class="structure-row row-1">
+                  <div class="structure__block">
+                    <p>Генеральный директор</p>
+                  </div>
+                </div>
+                <div class="structure-row row-2">
+                  <div class="structure__block">
+                    <p>1 отдел</p>
+                  </div>
+                  <div class="structure__block">
+                    <p>Советник 1,2</p>
+                  </div>
+                  <div class="structure__block">
+                    <p class="mob-only">Сл. Безопасн.</p>
+                    <p class="mob-sm-only">Служба безопасности</p>
+                  </div>
+                </div>
+                <div class="structure-row row-3">
+                  <div class="structure__block">
+                    <p class="mob-only">Бухг-р</p>
+                    <p class="mob-sm-only">Бухгалтер</p>
+                  </div>
+                  <div class="structure__block">
+                    <p class="mob-only">Главный бухг-р</p>
+                    <p class="mob-sm-only">Главный бухгалтер</p>
+                  </div>
+                  <div class="structure__block">
+                    <p class="mob-only">Админ-хоз отдел</p>
+                    <p class="mob-sm-only">Админ-хозяйственный отдел</p>
+                  </div>
+                </div>
+                <div class="structure-row row-4">
+                  <div class="structure__block"><span></span>
+                    <p>Исполнительный директор</p>
+                  </div>
+                </div>
+                <div class="structure-row row-5">
+                  <div class="structure__block">
+                    <p class="mob-only">1 зам. директора</p>
+                    <p class="mob-sm-only">Первый заместитель директора</p>
+                  </div>
+                  <div class="structure__block">
+                    <p>ОП Монголия (доч. общ.)</p>
+                  </div>
+                </div>
+                <div class="structure-row row-6">
+                  <div class="structure__block">
+                    <p>Главный инженер</p>
+                  </div>
+                  <div class="structure__block">
+                    <p>Зам. дир. по прав. вопросам и персоналу</p>
+                  </div>
+                </div>
+                <div class="structure-row row-7">
+                  <div class="structure__block">
+                    <p>Упр. строит-ва скважин и супервизия</p>
+                  </div>
+                </div>
+                <div class="structure-row row-8">
+                  <div class="structure__block">
+                    <p>Эконом. отдел</p>
+                  </div>
+                  <div class="structure__block">
+                    <p class="mob-only">Упр. по эконом. и финанс.</p>
+                    <p class="mob-sm-only">Управление по экономике и финансам</p>
+                  </div>
+                  <div class="structure__block">
+                    <p>Финанс. отдел</p>
+                  </div>
+                </div>
+                <div class="structure-row row-9">
+                  <div class="structure__block">
+                    <p class="mob-only">Карьер (доч. общ.)</p>
+                    <p class="mob-sm-only">Карьер (дочернее общество)</p>
+                  </div>
+                </div>
+                <div class="structure-row row-10">
+                  <div class="structure-col-wrapper">
+                    <div class="structure-col">
+                      <ul class="structure-col-list">
+                        <li>Отдел главного геофизика</li>
+                        <li>Производ-техн. отдел</li>
+                        <li>Отд. охраны труда, промыш. без-ти, и охраны окруж. ср.</li>
+                        <li>Отдел главного механика</li>
+                        <li>Отдел материал-технич. обеспеч.</li>
+                        <li>База<br> производ-ного обеспечения</li>
+                      </ul>
+                    </div><img class="structure-col-bg" src="assets/images/triangle-structure-mobile.png" alt="bg">
+                  </div>
+                  <div class="structure-col">
+                    <ul class="structure-col-list">
+                      <li>Тендерный отдел</li>
+                      <li>Юр. отдел</li>
+                      <li>Отдел труда и заработной платы</li>
+                      <li>Отдел кадров</li>
+                      <li>Отдел информационных технологий</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="structure-row row-11">
+                  <div class="structure__block">
+                    <p>Сейсморазведочные партии</p>
+                  </div>
+                </div>
+              </div>
+              <!-- STRUCTURE TABLET & DESKTOP-->
+              <div class="structure">
+                <div class="structure__row structure__row--first">
+                  <div class="structure__block dashed-line-top h20">
+                    <div class="dot t-dot"></div>
+                    <div class="structure__item structure__item--green">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-1"></use>
+                            </svg>
+                      <p>1 отдел</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-right">
+                    <div class="dot r-dot"></div>
+                    <div class="structure__item structure__item--green">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-2"></use>
+                            </svg>
+                      <p>Советник</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-top h20 max-width-line-1">
+                    <div class="dot l-dot"></div>
+                    <div class="dot r-dot"></div>
+                    <div class="structure__item structure__item--blue-gradient">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-3"></use>
+                            </svg>
+                      <p>Генеральный<br>директор</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-left">
+                    <div class="dot l-dot"></div>
+                    <div class="structure__item structure__item--green">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-2"></use>
+                            </svg>
+                      <p>Советник</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-top h20">
+                    <div class="dot t-dot"></div>
+                    <div class="structure__item structure__item--green">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-4"></use>
+                            </svg>
+                      <p>Служба безопасности</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="structure__row structure__row--second">
+                  <div class="structure__block dashed-line-right h21">
+                    <div class="dot r-dot"></div>
+                    <div class="structure__item structure__item--cyan">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-5"></use>
+                            </svg>
+                      <p>Бухгалтер</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-top h15">
+                    <div class="dot t-dot"></div>
+                    <div class="structure__item structure__item--cyan-gradient">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-6"></use>
+                            </svg>
+                      <p>Главный<br>бухгалтер</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-top max-width-line-2"></div>
+                  <div class="structure__block dashed-line-top h15">
+                    <div class="dot t-dot"></div>
+                    <div class="structure__item structure__item--green">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-7"></use>
+                            </svg>
+                      <p class="display-md">Админ-хозяйственный отдел</p>
+                      <p class="display-lgx">Административно-хозяйственный<br>отдел</p>
+                    </div>
+                  </div>
+                  <div class="structure__block"></div>
+                </div>
+                <div class="structure__row structure__row--third">
+                  <div class="structure__block dashed-line-right h21">
+                    <div class="dot r-dot"></div>
+                    <div class="structure__item structure__item--transparent">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-8"></use>
+                            </svg>
+                      <p>Главный<br>инженер</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-right w21">
+                    <div class="dot r-dot"></div>
+                    <div class="structure__item structure__item--blue">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-9"></use>
+                            </svg>
+                      <p>Первый<br>заместитель<br>директора</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-top h174 dashed-line-bottom h14">
+                    <div class="dot t-dot"></div>
+                    <div class="structure__item structure__item--green-gradient">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-10"></use>
+                            </svg>
+                      <p class="display-md">Исполн-ый директор</p>
+                      <p class="display-lgx">Исполнительный директор</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-left w21 dashed-line-top max-width-line-5">
+                    <div class="dot l-dot"></div>
+                    <div class="structure__item structure__item--blue">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-11"></use>
+                            </svg>
+                      <p>ОП Монголия (дочернее общество)</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-bottom h14">
+                    <div class="dot b-dot"></div>
+                    <div class="structure__item structure__item--transparent">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-12"></use>
+                            </svg>
+                      <p class="display-md">Зам. дир. по прав. вопросам и персоналу</p>
+                      <p class="display-hd">Заместитель директора по правовым вопросам и персоналу</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="structure__row structure__row--fourth">
+                  <div class="structure__block"></div>
+                  <div class="structure__block dashed-line-right w21 max-height-line-1">
+                    <div class="dot r-dot"></div>
+                    <div class="structure__item structure__item--blue-low">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-13"></use>
+                            </svg>
+                      <p>Экономический<br>отдел</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-top h16 max-width-line-4">
+                    <div class="dot t-dot mr-15"></div>
+                    <div class="structure__item structure__item--blue-low-gradient">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-14"></use>
+                            </svg>
+                      <p>Управление по<br> экономике <br>и финансам</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-left w21 dashed-line-top max-width-line-6">
+                    <div class="dot l-dot"></div>
+                    <div class="structure__item structure__item--blue-low">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-15"></use>
+                            </svg>
+                      <p>Финансовый<br>отдел</p>
+                    </div>
+                  </div>
+                  <div class="structure__block dashed-line-right max-height-line-3"></div>
+                </div>
+                <div class="structure__row structure__row--fifth dashed-line-top">
+                  <div class="structure__list">
+                    <ul class="structure-col-list">
+                      <li>Отдел главного геофизика</li>
+                      <li>Производственнотехнический отдел</li>
+                      <li>Отдел охраны труда, промышленной безопасности, и охраны окружающей среды</li>
+                      <li>Отдел главного механика</li>
+                      <li>Отдел материальнотехнического обеспечения</li>
+                      <li>База производственного обеспечения</li>
+                    </ul>
+                  </div>
+                  <div class="structure__col">
+                    <div class="structure__block dashed-line-top h15 dashed-line-top max-width-line-3">
+                      <div class="dot t-dot"></div>
+                      <div class="structure__item structure__item--blue">
+                              <svg>
+                                <use xlink:href="assets/sprites/sprites.svg#s-16"></use>
+                              </svg>
+                        <p>Карьер (дочернее общество)</p>
+                      </div>
+                    </div>
+                    <div class="structure__block dashed-line-right w15 max-height-line-2">
+                      <div class="dot r-dot"></div>
+                      <div class="structure__item structure__item--blue">
+                              <svg>
+                                <use xlink:href="assets/sprites/sprites.svg#s-17"></use>
+                              </svg>
+                        <p class="display-hd-min">Упр. строит-ва скважин и супервизия</p>
+                        <p class="display-hd">Упр. строительства скважин и супервизия</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="structure__list">
+                    <ul class="structure-col-list">
+                      <li>Тендерный отдел</li>
+                      <li>Юридический отдел</li>
+                      <li>Отдел труда и заработной платы</li>
+                      <li>Отдел кадров</li>
+                      <li>Отдел информационных технологий</li>
+                    </ul>
+                  </div><img class="structure-col-bg-hd" src="assets/images/triangle-structure.png" alt="bg">
+                </div>
+                <div class="structure__row structure__row--sixth">
+                  <div class="structure__block"></div>
+                  <div class="structure__block dashed-line-top h30">
+                    <div class="dot t-dot"></div>
+                    <div class="structure__item structure__item--transparent">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#s-18"></use>
+                            </svg>
+                      <p>Сейсморазве-<br>дочные партии</p>
+                    </div>
+                  </div>
+                  <div class="structure__block"></div>
+                  <div class="structure__block"></div>
+                  <div class="structure__block"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- Main::End-->
+      <!-- Footer::Start-->
+      <footer class="footer" id="footer">
+        <div class="footer-top-img"><img src="assets/images/triangles-6.png" alt="bg"></div>
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__logo"><img src="assets/images/logo-text.png" alt="logo">
+              <p>Геологоразведочные, камеральные работы и супервайзинг</p>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__address">
+                <div class="footer__address-block">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#map-pin"></use>
+                        </svg>
+                  <p>660075, Россия, Красноярский край, г. Красноярск,<br> ул. Железнодорожников, д. 17, помещение 18, комната 11</p>
+                </div>
+                <div class="footer__address-block">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#map-pin"></use>
+                        </svg>
+                  <p>660075, Россия, Красноярский край, г. Красноярск,<br> ул. Маерчака, д.10, 6 этаж БЦ "Баланс"</p>
+                </div>
+              </div>
+              <div class="footer__communication">
+                <div class="footer__communication-item">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#phone"></use>
+                        </svg><a href="tel:83912001285">8 (391) 200-12-85</a>
+                </div>
+                <div class="footer__communication-item">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#mail"></use>
+                        </svg><a href="mailto:office@seismopoisk.ru">office@seismopoisk.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__main">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">О компании</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Руководство</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">История компании</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Операционная структура</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Пресс-центр</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Услуги</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Сейсморазведочные работы</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Супервайзинг сейсморазведочных работ</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Камеральные работы</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Экологическое проектирование</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Устойчивое развитие</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Охрана окружающей среды</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Охрана труда и промышленная безопасность</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Противодействие коррупции</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Карьера</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Вакансии</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <p class="footer-copyright">Copyright © 2021 - 2022</p><a class="footer-developer" href="#" target="_blank">Разработка сайта Di-project</a>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer::End-->
+    </div>
+    <!-- Scripts::Start-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/plugins/jquery-ui.min.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/TweenLite.min.js"></script>
+    <script src="assets/js/plugins/EasePack.min.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Scripts::End-->
+  </body>
+</html>

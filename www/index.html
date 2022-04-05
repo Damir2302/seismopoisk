@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <title>Сейсмопоиск | Главная</title>
+    <!-- Styles-->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Yandex Map-->
+  </head>
+  <body>
+    <div id="page">
+      <!-- Header::Start-->
+      <header class="header" id="header">
+        <div class="header__inner">
+          <div class="header__logo"><img class="logo-mobile" src="assets/images/logo-text.png" alt="logo"><img class="logo-desktop" src="assets/images/logo.png" alt="logo"></div>
+          <nav class="header__nav">
+            <div class="mobile-menu-close">
+              <div class="close-menu-btn" id="closeSideMenu">
+                      <svg>
+                        <use xlink:href="assets/sprites/sprites.svg#close-icon"></use>
+                      </svg>
+              </div><img class="close-img" src="assets/images/close.png" alt="icon">
+            </div>
+            <ul class="navbar__menu">
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="about.html">О компании</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Руководство</a></li>
+                  <li><a class="navbar__submenu-link" href="#">История компании</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Операционная структура</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Услуги</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Сейсморазведочные работы</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Супервайзинг сейсморазведочных работ</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Камеральные работы</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Экологическое проектирование</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Пресс-центр</a></li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Карьера</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Вакансии</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Устойчивое развитие</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Охрана окружающей среды</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Охрана труда и промышленная безопасность</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Противодействие коррупции</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Контакты</a></li>
+            </ul><a class="navbar__phone" href="tel:83912001285">8 (391) 200-12-85</a><a class="navbar__email" href="mailto:office@seismopoisk.ru">office@seismopoisk.ru</a>
+            <form class="navbar-search-form">
+              <input class="navbar-search-input" type="search" name="search" placeholder="поиск" autocomplete="off">
+              <button class="navbar-search-button">
+                      <svg>
+                        <use xlink:href="assets/sprites/sprites.svg#search"></use>
+                      </svg>
+              </button>
+            </form>
+          </nav>
+          <div class="header__menu-btn" id="sideMenu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></div><a class="header__phone" href="tel:83912001285">8 (391) 200-12-85</a><a class="header__email" href="mailto:office@seismopoisk.ru">office@seismopoisk.ru</a>
+          <form class="header-search-form">
+            <input class="header-search-input" id="input-search" type="search" name="search" placeholder="поиск" autocomplete="off">
+            <button class="header-search-button" id="searchInput">
+                    <svg>
+                      <use xlink:href="assets/sprites/sprites.svg#search-white"></use>
+                    </svg>
+            </button>
+            <button class="header-search-button hide-search-btn" id="searchBtn">
+                    <svg>
+                      <use xlink:href="assets/sprites/sprites.svg#search"></use>
+                    </svg>
+            </button>
+          </form>
+        </div>
+      </header>
+      <!-- Header::End-->
+      <!-- Main::Start-->
+      <main id="main" role="main">
+        <section class="hero-section" id="hero-section">
+          <canvas class="canvas" id="canvas"></canvas>
+          <div class="left-line">
+            <div class="arrow-btn"><span class="arrow-btn-text">SCROLL DOWN</span>
+                    <svg class="arrow-btn-element">
+                      <use xlink:href="assets/sprites/sprites.svg#arr"></use>
+                    </svg>
+                    <svg class="arrow-btn-arrow">
+                      <use xlink:href="assets/sprites/sprites.svg#arrow-down"></use>
+                    </svg>
+            </div>
+          </div>
+          <div class="hero__main">
+            <div class="container">
+              <div class="hero__main-logo"><img src="assets/images/logo-text.png" alt="logo"></div>
+              <div class="hero__text">
+                <h1>Геологоразведочные, камеральные работы и супервайзинг</h1>
+                <p class="text-medium">Мы готовим проекты на выполнение полевых сейсморазведочных работ МОГТ 2D и 3D, рецензиина проекты полевых сейсморазведочных работ.</p>
+              </div>
+            </div>
+            <div class="hero__image">
+              <video src="assets/images/istockphoto-1144204289-640_adpp_is.mp4" oncontextmenu="return false;" muted loop autoplay></video>
+            </div>
+          </div>
+          <div class="services-l-section"><img class="services-l-text" src="assets/images/uslugi.png" alt="text">
+            <div class="container">
+              <div class="services-l__wrapper">
+                <div class="services-l__block">
+                  <div class="services-l__item"><img class="services-l__image" src="assets/images/nick-van-den-berg-tpyh8Eu7LgQ-unsplash_2.jpg" alt="img">
+                    <div class="services-l__icon"><img src="assets/images/truck.svg" alt="svg"></div>
+                    <p class="services-l__title">Сейсморазведочные работы</p>
+                    <p class="services-l__text">Выполнение полевых сейсморазведочных работ МОГТ 2D и МОГТ 3D осуществляется строго в соответствии с проектом на проведение работ.</p>
+                  </div>
+                  <div class="services-l__item"><img class="services-l__image" src="assets/images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg" alt="img">
+                    <div class="services-l__icon">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#plan-building"></use>
+                            </svg>
+                    </div>
+                    <p class="services-l__title">Камеральные работы</p>
+                    <p class="services-l__text">Обработка и интерпретация геофизических данных. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit est eros, viverra magna lacinia.</p>
+                  </div>
+                </div>
+                <div class="services-l__block">
+                  <div class="services-l__block-bg"><img src="assets/images/triangles.png" alt="bg"></div>
+                  <div class="services-l__item"><img class="services-l__image" src="assets/images/closeup-contractor-construction-site-pointing-plan-wooden-sleeper.jpg" alt="img">
+                    <div class="services-l__icon">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#construction-project"></use>
+                            </svg>
+                    </div>
+                    <p class="services-l__title">Супервайзинг сейсморазведочных работ</p>
+                    <p class="services-l__text">Необходимость супервайзерского контроля в современных условиях объясняется высокой стоимостью проведения геолого-разведочных работ</p>
+                  </div>
+                  <div class="services-l__item"><img class="services-l__image" src="assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash_1.jpg" alt="img">
+                    <div class="services-l__icon">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#ecologic"></use>
+                            </svg>
+                    </div>
+                    <p class="services-l__title">Экологическое проектирование</p>
+                    <p class="services-l__text">Осуществляем разработку: паспортов отходов, проекта НДВ, водохозяйственного баланса, схем систем водоснабжения и водоотведения</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="projects-section"><img class="projects-img" src="assets/images/triangles-2.png" alt="bg"><img class="projects-text" src="assets/images/proyekty.png" alt="text">
+          <div class="container">
+            <div class="projects__title">
+              <h2>С 2018 года успешно завершили работу в разных регионах и округах России</h2>
+              <p class="text-medium">Мы являемся крупнейшей компанией в России по полевым сейморазведочным, камеральным работ и супервайзингу.</p>
+            </div>
+            <div class="projects__desc">
+              <div class="projects__info">
+                <div>
+                  <p class="projects__info-count">114</p>
+                  <p class="projects__info-text">проектов</p>
+                </div>
+                <div>
+                  <p class="projects__info-count">100+</p>
+                  <p class="projects__info-text">партнёров</p>
+                </div>
+                <div>
+                  <p class="projects__info-count">4</p>
+                  <p class="projects__info-text">года на рынке</p>
+                </div>
+              </div>
+              <div class="projects__map-list">
+                <ul class="map__list">
+                  <li class="map__list-item"><span class="map__list-color" style="background-color: #E7DE16;"></span><span class="map__list-text">Полевые сейсморазведочные работы</span></li>
+                  <li class="map__list-item"><span class="map__list-color" style="background-color: #33E93B;"></span><span class="map__list-text">Камеральные работы</span></li>
+                  <li class="map__list-item"><span class="map__list-color" style="background-color: #44C7FF;"></span><span class="map__list-text">Супервайзинг</span></li>
+                  <li class="map__list-item"><span class="map__list-color" style="background-color: #DBDBDB;"></span><span class="map__list-text">Перспективные проекты</span></li>
+                  <li class="map__list-item"><span class="map__list-color" style="background-color: #555555;"></span><span class="map__list-text">Строительство площадок под буровые скважины</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="projects__about">
+              <div class="projects__about-info">
+                <div class="projects__about-title">
+                  <h2>Лучшие в геолого-разведочных работых</h2>
+                  <p class="text-medium">Общество с ограниченной ответственностью «Сейсмопоиск» (ООО «Сейсмопоиск») образовано в 2018 году.</p>
+                </div>
+                <div class="projects__about-activity">
+                  <p class="activity-title">Деятельность компании в области изучения недр и воспроизводства минерально-сырьевой базы:</p>
+                  <ul class="activity-list">
+                    <li class="activity-item">
+                            <svg class="strokes-icon">
+                              <use xlink:href="assets/sprites/sprites.svg#strokes"></use>
+                            </svg><span>Геолого-разведочные работы</span>
+                    </li>
+                    <li class="activity-item">
+                            <svg class="strokes-icon">
+                              <use xlink:href="assets/sprites/sprites.svg#strokes"></use>
+                            </svg><span></span><span>Геофизические работы</span>
+                    </li>
+                    <li class="activity-item">
+                            <svg class="strokes-icon">
+                              <use xlink:href="assets/sprites/sprites.svg#strokes"></use>
+                            </svg><span></span><span>Геохимические работы</span>
+                    </li>
+                  </ul><a class="activity-more" href="#">Узнать больше
+                          <svg class="arrow-right-link">
+                            <use xlink:href="assets/sprites/sprites.svg#arrow-right"></use>
+                          </svg></a>
+                </div>
+              </div><img class="projects__about-activity-bg" src="assets/images/triangles-2.png" alt="bg">
+              <div class="projects__image"><img class="projects__about-image" src="assets/images/agriculture-iot-with-rice-field-background_1.jpg" alt="img"><img class="projects__about-bg" src="assets/images/triangles-2.png" alt="bg"></div>
+            </div>
+          </div>
+        </section>
+        <section class="benefits-section"><img class="benefits-text" src="assets/images/about.png" alt="text">
+          <div class="container">
+            <div class="benefits__wrapper">
+              <div class="benefits__main">
+                <p class="benefits__main-title">Почему выбирают нас</p>
+                <p class="benefits__main-text">Высококвалифицированный персонал, уникальный опыт и передовые технологии позволяют успешно реализовывать геологоразведочные проекты любой сложности</p><img class="benefits__main-bg benefits__main-bg--mobile" src="assets/images/triangles-4-mob.png" alt="bg"><img class="benefits__main-bg" src="assets/images/triangles-4.png" alt="bg">
+              </div>
+              <div class="benefits__block benefits__block--single">
+                <div class="benefits__item">
+                  <div class="benefits__icon">
+                          <svg>
+                            <use xlink:href="assets/sprites/sprites.svg#benefits-1"></use>
+                          </svg>
+                  </div>
+                  <p class="benefits__title">Преимущества работы у нас</p>
+                  <p class="benefits__text">Выполнено более 10 проектов на выполнение полевых сейсморазведочных работ</p>
+                </div>
+              </div>
+              <div class="benefits__block">
+                <div class="benefits__item">
+                  <div class="benefits__icon">
+                          <svg>
+                            <use xlink:href="assets/sprites/sprites.svg#benefits-2"></use>
+                          </svg>
+                  </div>
+                  <p class="benefits__title">Преимущества сотрудничества</p>
+                  <p class="benefits__text">Современная материально-техническая база решает комплексные задачи различного уровня сложности.</p>
+                </div>
+                <div class="benefits__item">
+                  <div class="benefits__icon">
+                          <svg>
+                            <use xlink:href="assets/sprites/sprites.svg#benefits-3"></use>
+                          </svg>
+                  </div>
+                  <p class="benefits__title">Достижения OOO «Сейсмопоиск»</p>
+                  <p class="benefits__text">Более 800 сотрудников в штате полевых сейсморазведочных партий в нашей компании</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-section">
+          <div class="partners-section">
+            <div class="container">
+              <h2 class="hompage-c-title">Наши партнёры</h2>
+              <p class="hompage-c-subtitle">Уже 4 года с нами сотрудничают 4 постоянных партнёра. Это говорит о качестве и профессионализме наших услуг</p>
+              <div class="partners__wrapper"><img class="partners-bg" src="assets/images/triangles-5.png" alt="bg">
+                <div class="partners__block">
+                  <div class="partners__tile"><img src="assets/images/image 28.png" alt="img"></div>
+                  <div class="partners__tile"><img src="assets/images/image 29.png" alt="img"></div>
+                  <div class="partners__tile"><img src="assets/images/image 30.png" alt="img"></div>
+                  <div class="partners__tile"><img src="assets/images/image 31.png" alt="img"></div>
+                </div>
+                <div class="partners__block">
+                  <div class="partners__tile"><img src="assets/images/image 28.png" alt="img"></div>
+                  <div class="partners__tile"><img src="assets/images/image 31.png" alt="img"></div>
+                  <div class="partners__tile"><img src="assets/images/image 30.png" alt="img"></div>
+                  <div class="partners__tile"><img src="assets/images/image 29.png" alt="img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-section"><img class="news-text" src="assets/images/novosty.png" alt="text">
+            <div class="container">
+              <h2 class="hompage-c-title">Новости компании</h2>
+              <p class="hompage-c-subtitle">У нас постоянно происходит, что-то новое и интересное. Следите за нашими новостями, чтобы быть вкурсе всех событий</p>
+              <div class="swiper news__swiper">
+                <div class="news__swiper-arrows">
+                  <div class="swiper-arrow swiper-arrow-prev">
+                          <svg>
+                            <use xlink:href="assets/sprites/sprites.svg#arrow-left"></use>
+                          </svg><img src="assets/images/left-btn.png" alt="left-btn">
+                  </div>
+                  <div class="swiper-arrow swiper-arrow-next">
+                          <svg>
+                            <use xlink:href="assets/sprites/sprites.svg#arrow-right"></use>
+                          </svg><img src="assets/images/right-btn.png" alt="right-btn">
+                  </div>
+                </div>
+                <div class="swiper-wrapper news__wrapper">
+                  <div class="swiper-slide"><a class="news__slide" href="#" style="background-image: url('assets/images/paul-trienekens-9goYHROaqMo-unsplash 1.jpg')">
+                      <p class="news__date">29.03.2021</p>
+                      <p class="news__desc">Выполненили полевые сейсморазведочные работы МОГТ 2D на территории Муторайского и Кимчуканского УН</p></a></div>
+                  <div class="swiper-slide"><a class="news__slide" href="#" style="background-image: url('assets/images/dominik-stahl-jQnW46KMicQ-unsplash 1.jpg')">
+                      <p class="news__date">29.03.2021</p>
+                      <p class="news__desc">Окончание полевого сезона 2020-2021 гг.</p></a></div>
+                  <div class="swiper-slide"><a class="news__slide" href="#" style="background-image: url('assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash 1.jpg')">
+                      <p class="news__date">29.03.2021</p>
+                      <p class="news__desc">Закончили проект по супервайзингу в Краснодарском крае</p></a></div>
+                  <div class="swiper-slide"><a class="news__slide" href="#" style="background-image: url('assets/images/paul-trienekens-9goYHROaqMo-unsplash 1.jpg')">
+                      <p class="news__date">29.03.2021</p>
+                      <p class="news__desc">Выполненили полевые сейсморазведочные работы МОГТ 2D на территории Муторайского и Кимчуканского УН</p></a></div>
+                  <div class="swiper-slide"><a class="news__slide" href="#" style="background-image: url('assets/images/dominik-stahl-jQnW46KMicQ-unsplash 1.jpg')">
+                      <p class="news__date">29.03.2021</p>
+                      <p class="news__desc">Окончание полевого сезона 2020-2021 гг.</p></a></div>
+                  <div class="swiper-slide"><a class="news__slide" href="#" style="background-image: url('assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash 1.jpg')">
+                      <p class="news__date">29.03.2021</p>
+                      <p class="news__desc">Закончили проект по супервайзингу в Краснодарском крае</p></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Main::End-->
+      <!-- Footer::Start-->
+      <footer class="footer" id="footer">
+        <div class="footer-top-img"><img src="assets/images/triangles-6.png" alt="bg"></div>
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__logo"><img src="assets/images/logo-text.png" alt="logo">
+              <p>Геологоразведочные, камеральные работы и супервайзинг</p>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__address">
+                <div class="footer__address-block">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#map-pin"></use>
+                        </svg>
+                  <p>660075, Россия, Красноярский край, г. Красноярск,<br> ул. Железнодорожников, д. 17, помещение 18, комната 11</p>
+                </div>
+                <div class="footer__address-block">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#map-pin"></use>
+                        </svg>
+                  <p>660075, Россия, Красноярский край, г. Красноярск,<br> ул. Маерчака, д.10, 6 этаж БЦ "Баланс"</p>
+                </div>
+              </div>
+              <div class="footer__communication">
+                <div class="footer__communication-item">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#phone"></use>
+                        </svg><a href="tel:83912001285">8 (391) 200-12-85</a>
+                </div>
+                <div class="footer__communication-item">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#mail"></use>
+                        </svg><a href="mailto:office@seismopoisk.ru">office@seismopoisk.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__main">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">О компании</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Руководство</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">История компании</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Операционная структура</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Пресс-центр</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Услуги</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Сейсморазведочные работы</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Супервайзинг сейсморазведочных работ</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Камеральные работы</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Экологическое проектирование</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Устойчивое развитие</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Охрана окружающей среды</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Охрана труда и промышленная безопасность</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Противодействие коррупции</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Карьера</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Вакансии</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <p class="footer-copyright">Copyright © 2021 - 2022</p><a class="footer-developer" href="#" target="_blank">Разработка сайта Di-project</a>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer::End-->
+    </div>
+    <!-- Scripts::Start-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/plugins/jquery-ui.min.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/TweenLite.min.js"></script>
+    <script src="assets/js/plugins/EasePack.min.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Scripts::End-->
+  </body>
+</html>
