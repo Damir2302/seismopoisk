@@ -133,7 +133,7 @@ $hdplus: 1700px;
         margin: 0;
         position: absolute;
         top: 0;
-        left: 50vw;
+        left: calc(50vw - 4px);
         width: 838px;
         height: 657px;
         z-index: 0;

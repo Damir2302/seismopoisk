@@ -88,7 +88,7 @@
 .management__title {
     margin: 0 0 2px;
     font-size: 22px;
-    line-height: 40px;
+    line-height: 37px;
     color: #808896;
 
     @include breakpoint(md) {
@@ -99,7 +99,7 @@
     @include breakpoint(lg) {
         margin: 20px 0 0;
         font-size: 22px;
-        line-height: 40px;
+        line-height: 37px;
     }
 }
 

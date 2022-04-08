@@ -98,7 +98,7 @@
         position: absolute;
         left: calc(50% + 15px);
         font-size: 35px;
-        line-height: 40px;
+        line-height: 37px;
     }
 
     @include breakpoint(lg) {
@@ -383,7 +383,7 @@
     @include breakpoint(lgx) {
         max-width: 432px;
         font-size: 22px;
-        line-height: 40px;
+        line-height: 37px;
     }
 
     @include breakpoint(hd) {

@@ -3743,7 +3743,7 @@ button.swiper-pagination-bullet {
         margin: 0;
         position: absolute;
         top: 0;
-        right: -240px;
+        left: calc(50vw - 4px);
         width: 838px;
         height: 657px;
         z-index: 0
@@ -3752,14 +3752,12 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 1400px) {
     .hero__image {
-        right: -120px;
         height: 753px
     }
 }
 
 @media (min-width: 1700px) {
     .hero__image {
-        right: 0;
         width: 960px
     }
 }
@@ -5581,7 +5579,7 @@ button.swiper-pagination-bullet {
 @media (min-width: 1024px) {
     .about-info__main p {
         font-size: 22px;
-        line-height: 40px
+        line-height: 37px
     }
 }
 
@@ -5871,7 +5869,7 @@ button.swiper-pagination-bullet {
         max-width: unset;
         min-width: 150px;
         font-size: 22px;
-        line-height: 40px
+        line-height: 37px
     }
 }
 
@@ -6004,7 +6002,7 @@ button.swiper-pagination-bullet {
         align-items: baseline;
         max-width: 500px;
         font-size: 22px;
-        line-height: 40px
+        line-height: 37px
     }
 }
 
@@ -6426,7 +6424,7 @@ button.swiper-pagination-bullet {
 .management__title {
     margin: 0 0 2px;
     font-size: 22px;
-    line-height: 40px;
+    line-height: 37px;
     color: #808896
 }
 
@@ -6441,7 +6439,7 @@ button.swiper-pagination-bullet {
     .management__title {
         margin: 20px 0 0;
         font-size: 22px;
-        line-height: 40px
+        line-height: 37px
     }
 }
 
@@ -6501,7 +6499,7 @@ button.swiper-pagination-bullet {
 @media (min-width: 1024px) {
     .management__text {
         font-size: 22px;
-        line-height: 40px
+        line-height: 37px
     }
 }
 
@@ -6607,7 +6605,7 @@ button.swiper-pagination-bullet {
 .history__date p {
     margin: 0 0 16px;
     font-size: 22px;
-    line-height: 40px;
+    line-height: 37px;
     color: #273A4A
 }
 
@@ -6627,7 +6625,7 @@ button.swiper-pagination-bullet {
 @media (min-width: 1024px) {
     .history__content p {
         font-size: 22px;
-        line-height: 40px
+        line-height: 37px
     }
 }
 
@@ -8845,7 +8843,7 @@ button.swiper-pagination-bullet {
         position: absolute;
         left: calc(50% + 15px);
         font-size: 35px;
-        line-height: 40px
+        line-height: 37px
     }
 }
 
@@ -9195,7 +9193,7 @@ button.swiper-pagination-bullet {
     .career-review__text p {
         max-width: 432px;
         font-size: 22px;
-        line-height: 40px
+        line-height: 37px
     }
 }
 
@@ -9479,19 +9477,25 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 1024px) {
-    .vacancies-list__item:nth-child(3n+3) {
+    .vacancies-list__item:nth-child(3) {
         border-right: none
     }
 }
 
 @media (min-width: 1400px) {
-    .vacancies-list__item:nth-child(3n+3) {
-        border-right: 1px solid #575E6A
+    .vacancies-list__item:nth-child(3) {
+        border-right: 1px solid #4B9FB7
+    }
+}
+
+@media (min-width: 1400px) {
+    .vacancies-list__item:nth-child(4) {
+        border-right: none
     }
 }
 
 @media (min-width: 1024px) {
-    .vacancies-list__item:nth-child(3n+3) {
+    .vacancies-list__item:last-child {
         border: none
     }
 }
