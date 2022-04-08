@@ -226,8 +226,12 @@
         padding: 80px 0 140px;
     }
 
+    @include breakpoint(lg) {
+        padding: 100px 0 180px;
+    }
+
     @include breakpoint(hd) {
-        padding: 80px 0 180px;
+        padding: 150px 0 180px;
     }
 }
 
@@ -315,17 +319,17 @@
 
 .career-review__text {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 66px;
     background: #115EA0;
     position: relative;
 
     @include breakpoint(md) {
-        padding: 120px 20px 120px;;
+        padding: 105px 20px 105px;;
         width: 50%;
     }
 
     @include breakpoint(lgx) {
-        padding: 114px 30px 114px;
+        padding: 114px 30px 105px;
         width: 48%;
     }
 
@@ -404,14 +408,10 @@
 }
 
 .career-review__text span {
-    display: none;
-
-    @include breakpoint(hd) {
-        display: block;
-        font-size: 16px;
-        line-height: 24px;
-        color: #8FC6F4;
-    }
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8FC6F4;
 }
 
 .career-works-activity-bg {

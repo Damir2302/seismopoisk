@@ -4620,12 +4620,14 @@ button.swiper-pagination-bullet {
 @media (min-width: 1024px) {
     .benefits__wrapper {
         margin: 0;
+        padding: 120px 0;
         max-width: 100%
     }
 }
 
 @media (min-width: 1260px) {
     .benefits__wrapper {
+        padding: 150px 0;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center
@@ -8985,9 +8987,15 @@ button.swiper-pagination-bullet {
     }
 }
 
+@media (min-width: 1024px) {
+    .career-works {
+        padding: 100px 0 180px
+    }
+}
+
 @media (min-width: 1400px) {
     .career-works {
-        padding: 80px 0 180px
+        padding: 150px 0 180px
     }
 }
 
@@ -9109,21 +9117,21 @@ button.swiper-pagination-bullet {
 
 .career-review__text {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 66px;
     background: #115EA0;
     position: relative
 }
 
 @media (min-width: 768px) {
     .career-review__text {
-        padding: 120px 20px 120px;
+        padding: 105px 20px 105px;
         width: 50%
     }
 }
 
 @media (min-width: 1200px) {
     .career-review__text {
-        padding: 114px 30px 114px;
+        padding: 114px 30px 105px;
         width: 48%
     }
 }
@@ -9218,16 +9226,10 @@ button.swiper-pagination-bullet {
 }
 
 .career-review__text span {
-    display: none
-}
-
-@media (min-width: 1400px) {
-    .career-review__text span {
-        display: block;
-        font-size: 16px;
-        line-height: 24px;
-        color: #8FC6F4
-    }
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8FC6F4
 }
 
 .career-works-activity-bg {

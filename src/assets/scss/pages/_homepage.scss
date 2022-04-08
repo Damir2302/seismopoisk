@@ -833,10 +833,12 @@ $hdplus: 1700px;
 
     @include breakpoint(lg) {
         margin: 0;
+        padding: 120px 0;
         max-width: 100%;
     }
 
     @include breakpoint(xl) {
+        padding: 150px 0;
         justify-content: center;
     }
 }
