@@ -107,6 +107,14 @@
     @include breakpoint(md) {
         margin: 0 0 20px;
     }
+
+    @include breakpoint(lg) {
+        margin: 0 0 2px;
+    }
+
+    @include breakpoint(hd) {
+        margin: 0 0 20px;
+    }
 }
 
 .management__name {
