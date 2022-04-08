@@ -12,7 +12,7 @@ block main
 
             .left-line
 
-                .arrow-btn
+                a.arrow-btn(href="#content")
                     span.arrow-btn-text SCROLL DOWN
                     +sprite('arr','','arrow-btn-element')
                     +sprite('arrow-down','','arrow-btn-arrow')
@@ -33,7 +33,7 @@ block main
                 .hero__image
                     img(src="assets/images/about-main.jpg", alt="img")
 
-        section.about-info
+        section.about-info#content
 
             img.about-info-bg.mob(src="assets/images/triangles-2.png", alt="bg")
             img.about-info-bg(src="assets/images/triangles-7.png", alt="bg")
@@ -41,6 +41,7 @@ block main
             .container
 
                 .about-info__content
+                    img.about-info-text(src="assets/images/seysmopoisk.png", alt="text")
 
                     .about-info__img-block
                         img(src="assets/images/about-info-1.jpg", alt="img")
@@ -52,7 +53,6 @@ block main
 
                         .about-info__image
                             img.about-info__img(src="assets/images/about-info-1.jpg", alt="img")
-                            img.about-info-text(src="assets/images/seysmopoisk.png", alt="text")
 
                         h2 Миссия и ценности ООО «Сейсмопоиск»
 

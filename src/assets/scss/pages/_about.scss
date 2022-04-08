@@ -230,9 +230,10 @@
 
     @include breakpoint(md) {
         top: -255px;
-        right: -300px;
-        max-width: 315px;
-        max-height: unset;
+        right: -325px;
+        height: auto;
+        max-width: 384px;
+        max-height: 707px;
     }
 }
 

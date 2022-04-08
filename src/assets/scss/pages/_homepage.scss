@@ -158,6 +158,7 @@ $hdplus: 1700px;
 }
 
 .services-l-section {
+    position: relative;
 
     @include breakpoint(lg) {
         padding: 64px 0 80px;
@@ -169,10 +170,18 @@ $hdplus: 1700px;
 }
 
 .services-l-text {
-    margin-left: 20px;
 
     @include breakpoint(md) {
-        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 254px;
+        width: 341px;
+        height: auto;
+    }
+
+    @include breakpoint(lg) {
+        bottom: 0;
+        width: 666px;
     }
 }
 
@@ -383,7 +392,16 @@ $hdplus: 1700px;
     }
 
     @include breakpoint(lg) {
-        display: none;
+        top: 245px;
+        left: unset;
+        right: -227px;
+        width: auto;
+        height: auto;
+    }
+
+    @include breakpoint(hd) {
+        top: 348px;
+        right: -65px;
     }
 }
 
@@ -546,6 +564,14 @@ $hdplus: 1700px;
         position: relative;
         display: flex;
         flex-direction: row-reverse;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0 0 130px;
+    }
+
+    @include breakpoint(hd) {
+        margin: 0 0 170px;
     }
 }
 
@@ -710,6 +736,7 @@ $hdplus: 1700px;
 
 .projects__image {
     margin: 16px 0 0;
+    position: relative;
 
     @include breakpoint(md) {
         margin: 0 15px 0 0;
@@ -770,16 +797,27 @@ $hdplus: 1700px;
     }
 }
 
-.benefits-text-about {
+.text-about {
     position: absolute;
     left: 20px;
-    bottom: 60px;
+    bottom: -20px;
     width: 576px;
-    height: 78px;
+    height: auto;
 
     @include breakpoint(md) {
-        left: 40px;
-        bottom: 75px;
+        top: calc(100% + 35px);
+        left: 0;
+        bottom: unset;
+    }
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+
+    @include breakpoint(hd) {
+        top: calc(100% + -25px);
+        display: block;
+        width: auto;
     }
 }
 
@@ -1160,6 +1198,16 @@ $hdplus: 1700px;
     width: auto;
     max-width: 90px;
     max-height: 40px;
+
+    @include breakpoint(lg) {
+        max-width: 165px;
+        max-height: 76px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 195px;
+        max-height: 90px;
+    }
 }
 
 .news-section {
@@ -1317,6 +1365,14 @@ $hdplus: 1700px;
     width: 100%;
     height: 100%;
     z-index: 0;
+    transition: all 0.3s ease;
+}
+
+.news-slide:hover ::before {
+
+    @include breakpoint(lg) {
+        opacity: 0;
+    }
 }
 
 .news__wrapper .swiper-slide-duplicate:nth-child(3) {

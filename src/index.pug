@@ -11,7 +11,7 @@ block main
 
         .left-line
 
-            .arrow-btn
+            a.arrow-btn(href="#content")
                 span.arrow-btn-text SCROLL DOWN
                 +sprite('arr','','arrow-btn-element')
                 +sprite('arrow-down','','arrow-btn-arrow')
@@ -32,13 +32,12 @@ block main
 
         .services-l-section
 
-            img.services-l-text(src="assets/images/uslugi.png", alt="text")
-
             .container
 
-                .services-l__wrapper
+                .services-l__wrapper#content
 
                     .services-l__block
+                        img.services-l-text(src="assets/images/uslugi.png", alt="text")
 
                         .services-l__item
                             img.services-l__image(src="assets/images/nick-van-den-berg-tpyh8Eu7LgQ-unsplash_2.jpg", alt="img")
@@ -154,6 +153,8 @@ block main
 
                     img.projects__about-bg(src="assets/images/triangles-2.png", alt="bg")
 
+                    img.text-about(src="assets/images/about.png", alt="text")
+
     section.benefits-section
 
         .container
@@ -243,32 +244,32 @@ block main
 
                     .swiper-wrapper.news__wrapper
 
-                        .swiper-slide
+                        .swiper-slide.news-slide
                             a.news__slide(href="#" style="background-image: url('assets/images/paul-trienekens-9goYHROaqMo-unsplash 1.jpg')")
                                 p.news__date 29.03.2021
                                 p.news__desc Выполненили полевые сейсморазведочные работы МОГТ 2D на территории Муторайского и Кимчуканского УН
 
-                        .swiper-slide
+                        .swiper-slide.news-slide
                             a.news__slide(href="#" style="background-image: url('assets/images/dominik-stahl-jQnW46KMicQ-unsplash 1.jpg')")
                                 p.news__date 29.03.2021
                                 p.news__desc Окончание полевого сезона 2020-2021 гг.
 
-                        .swiper-slide
+                        .swiper-slide.news-slide
                             a.news__slide(href="#" style="background-image: url('assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash 1.jpg')")
                                 p.news__date 29.03.2021
                                 p.news__desc Закончили проект по супервайзингу в Краснодарском крае
 
-                        .swiper-slide
+                        .swiper-slide.news-slide
                             a.news__slide(href="#" style="background-image: url('assets/images/paul-trienekens-9goYHROaqMo-unsplash 1.jpg')")
                                 p.news__date 29.03.2021
                                 p.news__desc Выполненили полевые сейсморазведочные работы МОГТ 2D на территории Муторайского и Кимчуканского УН
 
-                        .swiper-slide
+                        .swiper-slide.news-slide
                             a.news__slide(href="#" style="background-image: url('assets/images/dominik-stahl-jQnW46KMicQ-unsplash 1.jpg')")
                                 p.news__date 29.03.2021
                                 p.news__desc Окончание полевого сезона 2020-2021 гг.
 
-                        .swiper-slide
+                        .swiper-slide.news-slide
                             a.news__slide(href="#" style="background-image: url('assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash 1.jpg')")
                                 p.news__date 29.03.2021
                                 p.news__desc Закончили проект по супервайзингу в Краснодарском крае
