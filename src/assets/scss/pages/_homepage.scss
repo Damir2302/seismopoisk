@@ -339,6 +339,7 @@ $hdplus: 1700px;
 
     @include breakpoint(md) {
         padding: 0 40px;
+        position: relative;
     }
 
     @include breakpoint(lg) {
@@ -769,12 +770,17 @@ $hdplus: 1700px;
     }
 }
 
-.benefits-text {
+.benefits-text-about {
     position: absolute;
     left: 20px;
-    top: -100px;
+    bottom: 60px;
     width: 576px;
     height: 78px;
+
+    @include breakpoint(md) {
+        left: 40px;
+        bottom: 75px;
+    }
 }
 
 .benefits__wrapper {
@@ -1170,6 +1176,10 @@ $hdplus: 1700px;
     @include breakpointMax(xl) {
         padding: 0;
     }
+
+    @include breakpoint(hd) {
+        position: relative;
+    }
 }
 
 .news-text {
@@ -1183,9 +1193,15 @@ $hdplus: 1700px;
         left: 100px;
     }
 
+    @include breakpoint(lg) {
+        left: 183px;
+        width: auto;
+        height: auto;
+    }
+
     @include breakpoint(hd) {
-        left: 160px;
-        bottom: 185px;
+        left: 130px;
+        bottom: -106px;
     }
 }
 

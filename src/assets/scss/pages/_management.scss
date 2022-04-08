@@ -115,6 +115,7 @@
 }
 
 .management__name {
+    font-weight: 500;
     font-size: 20px;
     line-height: 26px;
     color: #273A4A;
@@ -125,7 +126,7 @@
     }
 
     @include breakpoint(lg) {
-        max-width: 205px;
+        max-width: 212px;
     }
 }
 
