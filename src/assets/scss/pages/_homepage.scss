@@ -133,19 +133,17 @@ $hdplus: 1700px;
         margin: 0;
         position: absolute;
         top: 0;
-        right: -240px;
+        left: 50vw;
         width: 838px;
         height: 657px;
         z-index: 0;
     }
 
     @include breakpoint(hd) {
-        right: -120px;
         height: 753px;
     }
 
     @include breakpoint(hdplus) {
-        right: 0;
         width: 960px;
     }
 }
