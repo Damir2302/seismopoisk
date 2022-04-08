@@ -3772,6 +3772,10 @@ button.swiper-pagination-bullet {
     vertical-align: middle
 }
 
+.services-l-section {
+    position: relative
+}
+
 @media (min-width: 1024px) {
     .services-l-section {
         padding: 64px 0 80px
@@ -3784,13 +3788,20 @@ button.swiper-pagination-bullet {
     }
 }
 
-.services-l-text {
-    margin-left: 20px
-}
-
 @media (min-width: 768px) {
     .services-l-text {
-        display: none
+        position: absolute;
+        left: 0;
+        bottom: 254px;
+        width: 341px;
+        height: auto
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-l-text {
+        bottom: 0;
+        width: 666px
     }
 }
 
@@ -3993,7 +4004,8 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 768px) {
     .projects-section .container {
-        padding: 0 40px
+        padding: 0 40px;
+        position: relative
     }
 }
 
@@ -4047,7 +4059,18 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 1024px) {
     .projects-text {
-        display: none
+        top: 245px;
+        left: unset;
+        right: -227px;
+        width: auto;
+        height: auto
+    }
+}
+
+@media (min-width: 1400px) {
+    .projects-text {
+        top: 348px;
+        right: -65px
     }
 }
 
@@ -4262,6 +4285,18 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 1024px) {
+    .projects__about {
+        margin: 0 0 130px
+    }
+}
+
+@media (min-width: 1400px) {
+    .projects__about {
+        margin: 0 0 170px
+    }
+}
+
+@media (min-width: 1024px) {
     .projects__about-info {
         z-index: 1
     }
@@ -4459,7 +4494,8 @@ button.swiper-pagination-bullet {
 }
 
 .projects__image {
-    margin: 16px 0 0
+    margin: 16px 0 0;
+    position: relative
 }
 
 @media (min-width: 768px) {
@@ -4534,12 +4570,34 @@ button.swiper-pagination-bullet {
     }
 }
 
-.benefits-text {
+.text-about {
     position: absolute;
     left: 20px;
-    top: -100px;
+    bottom: -20px;
     width: 576px;
-    height: 78px
+    height: auto
+}
+
+@media (min-width: 768px) {
+    .text-about {
+        top: calc(100% + 35px);
+        left: 0;
+        bottom: unset
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-about {
+        display: none
+    }
+}
+
+@media (min-width: 1400px) {
+    .text-about {
+        top: calc(100% + -25px);
+        display: block;
+        width: auto
+    }
 }
 
 .benefits__wrapper {
@@ -5026,6 +5084,20 @@ button.swiper-pagination-bullet {
     max-height: 40px
 }
 
+@media (min-width: 1024px) {
+    .partners__tile img {
+        max-width: 165px;
+        max-height: 76px
+    }
+}
+
+@media (min-width: 1400px) {
+    .partners__tile img {
+        max-width: 195px;
+        max-height: 90px
+    }
+}
+
 .news-section {
     padding: 45px 0 145px;
     position: relative
@@ -5043,6 +5115,12 @@ button.swiper-pagination-bullet {
     }
 }
 
+@media (min-width: 1400px) {
+    .news-section .container {
+        position: relative
+    }
+}
+
 .news-text {
     position: absolute;
     left: 20px;
@@ -5057,10 +5135,18 @@ button.swiper-pagination-bullet {
     }
 }
 
+@media (min-width: 1024px) {
+    .news-text {
+        left: 183px;
+        width: auto;
+        height: auto
+    }
+}
+
 @media (min-width: 1400px) {
     .news-text {
-        left: 160px;
-        bottom: 185px
+        left: 130px;
+        bottom: -106px
     }
 }
 
@@ -5210,7 +5296,15 @@ button.swiper-pagination-bullet {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0
+    z-index: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease
+}
+
+@media (min-width: 1024px) {
+    .news-slide:hover ::before {
+        opacity: 0
+    }
 }
 
 .news__wrapper .swiper-slide-duplicate:nth-child(3) {
@@ -5536,9 +5630,10 @@ button.swiper-pagination-bullet {
 @media (min-width: 768px) {
     .about-info-text {
         top: -255px;
-        right: -300px;
-        max-width: 315px;
-        max-height: unset
+        right: -325px;
+        height: auto;
+        max-width: 384px;
+        max-height: 707px
     }
 }
 
@@ -6344,6 +6439,7 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 1024px) {
     .management__title {
+        margin: 20px 0 0;
         font-size: 22px;
         line-height: 40px
     }
@@ -6355,7 +6451,14 @@ button.swiper-pagination-bullet {
     }
 }
 
+@media (min-width: 1024px) {
+    .management__block--main .management__title {
+        margin: 0 0 2px
+    }
+}
+
 .management__name {
+    font-weight: 500;
     font-size: 20px;
     line-height: 26px;
     color: #273A4A
@@ -6370,7 +6473,7 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 1024px) {
     .management__name {
-        max-width: 205px
+        max-width: 212px
     }
 }
 
@@ -9332,6 +9435,17 @@ button.swiper-pagination-bullet {
     }
 }
 
+@media (min-width: 1024px) {
+    .vacancies-list__wrapper {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-column-gap: 36px;
+        -moz-column-gap: 36px;
+        column-gap: 36px;
+        row-gap: 24px
+    }
+}
+
 .vacancies-list__item {
     padding: 0 20px;
     width: auto;
@@ -9344,9 +9458,41 @@ button.swiper-pagination-bullet {
     }
 }
 
+@media (min-width: 1024px) {
+    .vacancies-list__item {
+        padding-left: 0;
+        padding-right: 36px;
+        border-color: #4B9FB7
+    }
+}
+
 @media (min-width: 768px) {
     .vacancies-list__item:first-child {
         padding-left: 40px
+    }
+}
+
+@media (min-width: 1024px) {
+    .vacancies-list__item:first-child {
+        padding-left: 0
+    }
+}
+
+@media (min-width: 1024px) {
+    .vacancies-list__item:nth-child(3n+3) {
+        border-right: none
+    }
+}
+
+@media (min-width: 1400px) {
+    .vacancies-list__item:nth-child(3n+3) {
+        border-right: 1px solid #575E6A
+    }
+}
+
+@media (min-width: 1024px) {
+    .vacancies-list__item:nth-child(3n+3) {
+        border: none
     }
 }
 
@@ -9355,6 +9501,19 @@ button.swiper-pagination-bullet {
     font-size: 20px;
     line-height: 28px;
     color: #575E6A
+}
+
+@media (min-width: 1024px) {
+    .vacancies-list__link {
+        font-size: 24px;
+        line-height: 31px
+    }
+}
+
+@media (min-width: 1024px) {
+    .vacancies-list__link:hover {
+        color: #115EA0
+    }
 }
 
 .vacancies-list__link.active {

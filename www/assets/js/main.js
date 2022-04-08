@@ -104,7 +104,7 @@ $(document).ready(function() {
     }
 
     // VACANCIES PAGE SWIPER MOBILE
-    if ($('.vacancies-list__swiper').length) {
+    if ($('.vacancies-list__swiper').length && $(window).width() < 1024) {
       let news_block = new Swiper('.vacancies-list__swiper', {
         direction: 'horizontal',
         freeMode: true,
