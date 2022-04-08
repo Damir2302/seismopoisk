@@ -188,6 +188,10 @@ $hdplus: 1700px;
     }
 }
 
+.services-l__block {
+    position: relative;
+}
+
 .services-l__block:last-child {
 
     @include breakpoint(md) {
@@ -1158,6 +1162,13 @@ $hdplus: 1700px;
 
     @include breakpoint(hd) {
         padding: 150px 0 270px;
+    }
+}
+
+.news-section .container {
+
+    @include breakpointMax(xl) {
+        padding: 0;
     }
 }
 

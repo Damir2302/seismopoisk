@@ -216,3 +216,19 @@ h2 {
         line-height: 55px;
     }
 }
+
+.container-padding {
+    padding: 0 20px;
+
+    @include breakpoint(md) {
+        padding: 0 40px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 0 88px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 0;
+    }
+}

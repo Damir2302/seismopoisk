@@ -1,0 +1,111 @@
+.vacancies-inner {
+    padding: 40px 0 100px;
+    background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+
+    @include breakpoint(md) {
+        padding: 60px 0 100px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 105px 0 140px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 100px 0 180px;
+    }
+}
+
+.vacancies-list .container {
+
+    @include breakpointMax(lg) {
+        padding: 0;
+    }
+}
+
+.vacancies-list__item {
+    padding: 0 20px;
+    width: auto;
+    border-right: 1px solid #575E6A;
+
+    @include breakpoint(md) {
+        padding: 0 24px;
+    }
+}
+
+.vacancies-list__item:first-child {
+
+    @include breakpoint(md) {
+        padding-left: 40px;
+    }
+}
+
+.vacancies-list__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #575E6A;
+}
+
+.vacancies-list__link.active {
+    color: #273A4A;
+}
+
+.vacancies-table {
+    margin: 40px 0 0;
+
+    @include breakpoint(md) {
+        margin: 50px 0 0;
+    }
+}
+
+.vac__row {
+    padding: 16px 0;
+    border-bottom: 1px solid #4B9FB7;
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+}
+
+.vac__row:first-child {
+    border-top: 1px solid #4B9FB7;
+}
+
+.vac__date {
+    margin: 0 0 16px;
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    color: #808896;
+
+    @include breakpoint(md) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.vac__sector {
+    margin: 0 0 1px;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #273A4A;
+
+    @include breakpoint(md) {
+        margin-left: 38px;
+        flex: 1 1 200px;
+    }
+}
+
+.vac__name {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #273A4A;
+
+    @include breakpoint(md) {
+        margin-left: 60px;
+        flex: 1 1 300px;
+    }
+}

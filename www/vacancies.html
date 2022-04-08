@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <title>Сейсмопоиск | Вакансии</title>
+    <!-- Styles-->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Yandex Map-->
+  </head>
+  <body>
+    <div id="page">
+      <!-- Header::Start-->
+      <header class="header" id="header">
+        <div class="header__inner">
+          <div class="header__logo"><img class="logo-mobile" src="assets/images/logo-text.png" alt="logo"><img class="logo-desktop" src="assets/images/logo.png" alt="logo"></div>
+          <nav class="header__nav">
+            <div class="mobile-menu-close">
+              <div class="close-menu-btn" id="closeSideMenu">
+                      <svg>
+                        <use xlink:href="assets/sprites/sprites.svg#close-icon"></use>
+                      </svg>
+              </div><img class="close-img" src="assets/images/close.png" alt="icon">
+            </div>
+            <ul class="navbar__menu">
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="about.html">О компании</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Руководство</a></li>
+                  <li><a class="navbar__submenu-link" href="#">История компании</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Операционная структура</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Услуги</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Сейсморазведочные работы</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Супервайзинг сейсморазведочных работ</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Камеральные работы</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Экологическое проектирование</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Пресс-центр</a></li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Карьера</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Вакансии</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Устойчивое развитие</a>
+                <ul class="navbar__submenu">
+                  <li><a class="navbar__submenu-link" href="#">Охрана окружающей среды</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Охрана труда и промышленная безопасность</a></li>
+                  <li><a class="navbar__submenu-link" href="#">Противодействие коррупции</a></li>
+                </ul>
+              </li>
+              <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Контакты</a></li>
+            </ul><a class="navbar__phone" href="tel:83912001285">8 (391) 200-12-85</a><a class="navbar__email" href="mailto:office@seismopoisk.ru">office@seismopoisk.ru</a>
+            <form class="navbar-search-form">
+              <input class="navbar-search-input" type="search" name="search" placeholder="поиск" autocomplete="off">
+              <button class="navbar-search-button">
+                      <svg>
+                        <use xlink:href="assets/sprites/sprites.svg#search"></use>
+                      </svg>
+              </button>
+            </form>
+          </nav>
+          <div class="header__menu-btn" id="sideMenu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></div><a class="header__phone" href="tel:83912001285">8 (391) 200-12-85</a><a class="header__email" href="mailto:office@seismopoisk.ru">office@seismopoisk.ru</a>
+          <form class="header-search-form">
+            <input class="header-search-input" id="input-search" type="search" name="search" placeholder="поиск" autocomplete="off">
+            <button class="header-search-button" id="searchInput">
+                    <svg>
+                      <use xlink:href="assets/sprites/sprites.svg#search-white"></use>
+                    </svg>
+            </button>
+            <button class="header-search-button hide-search-btn" id="searchBtn">
+                    <svg>
+                      <use xlink:href="assets/sprites/sprites.svg#search"></use>
+                    </svg>
+            </button>
+          </form>
+        </div>
+      </header>
+      <!-- Header::End-->
+      <!-- Main::Start-->
+      <main id="main" role="main">
+        <div id="vacancies-page">
+          <section class="vacancies-header">
+                        <div class="breadcrumbs">
+                          <div class="container">
+                            <div class="breadcrumbs-wrapper"><a class="breadcrumbs-item" href="/">Главная</a><span class="breadcrumbs-separator">
+                                      <svg>
+                                        <use xlink:href="assets/sprites/sprites.svg#separator"></use>
+                                      </svg></span><a class="breadcrumbs-item" href="#">Карьера</a><span class="breadcrumbs-separator">
+                                      <svg>
+                                        <use xlink:href="assets/sprites/sprites.svg#separator"></use>
+                                      </svg></span>
+                              <div class="breadcrumbs-item">Вакансии</div>
+                            </div>
+                          </div>
+                        </div>
+            <div class="container">
+              <div class="page-title">
+                <h1>Вакансии</h1>
+              </div>
+            </div>
+          </section>
+          <section class="vacancies-inner">
+            <div class="vacancies-list">
+              <div class="container">
+                <div class="swiper vacancies-list__swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide vacancies-list__item"><span class="vacancies-list__link active">Все</span></li>
+                    <li class="swiper-slide vacancies-list__item"><span class="vacancies-list__link">Финансовый отдел</span></li>
+                    <li class="swiper-slide vacancies-list__item"><span class="vacancies-list__link">Служба безопасности</span></li>
+                    <li class="swiper-slide vacancies-list__item"><span class="vacancies-list__link">Сейсморазведочные партии</span></li>
+                    <li class="swiper-slide vacancies-list__item"><span class="vacancies-list__link">Административный отдел</span></li>
+                    <li class="swiper-slide vacancies-list__item"><span class="vacancies-list__link">Стажировка</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="vacancies-table">
+              <div class="container">
+                <div class="vac__wrapper">
+                  <div class="vac__row"><span class="vac__date">21.02.2022</span><span class="vac__sector">Финансовый отдел</span><span class="vac__name">Бухгалтер</span></div>
+                  <div class="vac__row"><span class="vac__date">21.02.2022</span><span class="vac__sector">Служба безопасности</span><span class="vac__name">Охранник</span></div>
+                  <div class="vac__row"><span class="vac__date">21.02.2022</span><span class="vac__sector">Сейсморазведочные партии</span><span class="vac__name">Машинист буровой установки 5 разряда</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- Main::End-->
+      <!-- Footer::Start-->
+      <footer class="footer" id="footer">
+        <div class="footer-top-img"><img src="assets/images/triangles-6.png" alt="bg"></div>
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__logo"><img src="assets/images/logo-text.png" alt="logo">
+              <p>Геологоразведочные, камеральные работы и супервайзинг</p>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__address">
+                <div class="footer__address-block">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#map-pin"></use>
+                        </svg>
+                  <p>660075, Россия, Красноярский край, г. Красноярск,<br> ул. Железнодорожников, д. 17, помещение 18, комната 11</p>
+                </div>
+                <div class="footer__address-block">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#map-pin"></use>
+                        </svg>
+                  <p>660075, Россия, Красноярский край, г. Красноярск,<br> ул. Маерчака, д.10, 6 этаж БЦ "Баланс"</p>
+                </div>
+              </div>
+              <div class="footer__communication">
+                <div class="footer__communication-item">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#phone"></use>
+                        </svg><a href="tel:83912001285">8 (391) 200-12-85</a>
+                </div>
+                <div class="footer__communication-item">
+                        <svg>
+                          <use xlink:href="assets/sprites/sprites.svg#mail"></use>
+                        </svg><a href="mailto:office@seismopoisk.ru">office@seismopoisk.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__main">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">О компании</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Руководство</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">История компании</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Операционная структура</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Пресс-центр</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Услуги</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Сейсморазведочные работы</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Супервайзинг сейсморазведочных работ</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Камеральные работы</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Экологическое проектирование</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Устойчивое развитие</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Охрана окружающей среды</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Охрана труда и промышленная безопасность</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Противодействие коррупции</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Карьера</a>
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Вакансии</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <p class="footer-copyright">Copyright © 2021 - 2022</p><a class="footer-developer" href="#" target="_blank">Разработка сайта Di-project</a>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer::End-->
+    </div>
+    <!-- Scripts::Start-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/plugins/jquery-ui.min.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/TweenLite.min.js"></script>
+    <script src="assets/js/plugins/EasePack.min.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Scripts::End-->
+  </body>
+</html>

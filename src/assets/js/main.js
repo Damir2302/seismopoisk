@@ -73,4 +73,47 @@ $(document).ready(function() {
       });
     }
 
+    // CAREER PAGE SLIDER
+    if ($('.career-works__swiper').length) {
+      let news_block = new Swiper('.career-works__swiper', {
+        direction: 'horizontal',
+        freeMode: true,
+        slidesPerView: 1.288,
+        spaceBetween: 20,
+
+        breakpoints: {
+
+          768: {
+            slidesPerView: 1.67,
+            spaceBetween: 30,
+          },
+
+          1260: {
+            slidesPerView: 2.122,
+            spaceBetween: 20,
+          }
+
+        },
+
+        navigation: {
+          nextEl: '.swiper-arrow-next',
+          prevEl: '.swiper-arrow-prev',
+        }
+
+      });
+    }
+
+    // VACANCIES PAGE SWIPER MOBILE
+    if ($('.vacancies-list__swiper').length) {
+      let news_block = new Swiper('.vacancies-list__swiper', {
+        direction: 'horizontal',
+        freeMode: true,
+        slidesPerView: 'auto'
+      });
+
+      if ($(window).width() > 1023) {
+        news_block.destroy();
+      }
+    }
+
 });

@@ -1,0 +1,63 @@
+---
+title: Сейсмопоиск | Вакансии
+---
+
+extends includes/_page
+
+block main
+
+    #vacancies-page
+
+        section.vacancies-header
+
+            include components/_breadcrumbs
+            +breadcrumbs('Карьера', 'Вакансии')
+
+            .container
+
+                .page-title
+                    h1 Вакансии
+
+        section.vacancies-inner
+
+            .vacancies-list
+
+                .container
+
+                    .swiper.vacancies-list__swiper
+
+                        ul.swiper-wrapper
+                            li.swiper-slide.vacancies-list__item
+                                span.vacancies-list__link.active Все
+                            li.swiper-slide.vacancies-list__item
+                                span.vacancies-list__link Финансовый отдел
+                            li.swiper-slide.vacancies-list__item
+                                span.vacancies-list__link Служба безопасности
+                            li.swiper-slide.vacancies-list__item
+                                span.vacancies-list__link Сейсморазведочные партии
+                            li.swiper-slide.vacancies-list__item
+                                span.vacancies-list__link Административный отдел
+                            li.swiper-slide.vacancies-list__item
+                                span.vacancies-list__link Стажировка
+
+            .vacancies-table
+
+                .container
+
+                    .vac__wrapper
+
+                        .vac__row
+                            span.vac__date 21.02.2022
+                            span.vac__sector Финансовый отдел
+                            span.vac__name Бухгалтер
+
+                        .vac__row
+                            span.vac__date 21.02.2022
+                            span.vac__sector Служба безопасности
+                            span.vac__name Охранник
+
+                        .vac__row
+                            span.vac__date 21.02.2022
+                            span.vac__sector Сейсморазведочные партии
+                            span.vac__name Машинист буровой установки 5 разряда
+
