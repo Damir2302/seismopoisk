@@ -1,0 +1,117 @@
+---
+title: Сейсмопоиск | Вакансия
+---
+
+extends includes/_page
+
+block main
+
+    #vacancy-page
+
+        section.vacancies-header
+
+            include components/_breadcrumbs
+            +breadcrumbs('Карьера', 'Вакансии', 'Вакансия')
+
+            .container
+
+                .page-title
+                    h1 Вакансия
+
+        section.vacancies-inner
+
+            .vacancy
+
+                .container
+
+                    h2 Главный геолог
+
+                    h3 Обязанности
+                    ul
+                        li Является ответственным исполнителем по объекту геологоразведочных работ (ГРР)
+                        li Осуществляет методическое руководство и принимает непосредственное участие в выполнении работ геологического содержания на закрепленном за партией (отрядом) объекте, обработке полевых материалов, составлении геологического отчета;
+                        li Организовывает и принимает непосредственное участие в разработке геологических заданий, проектной документации, план-графиков камеральных и плевых работ;
+                        li Обеспечивает соблюдение методик проведения полевых работ и стандартизацию процедур камеральной обработки, хранения и представления геологических данных;
+                        li Систематически обобщает и анализирует полученные геологические данные по объекту ГРР и в соответствии с ними вносит предложения о дальнейшем направлении геологических исследований;
+
+                    h3 Требования:
+                    ul
+                        li Высшее профессиональное геологическое образование;
+                        li Стаж работы по специальности не менее 3-х лет;
+                        li Отсутствие медицинских противопоказаний.
+
+                    h3 Условия:
+                    ul
+                        li Полевое довольствие в размере 1400 руб. в сутки;
+                        li Оплата проезда до места работы;
+                        li Компенсация аренды жилья;
+                        li Полный социальный пакет;
+
+            // FORM
+            .vacancies-form
+
+                .container
+
+                    .vacancies-form__container
+
+                        h2.vacancies-form__title Откликнуться на вакансию
+
+                        form.vacancy-form
+
+                            .vac-form__row
+                                .vac-form__input
+                                    input(type="text" id="" name="" placeholder="Имя*")
+
+                                .vac-form__input
+                                    input(type="text" id="" name="" placeholder="Фамилия*")
+
+                            .vac-form__row
+                                .vac-form__input
+                                    input(type="text" id="" name="" placeholder="Отчество*")
+
+                                .vac-form__input
+                                    input(type="email" id="" name="" placeholder="Почта*")
+
+                            .vac-form__row
+                                .vac-form__input
+                                    input(type="tel" id="" name="" placeholder="Телефон*")
+
+                                .vac-form__input
+                                    input(type="text" id="" name="" placeholder="Желаемая должность*")
+
+                            .vac-form__row
+                                .vac-form__input.mob-hide
+                                    textarea(type="text" id="" name="" placeholder="Комментарий")
+
+                                .vac-form__column
+
+                                    .vac-form__input
+                                        label.vac-form__label-upload(for="fileUpload" id="fileUploadLabel")
+                                            +sprite('clip')
+                                            span Загрузите Ваше резюме <br><br>(.doc  .docx .pdf)
+                                        input(type="file" id="fileUpload" name="" style="display: none;" accept=".doc, .docx, .pdf")
+
+                                    .vac-form__input.desktop-hide
+                                        textarea(type="text" id="" name="" placeholder="Комментарий")
+
+                                    .vac-form__btn
+                                        button Оставить заявку
+                                        span.btn-notify Нажимая кнопку, Вы соглашаетесь<br>с условиями пользовательсткого соглашения
+
+
+                            .vac-form__bg
+                                img(src="assets/images/triangl-careers.png", alt="bg")
+
+
+        .success-modal.hide
+
+            .success-container
+
+                .success-close-icon
+                    #successClose.success-close
+                        +sprite('close-icon')
+                    img.close-img(src="assets/images/close-white.png", alt="icon")
+
+                .success-icon
+                    +sprite('checkmark')
+                p.success-text Ваша заявка отправлена

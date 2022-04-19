@@ -28,17 +28,17 @@ block main
 
                         ul.swiper-wrapper.vacancies-list__wrapper
                             li.swiper-slide.vacancies-list__item
-                                span.vacancies-list__link.active Все
+                                a(href="#").vacancies-list__link.active Все
                             li.swiper-slide.vacancies-list__item
-                                span.vacancies-list__link Финансовый отдел
+                                a(href="#").vacancies-list__link Финансовый отдел
                             li.swiper-slide.vacancies-list__item
-                                span.vacancies-list__link Служба безопасности
+                                a(href="#").vacancies-list__link Служба безопасности
                             li.swiper-slide.vacancies-list__item
-                                span.vacancies-list__link Сейсморазведочные партии
+                                a(href="#").vacancies-list__link Сейсморазведочные партии
                             li.swiper-slide.vacancies-list__item
-                                span.vacancies-list__link Административный отдел
+                                a(href="#").vacancies-list__link Административный отдел
                             li.swiper-slide.vacancies-list__item
-                                span.vacancies-list__link Стажировка
+                                a(href="#").vacancies-list__link Стажировка
 
             .vacancies-table
 
@@ -47,17 +47,97 @@ block main
                     .vac__wrapper
 
                         .vac__row
-                            span.vac__date 21.02.2022
-                            span.vac__sector Финансовый отдел
-                            span.vac__name Бухгалтер
+                            a.vac__link(href="#")
+                                span.vac__date 21.02.2022
+                                span.vac__sector Финансовый отдел
+                                span.vac__name Бухгалтер
 
                         .vac__row
-                            span.vac__date 21.02.2022
-                            span.vac__sector Служба безопасности
-                            span.vac__name Охранник
+                            a.vac__link(href="#")
+                                span.vac__date 21.02.2022
+                                span.vac__sector Служба безопасности
+                                span.vac__name Охранник
 
                         .vac__row
-                            span.vac__date 21.02.2022
-                            span.vac__sector Сейсморазведочные партии
-                            span.vac__name Машинист буровой установки 5 разряда
+                            a.vac__link(href="#")
+                                span.vac__date 21.02.2022
+                                span.vac__sector Сейсморазведочные партии
+                                span.vac__name Машинист буровой установки 5 разряда
 
+            .vacancies-empty
+                .container
+                    .vacancies-empty__inner
+                        +sprite('empty-vacancies')
+
+                        .vacancies-empty__content
+                            .vacancies-empty__title Нет открытых вакансий
+                            .vacancies-empty__text На данный момент у нас нет открытых вакансий, но Вы можете оставить завяку ниже, и мы будем иметь Вас в виду, если откроется подходящая вакансия
+
+            // FORM
+            .vacancies-form
+
+                .container
+
+                    .vacancies-form__container
+
+                        h2.vacancies-form__title Оставьте заявку если хотите стать членом нашей команды, но сейчас не нашли подходящей вакансии
+
+                        form.vacancy-form
+
+                            .vac-form__row
+                                .vac-form__input
+                                    input(type="text" id="" name="" placeholder="Имя*")
+
+                                .vac-form__input
+                                    input(type="text" id="" name="" placeholder="Фамилия*")
+
+                            .vac-form__row
+                                .vac-form__input
+                                    input(type="text" id="" name="" placeholder="Отчество*")
+
+                                .vac-form__input
+                                    input(type="email" id="" name="" placeholder="Почта*")
+
+                            .vac-form__row
+                                .vac-form__input
+                                    input(type="tel" id="" name="" placeholder="Телефон*")
+
+                                .vac-form__input
+                                    input(type="text" id="" name="" placeholder="Желаемая должность*")
+
+                            .vac-form__row
+                                .vac-form__input.mob-hide
+                                    textarea(type="text" id="" name="" placeholder="Комментарий")
+
+                                .vac-form__column
+
+                                    .vac-form__input
+                                        label.vac-form__label-upload(for="fileUpload" id="fileUploadLabel")
+                                            +sprite('clip')
+                                            span Загрузите Ваше резюме <br><br>(.doc  .docx .pdf)
+                                        input(type="file" id="fileUpload" name="" style="display: none;" accept=".doc, .docx, .pdf")
+
+                                    .vac-form__input.desktop-hide
+                                        textarea(type="text" id="" name="" placeholder="Комментарий")
+
+                                    .vac-form__btn
+                                        button Оставить заявку
+                                        span.btn-notify Нажимая кнопку, Вы соглашаетесь<br>с условиями пользовательсткого соглашения
+
+
+                            .vac-form__bg
+                                img(src="assets/images/triangl-careers.png", alt="bg")
+
+
+        .success-modal.hide
+
+            .success-container
+
+                .success-close-icon
+                    #successClose.success-close
+                        +sprite('close-icon')
+                    img.close-img(src="assets/images/close-white.png", alt="icon")
+
+                .success-icon
+                    +sprite('checkmark')
+                p.success-text Ваша заявка отправлена

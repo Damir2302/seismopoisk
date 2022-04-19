@@ -116,4 +116,17 @@ $(document).ready(function() {
       }
     }
 
+    // VACANCIES PAGE FORM
+    $('#fileUpload').on('change', function() {
+      if ($(this).val().length) {
+        let fileName = $('#fileUpload').val().split("\\");
+        $('#fileUploadLabel').html(fileName[fileName.length - 1]);
+      }
+    });
+
+    $('#successClose').on('click', function() {
+      $('.success-modal').remove();
+    });
+
+
 });
