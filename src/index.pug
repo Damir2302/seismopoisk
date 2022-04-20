@@ -37,17 +37,20 @@ block main
                 .services-l__wrapper#content
 
                     .services-l__block
-                        img.services-l-text(src="assets/images/uslugi.png", alt="text")
+                        .services-l-text
+                            img(src="assets/images/uslugi.png", alt="text")
 
                         .services-l__item
-                            img.services-l__image(src="assets/images/nick-van-den-berg-tpyh8Eu7LgQ-unsplash_2.jpg", alt="img")
+                            .services-l__image
+                                img(src="assets/images/nick-van-den-berg-tpyh8Eu7LgQ-unsplash_2.jpg", alt="img")
                             .services-l__icon
                                 img(src="assets/images/truck.svg", alt="svg")
                             p.services-l__title Сейсморазведочные работы
                             p.services-l__text Выполнение полевых сейсморазведочных работ МОГТ 2D и МОГТ 3D осуществляется строго в соответствии с проектом на проведение работ.
 
                         .services-l__item
-                            img.services-l__image(src="assets/images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg", alt="img")
+                            .services-l__image
+                                img(src="assets/images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg", alt="img")
                             .services-l__icon
                                 +sprite('plan-building')
                             p.services-l__title Камеральные работы
@@ -59,14 +62,16 @@ block main
                             img(src="assets/images/triangles.png", alt="bg")
 
                         .services-l__item
-                            img.services-l__image(src="assets/images/closeup-contractor-construction-site-pointing-plan-wooden-sleeper.jpg", alt="img")
+                            .services-l__image
+                                img(src="assets/images/closeup-contractor-construction-site-pointing-plan-wooden-sleeper.jpg", alt="img")
                             .services-l__icon
                                 +sprite('construction-project')
                             p.services-l__title Супервайзинг сейсморазведочных работ
                             p.services-l__text Необходимость супервайзерского контроля в современных условиях объясняется высокой стоимостью проведения геолого-разведочных работ
 
                         .services-l__item
-                            img.services-l__image(src="assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash_1.jpg", alt="img")
+                            .services-l__image
+                                img(src="assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash_1.jpg", alt="img")
                             .services-l__icon
                                 +sprite('ecologic')
                             p.services-l__title Экологическое проектирование
@@ -74,9 +79,11 @@ block main
 
     section.projects-section
 
-        img.projects-img(src="assets/images/triangles-2.png", alt="bg")
+        .projects-img
+            img(src="assets/images/triangles-2.png", alt="bg")
 
-        img.projects-text(src="assets/images/proyekty.png", alt="text")
+        .projects-text
+            img(src="assets/images/proyekty.png", alt="text")
 
         .container
 
@@ -145,15 +152,19 @@ block main
                                 span Геохимические работы
                         a.activity-more(href="#") Узнать больше
                             +sprite('arrow-right', '', 'arrow-right-link')
-                img.projects__about-activity-bg(src="assets/images/triangles-2.png", alt="bg")
+                .projects__about-activity-bg
+                    img(src="assets/images/triangles-2.png", alt="bg")
 
                 .projects__image
 
-                    img.projects__about-image(src="assets/images/agriculture-iot-with-rice-field-background_1.jpg", alt="img")
+                    .projects__about-image
+                        img(src="assets/images/agriculture-iot-with-rice-field-background_1.jpg", alt="img")
 
-                    img.projects__about-bg(src="assets/images/triangles-2.png", alt="bg")
+                    .projects__about-bg
+                        img(src="assets/images/triangles-2.png", alt="bg")
 
-                    img.text-about(src="assets/images/about.png", alt="text")
+                    .text-about
+                        img(src="assets/images/about.png", alt="text")
 
     section.benefits-section
 
@@ -164,8 +175,10 @@ block main
                 .benefits__main
                     p.benefits__main-title Почему выбирают нас
                     p.benefits__main-text Высококвалифицированный персонал, уникальный опыт и передовые технологии позволяют успешно реализовывать геологоразведочные проекты любой сложности
-                    img.benefits__main-bg.benefits__main-bg--mobile(src="assets/images/triangles-4-mob.png", alt="bg")
-                    img.benefits__main-bg(src="assets/images/triangles-4.png", alt="bg")
+                    .benefits__main-bg.benefits__main-bg--mobile
+                        img(src="assets/images/triangles-4-mob.png", alt="bg")
+                    .benefits__main-bg
+                        img(src="assets/images/triangles-4.png", alt="bg")
 
                 .benefits__block.benefits__block--single
 
@@ -199,7 +212,8 @@ block main
                 p.hompage-c-subtitle Уже 4 года с нами сотрудничают 4 постоянных партнёра. Это говорит о качестве и профессионализме наших услуг
 
                 .partners__wrapper
-                    img.partners-bg(src="assets/images/triangles-5.png", alt="bg")
+                    .partners-bg
+                        img(src="assets/images/triangles-5.png", alt="bg")
 
                     .partners__block
 
@@ -211,9 +225,6 @@ block main
                             img(src="assets/images/image 30.png", alt="img")
                         .partners__tile
                             img(src="assets/images/image 31.png", alt="img")
-
-                    .partners__block
-
                         .partners__tile
                             img(src="assets/images/image 28.png", alt="img")
                         .partners__tile
@@ -226,7 +237,8 @@ block main
         .news-section
 
             .container
-                img.news-text(src="assets/images/novosty.png", alt="text")
+                .news-text
+                    img(src="assets/images/novosty.png", alt="text")
 
                 .container-padding
                     h2.hompage-c-title Новости компании

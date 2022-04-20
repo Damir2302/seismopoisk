@@ -35,13 +35,16 @@ block main
 
         section.about-info#content
 
-            img.about-info-bg.mob(src="assets/images/triangles-2.png", alt="bg")
-            img.about-info-bg(src="assets/images/triangles-7.png", alt="bg")
+            .about-info-bg.mob
+                img(src="assets/images/triangles-2.png", alt="bg")
+            .about-info-bg
+                img(src="assets/images/triangles-7.png", alt="bg")
 
             .container
 
                 .about-info__content
-                    img.about-info-text(src="assets/images/seysmopoisk.png", alt="text")
+                    .about-info-text
+                        img(src="assets/images/seysmopoisk.png", alt="text")
 
                     .about-info__img-block
                         img(src="assets/images/about-info-1.jpg", alt="img")
@@ -104,11 +107,13 @@ block main
 
                         .activity__image
                             img(src="assets/images/activity-img.jpg", alt="img")
+                        .activity-info-bottom-text.activity-info-text-1
+                            img(src="assets/images/about.png", alt="text")
+                        .activity-info-bottom-text.activity-info-text-2
+                            img(src="assets/images/deyatelnost.png", alt="text")
 
-                        img.activity-info-bottom-text.activity-info-text-1(src="assets/images/about.png", alt="text")
-                        img.activity-info-bottom-text.activity-info-text-2(src="assets/images/deyatelnost.png", alt="text")
-
-                    img.activity-bg(src="assets/images/triangles-activity.png", alt="bg")
+                    .activity-bg
+                        img(src="assets/images/triangles-activity.png", alt="bg")
 
         section.table-history
 
@@ -253,7 +258,9 @@ block main
                         p.hompage-c-subtitle Уже 4 года с нами сотрудничают 4 постоянных партнёра. Это говорит о качестве и профессионализме наших услуг
 
                         .partners__wrapper
-                            img.partners-bg(src="assets/images/triangles-5.png", alt="bg")
+
+                            .partners-bg
+                                img(src="assets/images/triangles-5.png", alt="bg")
 
                             .partners__block
 
@@ -265,9 +272,6 @@ block main
                                     img(src="assets/images/image 30.png", alt="img")
                                 .partners__tile
                                     img(src="assets/images/image 31.png", alt="img")
-
-                            .partners__block
-
                                 .partners__tile
                                     img(src="assets/images/image 28.png", alt="img")
                                 .partners__tile
@@ -279,9 +283,10 @@ block main
 
             .projects-sec
 
-                img.projects-img(src="assets/images/triangles-2.png", alt="bg")
-
-                img.projects-text(src="assets/images/proyekty.png", alt="text")
+                .projects-img
+                    img(src="assets/images/triangles-2.png", alt="bg")
+                .projects-text
+                    img(src="assets/images/proyekty.png", alt="text")
 
                 .container
 
