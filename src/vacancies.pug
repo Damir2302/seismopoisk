@@ -115,7 +115,7 @@ block main
                                         label.vac-form__label-upload(for="fileUpload" id="fileUploadLabel")
                                             +sprite('clip')
                                             span Загрузите Ваше резюме <br><br>(.doc  .docx .pdf)
-                                        input(type="file" id="fileUpload" name="" style="display: none;" accept=".doc, .docx, .pdf")
+                                        input(type="file" id="fileUpload" name="" aria-hidden="true" accept=".doc, .docx, .pdf")
 
                                     .vac-form__input.desktop-hide
                                         textarea(type="text" id="" name="" placeholder="Комментарий")

@@ -16,17 +16,6 @@
     }
 }
 
-.about-main .hero__main {
-
-    @include breakpoint(lg) {
-        margin: 83px 0 0;
-    }
-
-    @include breakpoint(hd) {
-        margin: 142px 0 0;
-    }
-}
-
 .about-main .hero__text {
 
     @include breakpoint(lg) {
@@ -52,6 +41,7 @@
 
     @include breakpoint(lg) {
         margin: 30px 0;
+        min-height: 210px;
         font-size: 65px;
         line-height: 70px;
     }

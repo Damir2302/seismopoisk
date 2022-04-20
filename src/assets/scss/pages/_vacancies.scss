@@ -118,6 +118,14 @@
 .vac__row {
     padding: 16px 0;
     border-bottom: 1px solid #4B9FB7;
+
+    @include breakpoint(md) {
+        padding: 19px 0;
+    }
+
+    @include breakpoint(lg) {
+        padding: 25px 0;
+    }
 }
 
 .vac__row:first-child {
@@ -128,6 +136,7 @@
 
     @include breakpoint(md) {
         display: flex;
+        align-items: center;
     }
 }
 
@@ -143,8 +152,14 @@
     color: #808896;
 
     @include breakpoint(md) {
+        margin: 0;
         font-size: 16px;
         line-height: 24px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+        line-height: 40px;
     }
 }
 
@@ -157,7 +172,12 @@
 
     @include breakpoint(md) {
         margin-left: 38px;
-        flex: 1 1 200px;
+        flex: 0 1 33.333%;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+        line-height: 40px;
     }
 }
 
@@ -169,8 +189,18 @@
     color: #273A4A;
 
     @include breakpoint(md) {
-        margin-left: 60px;
-        flex: 1 1 300px;
+        margin-left: 40px;
+        flex: 1 1 50%;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 370px;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    @include breakpoint(hd) {
+        margin-left: 70px;
     }
 }
 
@@ -260,6 +290,10 @@
     }
 }
 
+.vac-form__column .vac-form__row {
+    column-gap: 36px;
+}
+
 .vac-form__input {
     margin: 0 0 20px;
 
@@ -287,8 +321,25 @@
     }
 }
 
+.label-date {
+    margin: 0 25px 10px;
+    display: inline-block;
+}
+
 .vac-form__input.input-date {
+    position: relative;
     min-width: unset;
+}
+
+.vac-form__input.input-date label {
+    position: absolute;
+    top: 17px;
+    right: 18px;
+}
+
+.vac-form__input.input-date label svg {
+    width: 24px;
+    height: 24px;
 }
 
 .vac-form__column {

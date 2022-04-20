@@ -20,18 +20,19 @@ block main
             include components/_breadcrumbs
             +breadcrumbs('О компании')
 
-            .hero__main
+            .hero__wrapper
+                .hero__main
 
-                .container
+                    .container
 
-                    .hero__main-logo
-                        img(src="assets/images/logo-text.png", alt="logo")
-                    .hero__text
-                        h1.about__title Сейсмопоиск - лучшие в геолого-разведочных работах в России
-                        p.text-medium Общество с ограниченной ответственностью «Сейсмопоиск» (ООО «Сейсмопоиск») образовано в 2018 году.
+                        .hero__main-logo
+                            img(src="assets/images/logo-text.png", alt="logo")
+                        .hero__text
+                            h1.about__title Сейсмопоиск - лучшие в геолого-разведочных работах в России
+                            p.text-medium Общество с ограниченной ответственностью «Сейсмопоиск» (ООО «Сейсмопоиск») образовано в 2018 году.
 
-                .hero__image
-                    img(src="assets/images/about-main.jpg", alt="img")
+                    .hero__image
+                        img(src="assets/images/about-main.jpg", alt="img")
 
         section.about-info#content
 

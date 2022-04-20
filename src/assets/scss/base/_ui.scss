@@ -126,6 +126,10 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance:none;
 }
 
+input[aria-hidden="true"] {
+    display: none;
+}
+
 h1 {
     margin: 0 0 16px;
     font-weight: 600;
@@ -173,23 +177,6 @@ h2 {
     @include breakpoint(md) {
         font-size: 22px;
         line-height: 39px;
-    }
-}
-
-.hero-section {
-    padding: 20px 0 60px;
-    position: relative;
-
-    @include breakpoint(md) {
-        padding: 50px 0 80px;
-    }
-
-    @include breakpoint(lg) {
-        padding: 50px 0 120px;
-    }
-
-    @include breakpoint(hd) {
-        padding: 50px 0 150px;
     }
 }
 

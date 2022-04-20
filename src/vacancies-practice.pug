@@ -73,11 +73,17 @@ block main
                                     .vac-form__input
                                         input(type="tel" id="" name="" placeholder="Телефон*")
 
+                                    span.label-date Срок прохождения практики
+
                                     .vac-form__row
                                         .vac-form__input.input-date
-                                            input(type="date" id="" name="")
+                                            input(type="text" id="" name="")
+                                            label
+                                                +sprite('calendar')
                                         .vac-form__input.input-date
-                                            input(type="date" id="" name="")
+                                            input(type="text" id="" name="")
+                                            label
+                                                +sprite('calendar')
 
                                     .vac-form__input.desktop-hide
                                         textarea(type="text" id="" name="" placeholder="Комментарий")
