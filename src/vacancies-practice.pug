@@ -45,24 +45,24 @@ block main
 
                             .vac-form__row
                                 .vac-form__input
-                                    input(type="text" id="" name="" placeholder="Имя*")
+                                    input(type="text" id="" name="" placeholder="Имя*" required)
 
                                 .vac-form__input
-                                    input(type="text" id="" name="" placeholder="Фамилия*")
-
-                            .vac-form__row
-                                .vac-form__input
-                                    input(type="text" id="" name="" placeholder="Отчество*")
-
-                                .vac-form__input
-                                    input(type="text" id="" name="" placeholder="Учебное заведение*")
+                                    input(type="text" id="" name="" placeholder="Фамилия*" required)
 
                             .vac-form__row
                                 .vac-form__input
-                                    input(type="text" id="" name="" placeholder="Специальность*")
+                                    input(type="text" id="" name="" placeholder="Отчество*" required)
 
                                 .vac-form__input
-                                    input(type="email" id="" name="" placeholder="Почта*")
+                                    input(type="text" id="" name="" placeholder="Учебное заведение*" required)
+
+                            .vac-form__row
+                                .vac-form__input
+                                    input(type="text" id="" name="" placeholder="Специальность*" required)
+
+                                .vac-form__input
+                                    input(type="email" id="" name="" placeholder="Почта*" required)
 
                             .vac-form__row
                                 .vac-form__input.mob-hide
@@ -71,17 +71,17 @@ block main
                                 .vac-form__column
 
                                     .vac-form__input
-                                        input(type="tel" id="" name="" placeholder="Телефон*")
+                                        input(type="tel" id="" name="" placeholder="Телефон*" required)
 
                                     span.label-date Срок прохождения практики
 
                                     .vac-form__row
                                         .vac-form__input.input-date
-                                            input(type="text" id="" name="")
+                                            input(type="text" id="" name="" onmouseover="(this.type='date')")
                                             label
                                                 +sprite('calendar')
                                         .vac-form__input.input-date
-                                            input(type="text" id="" name="")
+                                            input(type="text" id="" name="" onmouseover="(this.type='date')")
                                             label
                                                 +sprite('calendar')
 

@@ -331,6 +331,31 @@
     min-width: unset;
 }
 
+.vac-form__input.input-date:first-child::after {
+    content: '';
+    background: #4B9FB7;
+    position: absolute;
+    top: 29px;
+    right: -28px;
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+}
+
+.vac-form__input.input-date input {
+    padding: 18px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator {
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    cursor: pointer;
+}
+
 .vac-form__input.input-date label {
     position: absolute;
     top: 17px;
@@ -377,7 +402,7 @@
 .vac-form__input input {
     padding: 18px 20px 17px;
     background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
+    // backdrop-filter: blur(5px);
     width: 100%;
     height: 59px;
     font-size: 16px;

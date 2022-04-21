@@ -1,5 +1,6 @@
 ---
 title: Сейсмопоиск | О компании
+breads: [О компании]
 ---
 
 extends includes/_page
@@ -8,38 +9,14 @@ block main
 
     #about-page
 
-        section.about-main
-
-            .left-line
-
-                a.arrow-btn(href="#content")
-                    span.arrow-btn-text SCROLL DOWN
-                    +sprite('arr','','arrow-btn-element')
-                    +sprite('arrow-down','','arrow-btn-arrow')
-
-            include components/_breadcrumbs
-            +breadcrumbs('О компании')
-
-            .hero__wrapper
-                .hero__main
-
-                    .container
-
-                        .hero__main-logo
-                            img(src="assets/images/logo-text.png", alt="logo")
-                        .hero__text
-                            h1.about__title Сейсмопоиск - лучшие в геолого-разведочных работах в России
-                            p.text-medium Общество с ограниченной ответственностью «Сейсмопоиск» (ООО «Сейсмопоиск») образовано в 2018 году.
-
-                    .hero__image
-                        img(src="assets/images/about-main.jpg", alt="img")
+        section.hero-section.hero-about
+            include components/_hero
+            +hero('Сейсмопоиск - лучшие в геолого-разведочных работах в России',
+                  'Общество с ограниченной ответственностью «Сейсмопоиск» (ООО «Сейсмопоиск») образовано в 2018 году.',
+                   media='image',
+                  'about-main.jpg')
 
         section.about-info#content
-
-            .about-info-bg.mob
-                img(src="assets/images/triangles-2.png", alt="bg")
-            .about-info-bg
-                img(src="assets/images/triangles-7.png", alt="bg")
 
             .container
 

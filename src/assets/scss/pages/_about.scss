@@ -72,37 +72,6 @@
     }
 }
 
-.about-info-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
-    width: 153px;
-    height: 46px;
-
-    @include breakpoint(md) {
-        top: -18px;
-        width: 503px;
-        height: 125px;
-        z-index: 0;
-    }
-
-    @include breakpoint(hd) {
-        top: 0;
-        display: block;
-        width: auto;
-        height: auto;
-    }
-}
-
-.about-info-bg.mob {
-    display: block;
-
-    @include breakpoint(hd) {
-        display: none;
-    }
-}
-
 .about-info__content {
 
     @include breakpoint(lg) {

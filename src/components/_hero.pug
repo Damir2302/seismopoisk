@@ -1,0 +1,42 @@
+mixin hero(title, subtitle, media, link)
+
+    if page == 'Main'
+        canvas#canvas.canvas
+
+    .left-line
+
+        a.arrow-btn(href="#content")
+            span.arrow-btn-text SCROLL DOWN
+            +sprite('arr','','arrow-btn-element')
+            +sprite('arrow-down','','arrow-btn-arrow')
+
+    if breads.length == true
+
+        include _breadcrumbs
+        +breadcrumbs(...breads)
+
+    .hero__wrapper
+
+        .hero__content
+
+            .container
+
+                .hero__logo
+                    img(src="assets/images/logo-text.png", alt="logo")
+                .hero__text
+                    h1= title
+                    p.text-medium=subtitle
+
+        if media == 'video'
+            .hero__image
+                video(src="assets/images/" + link oncontextmenu="return false;" muted loop autoplay)
+
+        else
+            .hero__image
+                img(src="assets/images/" + link, alt="img")
+
+
+    .triangles-hero.triangles.mob
+        img(src="assets/images/triangles-2.png", alt="triangles")
+    .triangles-hero.triangles
+        img(src="assets/images/triangles-7.png", alt="triangles")

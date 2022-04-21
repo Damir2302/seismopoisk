@@ -128,5 +128,14 @@ $(document).ready(function() {
       $('.success-modal').remove();
     });
 
+    // VACANCIES PAGE PRACTICE FORM
+    $('.input-date input').on('mouseout', function() {
+      if ($(this).val().length == 0) {
+        $(this).attr('type', 'text');
+        $(this).blur();
+      }
+    });
+
+    $('input[type="tel"]').inputmask({"mask": "+7 (999) 99-99-99"});
 
 });

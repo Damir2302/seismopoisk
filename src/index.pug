@@ -1,36 +1,24 @@
 ---
 title: Сейсмопоиск | Главная
+breads: []
+page: Main
 ---
 
 extends includes/_page
 
 block main
 
-    section#hero-section.hero-section
-        canvas#canvas.canvas
+    // HERO WITH SERVICES BLOCKS
+    #particlesWrapper
 
-        .left-line
+        section.hero-section.hero-main
+            include components/_hero
+            +hero('Геологоразведочные, камеральные работы и супервайзинг',
+                  'Мы готовим проекты на выполнение полевых сейсморазведочных работ МОГТ 2D и 3D, рецензиина проекты полевых сейсморазведочных работ.',
+                  media='video',
+                  'istockphoto-1144204289-640_adpp_is.mp4')
 
-            a.arrow-btn(href="#content")
-                span.arrow-btn-text SCROLL DOWN
-                +sprite('arr','','arrow-btn-element')
-                +sprite('arrow-down','','arrow-btn-arrow')
-
-        .hero__wrapper
-            .hero__main
-
-                .container
-
-                    .hero__main-logo
-                            img(src="assets/images/logo-text.png", alt="logo")
-                    .hero__text
-                        h1 Геологоразведочные, камеральные работы и супервайзинг
-                        p.text-medium Мы готовим проекты на выполнение полевых сейсморазведочных работ МОГТ 2D и 3D, рецензиина проекты полевых сейсморазведочных работ.
-
-                .hero__image
-                    video(src="assets/images/istockphoto-1144204289-640_adpp_is.mp4" oncontextmenu="return false;" muted loop autoplay)
-
-        .services-l-section
+        section.services-l-section
 
             .container
 
@@ -49,7 +37,7 @@ block main
                             p.services-l__text Выполнение полевых сейсморазведочных работ МОГТ 2D и МОГТ 3D осуществляется строго в соответствии с проектом на проведение работ.
 
                         .services-l__item
-                            .services-l__image
+                            .servic es-l__image
                                 img(src="assets/images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg", alt="img")
                             .services-l__icon
                                 +sprite('plan-building')
@@ -77,10 +65,11 @@ block main
                             p.services-l__title Экологическое проектирование
                             p.services-l__text Осуществляем разработку: паспортов отходов, проекта НДВ, водохозяйственного баланса, схем систем водоснабжения и водоотведения
 
+    // PROJECTS SECTION
     section.projects-section
 
-        .projects-img
-            img(src="assets/images/triangles-2.png", alt="bg")
+        .triangles-projects.triangles
+            img(src="assets/images/triangles-2.png", alt="triangles")
 
         .projects-text
             img(src="assets/images/proyekty.png", alt="text")
@@ -166,6 +155,7 @@ block main
                     .text-about
                         img(src="assets/images/about.png", alt="text")
 
+    // BENEFITS SECTION
     section.benefits-section
 
         .container
@@ -202,6 +192,7 @@ block main
                         p.benefits__title Достижения OOO «Сейсмопоиск»
                         p.benefits__text Более 800 сотрудников в штате полевых сейсморазведочных партий в нашей компании
 
+    //ABOUT SECTION
     section.about-section
 
         .partners-section

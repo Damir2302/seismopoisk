@@ -15,7 +15,7 @@ if ($(window).width() > 1023) {
 
 
         function initHeader() {
-            largeHeader = document.getElementById('hero-section');
+            largeHeader = document.getElementById('particlesWrapper');
 
             width = largeHeader.offsetWidth;
             height = largeHeader.offsetHeight;

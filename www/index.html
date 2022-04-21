@@ -83,30 +83,35 @@
       <!-- Header::End-->
       <!-- Main::Start-->
       <main id="main" role="main">
-        <section class="hero-section" id="hero-section">
-          <canvas class="canvas" id="canvas"></canvas>
-          <div class="left-line"><a class="arrow-btn" href="#content"><span class="arrow-btn-text">SCROLL DOWN</span>
-                    <svg class="arrow-btn-element">
-                      <use xlink:href="assets/sprites/sprites.svg#arr"></use>
-                    </svg>
-                    <svg class="arrow-btn-arrow">
-                      <use xlink:href="assets/sprites/sprites.svg#arrow-down"></use>
-                    </svg></a></div>
-          <div class="hero__wrapper">
-            <div class="hero__main">
-              <div class="container">
-                <div class="hero__main-logo"><img src="assets/images/logo-text.png" alt="logo"></div>
-                <div class="hero__text">
-                  <h1>Геологоразведочные, камеральные работы и супервайзинг</h1>
-                  <p class="text-medium">Мы готовим проекты на выполнение полевых сейсморазведочных работ МОГТ 2D и 3D, рецензиина проекты полевых сейсморазведочных работ.</p>
-                </div>
-              </div>
-              <div class="hero__image">
-                <video src="assets/images/istockphoto-1144204289-640_adpp_is.mp4" oncontextmenu="return false;" muted loop autoplay></video>
-              </div>
-            </div>
-          </div>
-          <div class="services-l-section">
+        <!-- HERO WITH SERVICES BLOCKS-->
+        <div id="particlesWrapper">
+          <section class="hero-section hero-main">
+                        <canvas class="canvas" id="canvas"></canvas>
+                        <div class="left-line"><a class="arrow-btn" href="#content"><span class="arrow-btn-text">SCROLL DOWN</span>
+                                  <svg class="arrow-btn-element">
+                                    <use xlink:href="assets/sprites/sprites.svg#arr"></use>
+                                  </svg>
+                                  <svg class="arrow-btn-arrow">
+                                    <use xlink:href="assets/sprites/sprites.svg#arrow-down"></use>
+                                  </svg></a></div>
+                        <div class="hero__wrapper">
+                          <div class="hero__content">
+                            <div class="container">
+                              <div class="hero__logo"><img src="assets/images/logo-text.png" alt="logo"></div>
+                              <div class="hero__text">
+                                <h1>Геологоразведочные, камеральные работы и супервайзинг</h1>
+                                <p class="text-medium">Мы готовим проекты на выполнение полевых сейсморазведочных работ МОГТ 2D и 3D, рецензиина проекты полевых сейсморазведочных работ.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="hero__image">
+                            <video src="assets/images/istockphoto-1144204289-640_adpp_is.mp4" oncontextmenu="return false;" muted loop autoplay></video>
+                          </div>
+                        </div>
+                        <div class="triangles-hero triangles mob"><img src="assets/images/triangles-2.png" alt="triangles"></div>
+                        <div class="triangles-hero triangles"><img src="assets/images/triangles-7.png" alt="triangles"></div>
+          </section>
+          <section class="services-l-section">
             <div class="container">
               <div class="services-l__wrapper" id="content">
                 <div class="services-l__block">
@@ -118,7 +123,7 @@
                     <p class="services-l__text">Выполнение полевых сейсморазведочных работ МОГТ 2D и МОГТ 3D осуществляется строго в соответствии с проектом на проведение работ.</p>
                   </div>
                   <div class="services-l__item">
-                    <div class="services-l__image"><img src="assets/images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg" alt="img"></div>
+                    <div class="servic">es-l__image<img src="assets/images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg" alt="img"></div>
                     <div class="services-l__icon">
                             <svg>
                               <use xlink:href="assets/sprites/sprites.svg#plan-building"></use>
@@ -153,10 +158,11 @@
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
+        <!-- PROJECTS SECTION-->
         <section class="projects-section">
-          <div class="projects-img"><img src="assets/images/triangles-2.png" alt="bg"></div>
+          <div class="triangles-projects triangles"><img src="assets/images/triangles-2.png" alt="triangles"></div>
           <div class="projects-text"><img src="assets/images/proyekty.png" alt="text"></div>
           <div class="container">
             <div class="projects__title">
@@ -227,6 +233,7 @@
             </div>
           </div>
         </section>
+        <!-- BENEFITS SECTION-->
         <section class="benefits-section">
           <div class="container">
             <div class="benefits__wrapper">
@@ -270,6 +277,7 @@
             </div>
           </div>
         </section>
+        <!--ABOUT SECTION-->
         <section class="about-section">
           <div class="partners-section">
             <div class="container">
@@ -416,6 +424,7 @@
     <!-- Scripts::Start-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/plugins/jquery-ui.min.js"></script>
+    <script src="assets/js/plugins/inputmask.min.js"></script>
     <script src="assets/js/plugins/swiper-bundle.min.js"></script>
     <script src="assets/js/plugins/TweenLite.min.js"></script>
     <script src="assets/js/plugins/EasePack.min.js"></script>

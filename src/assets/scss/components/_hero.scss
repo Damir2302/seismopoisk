@@ -1,0 +1,231 @@
+.hero-section  {
+    position: relative;
+    padding: 20px 0 0;
+
+    @include breakpoint(md) {
+        padding: 50px 0 0;
+    }
+
+    @include breakpoint(lg) {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 657px;
+    }
+
+    @include breakpoint(hd) {
+        min-height: 753px;
+    }
+}
+
+.canvas {
+    display: none;
+
+    @include breakpoint(xl) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: block;
+    }
+}
+
+.left-line {
+
+    @include breakpoint(lg) {
+        position: absolute;
+        top: 0;
+        left: 65px;
+        height: 100%;
+        border-right: 1px solid rgba(79, 134, 172, 0.2)
+    }
+
+    @include breakpoint(xl) {
+        left: 60px;
+    }
+
+    @include breakpoint(hd) {
+        left: 80px;
+    }
+}
+
+.arrow-btn {
+
+    display: none;
+
+    @include breakpoint(lg) {
+        position: absolute;
+        bottom: 58px;
+        left: -40px;
+        display: block;
+        width: 20px;
+        height: 232px;
+        cursor: pointer;
+    }
+
+    @include breakpoint(hd) {
+        bottom: 88px;
+        left: -48px;
+    }
+}
+
+.arrow-btn-text {
+    position: absolute;
+    top: 55px;
+    left: -58px;
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    white-space: nowrap;
+    transform: rotate(270deg);
+}
+
+.arrow-btn-element {
+    position: absolute;
+    top: 168px;
+    left: 0;
+    width: 20px;
+    height: 32px;
+}
+
+.arrow-btn-arrow {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 20px;
+    height: 32px;
+    transition: all 0.3s ease;
+}
+
+.arrow-btn:hover .arrow-btn-arrow {
+    top: 210px;
+}
+
+.hero__wrapper {
+
+    @include breakpoint(lg) {
+        margin: auto 0 0;
+        padding: 50px 0;
+        z-index: 2;
+    }
+
+    @include breakpoint(hd) {
+        padding: 50px 0 80px;
+    }
+}
+
+.hero__logo {
+    display: none;
+
+    @include breakpoint(md) {
+        margin: 0 0 28px;
+        display: block;
+        max-width: 200px;
+    }
+}
+
+.hero__text {
+    max-width: 400px;
+
+    @include breakpoint(md) {
+        max-width: 600px;
+    }
+
+    @include breakpoint(lg) {
+        position: relative;
+        max-width: 784px;
+        z-index: 1;
+    }
+}
+
+.hero__text p {
+    color: #fff;
+
+    @include breakpoint(lg) {
+        max-width: 470px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 600px;
+    }
+}
+
+.hero__image {
+    margin: 35px 0 0;
+    position: relative;
+    z-index: 2;
+
+    @include breakpoint(md) {
+        margin: 51px 0 0;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: calc(50vw - 4px);
+        width: calc(100% - 49vw);
+        height: 100%;
+        min-height: 657px;
+        z-index: 0;
+    }
+
+    @include breakpoint(hd) {
+        min-height: 753px;
+    }
+}
+
+.hero__image img {
+
+    @include breakpoint(lg) {
+        object-position: left;
+    }
+}
+
+.hero__image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+
+    @include breakpoint(lg) {
+        min-height: 657px;
+    }
+
+    @include breakpoint(hd) {
+        min-height: 753px;
+    }
+}
+
+.triangles-hero {
+    top: 100%;
+    right: 0;
+    display: none;
+    width: 153px;
+    height: 46px;
+    z-index: 1;
+
+    @include breakpoint(md) {
+        width: 503px;
+        height: 125px;
+    }
+
+    @include breakpoint(hd) {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+}
+
+.triangles-hero.mob {
+    display: block;
+
+    @include breakpoint(md) {
+        top: calc(100% - 15px);
+    }
+
+    @include breakpoint(hd) {
+        display: none;
+    }
+}
