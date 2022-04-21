@@ -97,41 +97,6 @@
     }
 }
 
-.career-services {
-
-    @include breakpoint(lg) {
-        padding: 48px 0 80px;
-    }
-
-    @include breakpoint(lgx) {
-        padding: 88px 0 136px;
-    }
-
-    @include breakpoint(hd) {
-        padding: 88px 0 155px;
-    }
-}
-
-.career-services__wrapper {
-    position: relative;
-}
-
-.career-services__block {
-    position: relative;
-    z-index: 1;
-}
-
-.career-item__text {
-    margin: 8px 0 0;
-}
-
-.career-services__block:last-of-type {
-
-    @include breakpoint(md) {
-        margin: 328px 0 0;
-    }
-}
-
 .career-services-bg {
     top: calc(100% - 110px);
     right: 36px;

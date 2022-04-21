@@ -73,6 +73,7 @@
 
 .services-l__block:nth-child(6) {
     grid-area: A6;
+    z-index: 0;
 }
 
 .services-l__text {
@@ -152,11 +153,17 @@
 
     @include breakpoint(md) {
         margin: auto 0 8px;
+        max-width: 275px;
     }
 
-    @include breakpoint(lg) {
+    @include breakpoint(lgx) {
+        max-width: 390px;
         font-size: 24px;
         line-height: 34px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 100%;
     }
 }
 
@@ -164,7 +171,24 @@
     display: none;
 
     @include breakpoint(md) {
+        position: absolute;
+        left: -325px;
+        bottom: -85px;
+        display: block;
+        width: 697px;
+        height: 300px;
+    }
 
+    @include breakpoint(lgx) {
+        left: -235px;
+        bottom: -118px;
+    }
+
+    @include breakpoint(hd) {
+        left: -315px;
+        bottom: -145px;
+        width: 905px;
+        height: 390px;
     }
 }
 
@@ -692,7 +716,8 @@
         line-height: 39px;
     }
 
-    @include breakpoint(xl) {
+    @include breakpoint(lg) {
+        margin: 0 0 28px;
         padding: 0;
         font-size: 40px;
         line-height: 44px;
@@ -716,38 +741,40 @@
     }
 
     @include breakpoint(lg) {
-        max-width: 420px;
+        font-size: 22px;
+        line-height: 39px;
+        max-width: 492px;
     }
 
     @include breakpoint(xl) {
-        font-size: 22px;
-        line-height: 39px;
         max-width: 100%;
     }
 }
 
 .benefits__main-bg {
-    position: absolute;
-    left: 0;
-    bottom: -256px;
     display: none;
-    width: auto;
-    height: auto;
-    z-index: 0;
 
     @include breakpoint(md) {
-        left: unset;
-        right: 0;
-        bottom: -175px;
+        position: absolute;
+        right: -345px;
+        bottom: -230px;
         display: block;
+        width: 637px;
+        height: 546px;
+        z-index: 0;
     }
 
-    @include breakpoint(xl) {
-        bottom: -210px;
+    @include breakpoint(lg) {
+        right: -447px;
+        bottom: -270px;
+        width: 968px;
+        height: 618px;
     }
 
     @include breakpoint(hd) {
-        bottom: -230px;
+        right: -375px;
+        bottom: -325px;
+        height: 718px;
     }
 }
 
@@ -756,18 +783,6 @@
 
     @include breakpoint(md) {
         display: none;
-    }
-}
-
-.benefits__main-bg img {
-
-    @include breakpoint(md) {
-        max-width: 450px;
-        object-fit: none;
-    }
-
-    @include breakpoint(xl) {
-        max-width: 460px;
     }
 }
 
@@ -795,12 +810,12 @@
     }
 
     @include breakpoint(lg) {
-        padding: 40px;
+        padding: 40px 40px 64px;
         max-width: 512px;
+        min-height: 328px;
     }
 
     @include breakpoint(xl) {
-        padding-bottom: 64px;
         height: 328px;
         max-width: 600px;
     }

@@ -1,32 +1,20 @@
-.about-main {
-    padding: 20px 0 0;
-    position: relative;
-    z-index: 1;
-
-    @include breakpoint(md) {
-        padding: 50px 0 0;
-    }
-
-    @include breakpoint(lg) {
-        padding: 0 0 50px;
-    }
+#about-page .hero__text {
 
     @include breakpoint(hd) {
-        padding: 0 0 80px;
+        max-width: 955px;
     }
 }
 
-.about-main .hero__text {
+#about-page .hero__text h1 {
 
     @include breakpoint(lg) {
-        max-width: 800px;
+        font-size: 50px;
+        line-height: 55px;
     }
-}
-
-.about-main .hero__text p {
 
     @include breakpoint(hd) {
-        max-width: 600px;
+        font-size: 60px;
+        line-height: 65px;
     }
 }
 
@@ -234,7 +222,7 @@
     }
 
     @include breakpoint(hd) {
-        margin: 130px auto 0;
+        margin: 100px auto 0;
         padding-bottom: 150px;
     }
 }
@@ -278,7 +266,6 @@
 }
 
 .achievement-item.big-number {
-    flex-direction: row;
 
     @include breakpoint(md) {
         margin-left: 120px;
@@ -321,6 +308,17 @@
     }
 }
 
+.achievement-sup {
+    background: radial-gradient(106.25% 344.25% at 0% 50%, #1560A7 0%, #2DA8BE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 30px;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+
 .achievement-number span {
     background: linear-gradient(107.43deg, #115EA0 1.01%, #1C65B9 42.15%, #2A9BC3 77.5%, #38CEAC 112.26%);
     -webkit-background-clip: text;
@@ -338,11 +336,11 @@
 }
 
 .big-number .achievement-number span {
-    font-size: 180px;
+    font-size: 100px;
     line-height: 145px;
 
     @include breakpoint(lg) {
-        font-size: 250px;
+        font-size: 200px;
         line-height: 200px;
     }
 }
@@ -368,10 +366,6 @@
 
     @include breakpoint(md) {
         max-width: 164px;
-    }
-
-    @include breakpoint(lg) {
-        margin-left: 42px;
     }
 }
 
