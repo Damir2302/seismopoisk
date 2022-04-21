@@ -11,17 +11,21 @@
     }
 }
 
-.hero-main .breadcrumbs {}
-
 .breadcrumbs-wrapper {
     display: flex;
     align-items: center;
 }
 
 .breadcrumbs-item {
+    display: inline-flex;
+    align-items: center;
     font-size: 16px;
     line-height: 28px;
     color: #78AACC;
+}
+
+div.breadcrumbs-item {
+    cursor: default;
 }
 
 .breadcrumbs-separator {

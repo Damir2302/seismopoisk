@@ -31,42 +31,24 @@
     }
 }
 
-.left-line {
-
-    @include breakpoint(lg) {
-        position: absolute;
-        top: 0;
-        left: 65px;
-        height: 100%;
-        border-right: 1px solid rgba(79, 134, 172, 0.2)
-    }
-
-    @include breakpoint(xl) {
-        left: 60px;
-    }
-
-    @include breakpoint(hd) {
-        left: 80px;
-    }
-}
-
 .arrow-btn {
 
     display: none;
 
     @include breakpoint(lg) {
         position: absolute;
+        left: 24px;
         bottom: 58px;
-        left: -40px;
         display: block;
         width: 20px;
         height: 232px;
         cursor: pointer;
+        z-index: 3;
     }
 
     @include breakpoint(hd) {
         bottom: 88px;
-        left: -48px;
+        left: 30px;
     }
 }
 
@@ -99,7 +81,7 @@
 }
 
 .arrow-btn:hover .arrow-btn-arrow {
-    top: 210px;
+    top: 240px;
 }
 
 .hero__wrapper {
@@ -107,7 +89,6 @@
     @include breakpoint(lg) {
         margin: auto 0 0;
         padding: 50px 0;
-        z-index: 2;
     }
 
     @include breakpoint(hd) {
@@ -151,10 +132,27 @@
     }
 }
 
+.hero__button {
+    margin: 40px 0 0;
+    padding: 21px 24px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+
+    @include breakpoint(md) {
+        margin: 54px 0 0;
+        max-width: 265px;
+    }
+}
+
+.hero__button-link {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
 .hero__image {
     margin: 35px 0 0;
     position: relative;
-    z-index: 2;
 
     @include breakpoint(md) {
         margin: 51px 0 0;
@@ -180,6 +178,7 @@
 
     @include breakpoint(lg) {
         object-position: left;
+        object-fit: cover;
     }
 }
 

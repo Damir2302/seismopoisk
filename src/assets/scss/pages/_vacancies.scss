@@ -332,14 +332,17 @@
 }
 
 .vac-form__input.input-date:first-child::after {
-    content: '';
-    background: #4B9FB7;
-    position: absolute;
-    top: 29px;
-    right: -28px;
-    display: inline-block;
-    width: 20px;
-    height: 1px;
+
+    @include breakpoint(md) {
+        content: '';
+        background: #4B9FB7;
+        position: absolute;
+        top: 29px;
+        right: -28px;
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+    }
 }
 
 .vac-form__input.input-date input {

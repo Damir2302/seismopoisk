@@ -1,5 +1,6 @@
 ---
 title: Сейсмопоиск | Карьера
+breads: [Карьера]
 ---
 
 extends includes/_page
@@ -8,70 +9,59 @@ block main
 
     #career-page
 
-        section.career-main
+        section.hero-section
+            include components/_hero
+            +hero('Карьера',
+                  'Мы стремимся создать условия, способствующие повышению эффективности деятельности работников, их вовлеченности в реализацию корпоративных целей.',
+                   media='image',
+                  'career.jpg',
+                  'Присоединиться к команде')
 
-            .left-line
+        section.services-l-section
 
-                .arrow-btn
-                    span.arrow-btn-text SCROLL DOWN
-                    +sprite('arr','','arrow-btn-element')
-                    +sprite('arrow-down','','arrow-btn-arrow')
+            .container
 
-            include components/_breadcrumbs
-            +breadcrumbs('Карьера')
+                .services-l__wrapper#content
 
-            .hero__main.career-main-hero
+                    .services-l__block
 
-                .container
+                        h3 Все условия<br> для развития<br> профессионалов
 
-                    .hero__main-logo
-                            img(src="assets/images/logo-text.png", alt="logo")
-                    .hero__text.career-hero__text
-                        h1.career__title Карьера
-                        p.text-medium Мы стремимся создать условия, способствующие повышению эффективности деятельности работников, их вовлеченности в реализацию корпоративных целей.
-                        .hero__button.career-action-btn
-                            a.career-btn-link(href="vacancies.html") Присоединиться к команде
+                    .services-l__block
 
-                .hero__image.career-hero
-                    img(src="assets/images/career.jpg", alt="img")
+                        .services-l__item
+                            .services-l__icon
+                                +sprite('arrows-up')
+                            p.services-l__title Современные методики повышения квалификации
+                            p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
 
-            .services-l-section.career-services
+                    .services-l__block
 
-                .container
+                        .services-l__item
+                            .services-l__icon
+                                +sprite('wash-hand')
+                            p.services-l__title Внедрение и развитие культуры непрерывных улучшений
+                            p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
 
-                    h2.services-l-title.career-services__title Все условия<br> для развития<br> профессионалов
+                    .services-l__block
 
-                    .services-l__wrapper.career-services__wrapper
+                        .services-l__item
+                            .services-l__icon
+                                +sprite('arm-muscle')
+                            p.services-l__title Социальные гарантии и уверенность в завтрашнем дне
+                            p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
 
-                        .services-l__block.career-services__block
+                    .services-l__block
 
-                            .services-l__item
-                                .services-l__icon
-                                    +sprite('arrows-up')
-                                p.services-l__title.career-item__title Современные методики повышения квалификации
-                                p.services-l__text.career-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
+                        .services-l__item
+                            .services-l__icon
+                                +sprite('book-thin')
+                            p.services-l__title Соблюдение норм трудового законодательства
+                            p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
 
-                            .services-l__item
-                                .services-l__icon
-                                    +sprite('wash-hand')
-                                p.services-l__title.career-item__title Внедрение и развитие культуры непрерывных улучшений
-                                p.services-l__text.career-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
+                    .services-l__block
 
-                        .services-l__block.career-services__block
-
-                            .services-l__item
-                                .services-l__icon
-                                    +sprite('arm-muscle')
-                                p.services-l__title.career-item__title Социальные гарантии и уверенность в завтрашнем дне
-                                p.services-l__text.career-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
-
-                            .services-l__item
-                                .services-l__icon
-                                    +sprite('book-thin')
-                                p.services-l__title.career-item__title Соблюдение норм трудового законодательства
-                                p.services-l__text.career-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
-
-                        .career-services-bg
+                        .career-services-bg.triangles
                             img(src="assets/images/triangles-career-1.png", alt="bg")
 
         section.career-works
@@ -123,8 +113,8 @@ block main
                     .career-action__inner
 
                         p.career-action__title Найди актуальную вакансию<br> и присоединяйся к нашей команде
-                        .career-works-btn.career-action-btn
-                            a.career-btn-link(href="vacancies.html") Присоединиться к команде
+                        .career-action__btn
+                            a(href="vacancies.html") Присоединиться к команде
                     .career-works-mob-bg
                         img(src="assets/images/triangl-careers-mob.png", alt="bg")
                     .career-works-bg

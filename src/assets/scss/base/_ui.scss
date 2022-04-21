@@ -224,3 +224,22 @@ h2 {
     position: absolute;
     z-index: 0;
 }
+
+.left-line {
+
+    @include breakpoint(lg) {
+        position: absolute;
+        top: 0;
+        left: 65px;
+        height: 100%;
+        border-right: 1px solid rgba(79, 134, 172, 0.2)
+    }
+
+    @include breakpoint(xl) {
+        left: 60px;
+    }
+
+    @include breakpoint(hd) {
+        left: 80px;
+    }
+}

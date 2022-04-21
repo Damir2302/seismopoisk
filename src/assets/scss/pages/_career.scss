@@ -1,117 +1,59 @@
-.career-main {
-    padding: 20px 0 70px;
+#career-page .hero__text p {
+    max-width: 570px;
+}
+
+#career-page .services-l__wrapper {
 
     @include breakpoint(md) {
-        padding: 50px 0 80px;
-    }
-
-    @include breakpoint(lg) {
-        padding: 0;
-        position: relative;
+        grid-template-areas: 'A2 A1'
+                             'A3 A4'
+                             'A6 A5';
     }
 }
 
-.career-main-hero {
+#career-page .services-l-section {
 
-    @include breakpoint(hd) {
-        margin: 130px 0 0;
+    @include breakpointMax(md) {
+        padding: 60px 0 90px;
     }
 }
 
-.career-hero__text p {
-
-    @include breakpoint(lg) {
-        max-width: 445px;
-    }
-
-    @include breakpoint(lgx) {
-        max-width: 492px;
-    }
-}
-
-.career__title {
-    font-size: 25px;
-    line-height: 27px;
+#career-page .services-l-section .services-l__block:first-child {
 
     @include breakpoint(md) {
-        margin: 0 0 20px;
-        font-size: 40px;
-        line-height: 43px;
-    }
-
-    @include breakpoint(lg) {
-        margin: 28px 0 20px;
-        font-size: 65px;
-        line-height: 70px;
-    }
-
-    @include breakpoint(hd) {
-        margin: 28px 0;
+        display: flex;
+        align-items: center;
     }
 }
 
-.career-action-btn {
-    margin: 40px 0 0;
-    padding: 21px 24px;
-    border: 1px solid #FFFFFF;
-
-    @include breakpoint(md) {
-        margin: 54px 0 0;
-        max-width: 265px;
-    }
+#career-page .services-l-section .services-l__block:last-child {
+    z-index: 0;
 }
 
-.career-action-btn .career-btn-link {
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-}
-
-.career-hero {
-
-    @include breakpoint(md) {
-        margin: 60px 0 0;
-    }
-
-    @include breakpoint(lg) {
-        margin: 0;
-        right: -310px;
-    }
-
-    @include breakpoint(lgx) {
-        right: -240px;
-    }
-
-    @include breakpoint(hd) {
-        right: 0;
-    }
-}
-
-.career-services__title {
-    margin: 60px 0 40px;
+#career-page .services-l-section h3 {
+    margin: 0 0 40px;
+    font-weight: 500;
     font-size: 25px;
     line-height: 28px;
-    color: #fff;
 
     @include breakpoint(md) {
-        margin: 99px 0 0;
-        position: absolute;
-        left: calc(50% + 15px);
+        margin: 0;
+        margin-left: 15px;
         font-size: 35px;
-        line-height: 37px;
+        line-height: 39px;
+
     }
 
-    @include breakpoint(lg) {
+    @include breakpoint(lgx) {
+        margin-left: 20px;
         font-size: 45px;
         line-height: 50px;
     }
-}
 
-.career-item__title {
-    margin: 24px 0 0;
-
-    @include breakpoint(md) {
-        margin: auto 0 8px;
+    @include breakpoint(hd) {
+        margin-left: 24px;
+        font-size: 50px;
+        line-height: 55px;
     }
 }
 
@@ -191,30 +133,28 @@
 }
 
 .career-services-bg {
-    position: absolute;
+    top: calc(100% - 110px);
     right: 36px;
-    bottom: -90px;
     width: 374px;
     height: 184px;
-    z-index: 0;
 
     @include breakpoint(md) {
-        right: calc(50% - 260px);
-        bottom: 130px;
-        width: 585px;
+        top: -85px;
+        right: -260px;
+        width: 584px;
         height: 280px;
     }
 
     @include breakpoint(lgx) {
-        left: 0;
-        bottom: 0;
-        width: auto;
-        height: auto;
+        top: -110px;
+        right: -380px;
+        width: 910px;
+        height: 435px;
     }
 
     @include breakpoint(hd) {
-        left: 30px;
-        bottom: 30px;
+        top: -135px;
+        right: -340px;
     }
 }
 
@@ -499,20 +439,18 @@
     }
 }
 
-.career-works-btn {
+.career-action__btn {
+    margin: 44px 0 0;
+    max-width: 263px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+}
 
-    @include breakpoint(md) {
-        margin: 40px 0 0;
-    }
-
-    @include breakpoint(lg) {
-        margin: 58px 0 0;
-    }
-
-    @include breakpoint(hd) {
-        max-width: 265px;
-        box-sizing: border-box;
-    }
+.career-action__btn a {
+    padding: 22px 24px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
 }
 
 .career-works-mob-bg {
