@@ -1,4 +1,4 @@
-mixin hero(title, subtitle, media, link, button)
+mixin hero(title, subtitle, media, link, button, anchor)
 
     if page == 'Main'
         canvas#canvas.canvas
@@ -27,7 +27,7 @@ mixin hero(title, subtitle, media, link, button)
 
                 if page != "Main" && page != "About"
                     .hero__button
-                        a.hero__button-link(href="vacancies.html")=button
+                        a.hero__button-link(href=anchor)=button
 
         if media == 'video'
             .hero__image

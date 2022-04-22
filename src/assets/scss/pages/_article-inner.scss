@@ -1,0 +1,126 @@
+.article {
+    padding: 40px 0 0;
+    background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+
+    @include breakpoint(md) {
+        padding: 60px 0 0;
+    }
+
+    @include breakpoint(lgx) {
+        padding: 80px 0 0;
+    }
+
+    @include breakpoint(hd) {
+        padding: 100px 0 0;
+    }
+}
+
+.article__wrapper {
+    padding: 0 0 20px;
+}
+
+.article__wrapper p {
+    margin: 0 0 30px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #575E6A;
+
+    @include breakpoint(md) {
+        margin: 0 0 40px;
+        font-size: 18px;
+        line-height: 33px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
+
+.article h2  {
+    margin: 0 0 40px;
+    font-size: 25px;
+    line-height: 28px;
+    color: #273A4A;
+
+    @include breakpoint(md) {
+        margin: 0 0 50px;
+        max-width: 582px;
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0 0 40px;
+        font-size: 35px;
+        line-height: 39px;
+    }
+
+    @include breakpoint(hd) {
+        margin: 0 0 70;
+        max-width: 784px;
+        font-size: 40px;
+        line-height: 44px;
+    }
+}
+
+.article__image {
+    margin: 0 0 40px;
+
+    @include breakpoint(md) {
+        margin: 0 0 50px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0 0 60px;
+    }
+
+    @include breakpoint(hd) {
+        margin: 0 0 70px;
+    }
+}
+
+.article__text {
+
+    @include breakpoint(md) {
+        margin-left: auto;
+        max-width: 629px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 847px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 889px;
+    }
+}
+
+#articles-page .news-section h2 {
+    margin: 0 0 16px;
+
+    @include breakpoint(md) {
+        font-size: 35px;
+        line-height: 39px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0 0 28px;
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0 0 30px;
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+#articles-page .news-section p {
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+        line-height: 39px;
+    }
+}
