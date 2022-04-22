@@ -1,7 +1,7 @@
 ---
 title: Сейсмопоиск | О компании
 breads: [О компании]
-page: About
+noHeroBtn: true
 ---
 
 extends includes/_page
@@ -16,6 +16,9 @@ block main
                   'Общество с ограниченной ответственностью «Сейсмопоиск» (ООО «Сейсмопоиск») образовано в 2018 году.',
                    media='image',
                   'about-main.jpg')
+            .triangles.triangles-hero
+                img(src="assets/images/triangles-2.png", alt="triangles")
+                img.hd-only(src="assets/images/triangles-7.png", alt="triangles")
 
         section.about-info#content
 
@@ -263,8 +266,6 @@ block main
 
             .projects-sec
 
-                .projects-img
-                    img(src="assets/images/triangles-2.png", alt="bg")
                 .projects-text
                     img(src="assets/images/proyekty.png", alt="text")
 

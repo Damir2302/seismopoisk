@@ -43,7 +43,7 @@
         width: 20px;
         height: 232px;
         cursor: pointer;
-        z-index: 3;
+        z-index: 4;
     }
 
     @include breakpoint(hd) {
@@ -94,6 +94,11 @@
     @include breakpoint(hd) {
         padding: 50px 0 80px;
     }
+}
+
+.hero__content {
+    position: relative;
+    z-index: 3;
 }
 
 .hero__logo {
@@ -153,6 +158,7 @@
 .hero__image {
     margin: 35px 0 0;
     position: relative;
+    z-index: 2;
 
     @include breakpoint(md) {
         margin: 51px 0 0;
@@ -166,7 +172,6 @@
         width: calc(100% - 49vw);
         height: 100%;
         min-height: 657px;
-        z-index: 0;
     }
 
     @include breakpoint(hd) {
@@ -200,31 +205,38 @@
 .triangles-hero {
     top: 100%;
     right: 0;
-    display: none;
     width: 153px;
     height: 46px;
     z-index: 1;
 
     @include breakpoint(md) {
+        top: calc(100% - 20px);
         width: 503px;
         height: 125px;
     }
 
+    @include breakpoint(lg) {
+        width: 507px;
+    }
+
     @include breakpoint(hd) {
-        display: block;
+        top: 100%;
         width: auto;
         height: auto;
     }
 }
 
-.triangles-hero.mob {
-    display: block;
-
-    @include breakpoint(md) {
-        top: calc(100% - 15px);
-    }
+.triangles-hero img {
 
     @include breakpoint(hd) {
         display: none;
+    }
+}
+
+.triangles-hero img.hd-only {
+    display: none;
+
+    @include breakpoint(hd) {
+        display: block;
     }
 }

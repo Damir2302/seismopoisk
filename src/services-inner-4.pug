@@ -1,0 +1,187 @@
+---
+title: Сейсмопоиск | О компании
+breads: [Услуги, Экологическое проетирование]
+---
+
+extends includes/_page
+
+block main
+
+    #service-page
+
+        section.hero-section
+            include components/_hero
+            +hero('Экологическое проетирование',
+                  'Экологическое проектирование зданий, предприятий – это комплекс работ по подготовке и согласованию в инстанциях государственного надзора природоохранных документов, необходимых для осуществления хозяйственной деятельности субъектов.',
+                   media='video',
+                  'istockphoto-1048810480-640_adpp_is.mp4',
+                  'Оставить заявку', '#')
+            .triangles.triangles-hero
+                img(src="assets/images/triangles-2.png", alt="triangles")
+                img.hd-only(src="assets/images/triangles-7.png", alt="triangles")
+
+        .service-inner__wrap
+
+            .service__content#content
+
+                .container
+
+                    h3 МОГТ 2D полевые сейсморазведочных работы
+                    p Наземные сейсморазведочные работы 2D, как правило, предполагают проведение полного комплекса геологоразведочных работ, включая обработку и интерпретацию данных с выдачей рекомендаций по разведочному бурению. Примером, характеризующим возможности «ГЕОТЕК Сейсморазведка» по работам 2D, является выполненный проект на Лепчинской площади в Восточной Сибири
+                    br
+                    h3 МОГТ 3D полевые сейсморазведочных работы
+                    p Наземные сейсморазведочные работы 3D могут выполняться с использованием 3 видов источников возбуждения сейсмических сигналов – взрывного, вибрационного и импульсного электромагнитного. За последние годы «ГЕОТЕК Сейсморазведка» выполнил большое количество высокоразрешающих широкоазимутальных проектов.
+                    br
+                    h3 Услуга сейсморазведочные работы включает в себя:
+
+                    ul
+                        li
+                            p Аудит готовности сейсморазведочной партии к проведению работ, в ходе которого дается оценка технической оснащенности и бытовых условий сейсморазведочной партии, а также проводится оценка кадрового состава партии и проверка соблюдения требований охраны труда и пожарной безопасности.
+                        li
+                            p Контроль над соблюдением проектной документации и технологии проведения работ;
+                        li
+                            p Контроль над соблюдением требований охраны труда и пожарной безопасности, охраны окружающей среды при производстве работ;
+                        li
+                            p Контроль технического состояния сейсморазведочного оборудования;
+                        li
+                            p Контроль качества получаемого сейсмического и топографо-геодезического материала;
+                        li
+                            p Ежедневная, еженедельная и ежемесячная отчетность о выполненных работах;
+                        li
+                            p Составление итогового отчета о проведенных работах и их качестве.
+
+                    .service__download
+                        .file-link
+                            .link-icon
+                                +sprite('download')
+                            a(href="#" download) Скачать договор на оказание услуги
+                        .file-size PDF 23 МБ
+
+            // FORM
+            #form.vacancies-form
+
+                .container
+
+                    .vacancies-form__container
+
+                        h2.vacancies-form__title Бесплатная консультация по нашим услугам
+
+                        .form-wrapper
+
+                            p Запоните короткую форму ниже, мы свяжемся с вами в ближайшее время, бесплатно проконсультируем, ответим на все вопросы и оформим заявку на оказание услуги
+
+                            form.vacancy-form
+
+                                .vac-form__row
+                                    .vac-form__input
+                                        input(type="text" id="" name="" placeholder="Имя*" required)
+
+                                .vac-form__row
+                                    .vac-form__input
+                                        input(type="email" id="" name="" placeholder="Почта*" required)
+
+                                .vac-form__row
+                                    .vac-form__input
+                                        input(type="tel" id="" name="" placeholder="Телефон*" required)
+
+                                .vac-form__btn
+                                    button Оставить заявку
+                                    span.btn-notify Нажимая кнопку, Вы соглашаетесь<br>с условиями пользовательсткого соглашения
+
+                                .vac-form__bg
+                                    img(src="assets/images/triangl-careers.png", alt="bg")
+
+
+            .success-modal.hide
+
+                .success-container
+
+                    .success-close-icon
+                        #successClose.success-close
+                            +sprite('close-icon')
+                        img.close-img(src="assets/images/close-white.png", alt="icon")
+
+                    .success-icon
+                        +sprite('checkmark')
+                    p.success-text Ваша заявка отправлена
+
+            section.services-l-section
+
+                .container
+
+                    .services-l__wrapper
+
+                        .services-l__block
+                            p.service-block__title Другие наши<br>услуги
+                            .services-l__block-bg
+                                img(src="assets/images/triangles.png", alt="bg")
+
+                        .services-l__block
+                            a.services-l__item(href="#")
+                                .services-l__image
+                                    img(src="assets/images/nick-van-den-berg-tpyh8Eu7LgQ-unsplash_2.jpg", alt="img")
+                                .services-l__icon
+                                    img(src="assets/images/truck.svg", alt="svg")
+                                p.services-l__title Сейсморазведочные работы
+                                p.services-l__text Выполнение полевых сейсморазведочных работ МОГТ 2D и МОГТ 3D осуществляется строго в соответствии с проектом на проведение работ.
+
+                        .services-l__block
+                            a.services-l__item(href="#")
+                                .services-l__image
+                                    img(src="assets/images/closeup-contractor-construction-site-pointing-plan-wooden-sleeper.jpg", alt="img")
+                                .services-l__icon
+                                    +sprite('construction-project')
+                                p.services-l__title Супервайзинг сейсморазведочных работ
+                                p.services-l__text Необходимость супервайзерского контроля в современных условиях объясняется высокой стоимостью проведения геолого-разведочных работ
+
+                        .services-l__block
+                            a.services-l__item(href="#")
+                                .services-l__image
+                                    img(src="assets/images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg", alt="img")
+                                .services-l__icon
+                                    +sprite('plan-building')
+                                p.services-l__title Камеральные работы
+                                p.services-l__text Обработка и интерпретация геофизических данных. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit est eros, viverra magna lacinia.
+
+            section.projects-section
+
+                .container
+
+                    .projects__title
+
+                            h2 С 2018 года успешно завершили работу в разных регионах и округах России
+                            p.text-medium Мы являемся крупнейшей компанией в России по полевым сейморазведочным, камеральным работ и супервайзингу.
+
+                    .projects__desc
+
+                        .projects__info
+                            div
+                                p.projects__info-count 114
+                                p.projects__info-text проектов
+
+                            div
+                                p.projects__info-count 100+
+                                p.projects__info-text партнёров
+
+                            div
+                                p.projects__info-count 4
+                                p.projects__info-text года на рынке
+
+                        .projects__map-list
+
+                            ul.map__list
+                                li.map__list-item
+                                    span.map__list-color(style="background-color: #E7DE16;")
+                                    span.map__list-text Полевые сейсморазведочные работы
+                                li.map__list-item
+                                    span.map__list-color(style="background-color: #33E93B;")
+                                    span.map__list-text Камеральные работы
+                                li.map__list-item
+                                    span.map__list-color(style="background-color: #44C7FF;")
+                                    span.map__list-text Супервайзинг
+                                li.map__list-item
+                                    span.map__list-color(style="background-color: #DBDBDB;")
+                                    span.map__list-text Перспективные проекты
+                                li.map__list-item
+                                    span.map__list-color(style="background-color: #555555;")
+                                    span.map__list-text Строительство площадок под буровые скважины

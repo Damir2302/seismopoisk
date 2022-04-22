@@ -131,7 +131,8 @@ function css(cb) {
 		    selectorBlackList: ['.fancybox-button', '.slick-slider', 'slick'],
 		    replace: true,
 		    mediaQuery: false,
-		    minPixelValue: 18
+		    minPixelValue: 0,
+            exclude: /node_modules/i
 		}))
         .pipe(removeComments())
         .pipe(rename({

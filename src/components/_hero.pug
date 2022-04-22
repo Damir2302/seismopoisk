@@ -8,7 +8,7 @@ mixin hero(title, subtitle, media, link, button, anchor)
         +sprite('arr','','arrow-btn-element')
         +sprite('arrow-down','','arrow-btn-arrow')
 
-    if breads.length == true
+    if breads.length != 0
 
         include _breadcrumbs
         +breadcrumbs(...breads)
@@ -25,7 +25,7 @@ mixin hero(title, subtitle, media, link, button, anchor)
                     h1= title
                     p.text-medium=subtitle
 
-                if page != "Main" && page != "About"
+                if noHeroBtn != true
                     .hero__button
                         a.hero__button-link(href=anchor)=button
 

@@ -1,0 +1,24 @@
+---
+title: Сейсмопоиск | Устойчивое развитие
+breads: [Устойчивое развитие]
+noHeroBtn: true
+---
+
+extends includes/_page
+
+block main
+
+    #evolution-page
+
+        section.hero-section
+            include components/_hero
+            +hero('Устойчивое развитие',
+                  'Бережное отношение к природе, здоровье сотрудников и борьба с коррупцией являются важнейшими  направлениями деятельности ООО «Сейсмопоиск» ',
+                   media='image',
+                  'image 33.jpg')
+            .triangles.triangles-hero
+                img(src="assets/images/triangles-2.png", alt="triangles")
+                img.hd-only(src="assets/images/triangles-7.png", alt="triangles")
+
+        section.evolution-section-1#content
+
