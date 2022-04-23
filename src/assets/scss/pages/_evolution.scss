@@ -6,3 +6,34 @@
     padding: 150px 0 300px;
     background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
 }
+
+.evolution-section-1 .projects__about-title h2 {
+    max-width: 525px;
+}
+
+.evolution-section-1 .projects__about-activity {
+    background: #0ECAB3;
+}
+
+.evolution-section-2 {
+    padding: 150px 0 220px;
+}
+
+.evolution-section-2 .projects__about-title h2 {
+    max-width: 525px;
+    color: #fff;
+}
+
+.evolution-section-2 .projects__about-title p {
+    color: #fff;
+}
+
+.evolution-section-2 .projects__about-activity {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+}
+
+.evolution-section-3 {
+    padding: 150px 0 400px;
+    background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+}
