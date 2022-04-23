@@ -1,0 +1,46 @@
+#environmental-page .hero__text {
+    max-width: 678px;
+}
+
+.e-inner-page {
+    padding: 150px 0 220px;
+    background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+}
+
+.enviro-sec {
+    margin: 0 0 75px;
+    display: flex;
+    column-gap: 78px;
+    min-height: 583px;
+    color: #575E6A;
+}
+
+.enviro-sec:last-child {
+    margin-top: 100px;
+    flex-direction: row-reverse;
+}
+
+.enviro-sec__img {
+    min-width: 520px;
+}
+
+.enviro-sec__img img {
+    object-fit: contain;
+}
+
+.enviro-sec__text {
+    width: 100%;
+}
+
+.enviro-sec__text h2 {
+    margin-bottom: 28px;
+}
+
+.enviro-sec__text p {
+    font-size: 22px;
+    line-height: 40px;
+}
+
+#environmental-page .activity__wrapper {
+    padding: 70px 0;
+}

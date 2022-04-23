@@ -1,0 +1,56 @@
+#corruption-page .services-l-section {
+    padding: 140px 0 0;
+}
+
+#corruption-page .services-l__wrapper {
+    grid-template-areas: 'A1 A2'
+                         'A3 A4'
+                         'A5 A6';
+}
+
+#corruption-page .services-l__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#corruption-page .services-l__item {
+    padding: 35px;
+    height: 398px;
+}
+
+#corruption-page .services-l__icon {
+    background: #3A77B7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    line-height: 29px;
+    border-radius: 50%;
+}
+
+#corruption-page .services-l__text {
+    margin: 27px 0 0;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+#corruption-page .career-services-bg {
+    top: -145px;
+    left: -370px;
+    right: unset;
+    transform: rotate(-35deg);
+}
+
+.definition-section {
+    margin: 190px 0 0;
+}
+
+.definition {
+    display: flex;
+    column-gap: 56px;
+}
+
+.definition p {
+    color: #575E6A;
+}

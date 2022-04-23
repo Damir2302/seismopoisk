@@ -1,0 +1,99 @@
+---
+title: Сейсмопоиск | Охрана труда
+breads: [Устойчивое развитие, Охрана труда]
+noHeroBtn: true
+---
+
+extends includes/_page
+
+block main
+
+    #occupational-page
+
+        section.hero-section
+            include components/_hero
+            +hero('Охрана труда',
+                  'ООО «Сейсмопоиск» признает приоритет жизни и здоровья сотрудников по отношению к результатам производственной деятельности.',
+                   media='image',
+                  'image9233.jpg')
+            .triangles.triangles-hero
+                img(src="assets/images/triangles-2.png", alt="triangles")
+                img.hd-only(src="assets/images/triangles-7.png", alt="triangles")
+
+        // EVOLUTION INNER PAGES TEMPLATE
+        .e-inner-page
+
+            section#content
+
+                .container
+
+                    .enviro-sec
+
+                        .enviro-sec__img
+                            img(src="assets/images/image93841.jpg", alt="img")
+
+                        .enviro-sec__text
+                            h2 Жизнь сотрудников  наш главный приоритет
+                            p Мы стремимся к обеспечению системного подхода к управлению охраной труда и промышленной безопасностью и ведем серьезную работу по повышению культуры безопасности среди работников и подрядчиков, соблюдению всех применимых законов, мониторингу и управлению рисками.
+                              br
+                              br
+                              |Система управления охраной труда ООО «Сейсмопоиск» основана на принципах общедоступности данных о состоянии условий и охраны труда, открытости и гласности.
+
+                    .enviro-sec
+
+                        .enviro-sec__img
+                            img(src="assets/images/image00841.jpg", alt="img")
+
+                        .enviro-sec__text
+                            h2 Промышленная безопасность
+                            p ООО «Сейсмопоиск»  эксплуатирует порядка 90 опасных производственных объектов различных наименований и классов опасности - участки геофизических, буровых работ, транспортные участки и др.  в строгом соответствии с законодательством Российской Федерации и нормами международного права.
+
+            section.services-l-section
+
+                .container
+
+                    .services-l__wrapper#content
+
+                        .services-l__block
+
+                            h2 Наши принципы охраны труда
+
+                        .services-l__block
+
+                            .services-l__item
+                                .services-l__icon 01
+                                p.services-l__text Выполнение  требований промышленной и пожарной безопасности и снижения воздействия вредных факторов на работников;
+
+                        .services-l__block
+
+                            .services-l__item
+                                .services-l__icon 02
+                                p.services-l__text Организуем учет и анализ производственного  травматизма, аварий на производственных объектах и профессиональной заболеваемости.
+
+                        .services-l__block
+
+                            .services-l__item
+                                .services-l__icon 03
+                                p.services-l__text Организация проведения специальной оценки условий труда с участием представителей профсоюзного комитета.
+
+                        .services-l__block
+
+                            .services-l__item
+                                .services-l__icon 04
+                                p.services-l__text Помогаем в работе уполномоченным по охране труда профессионального союза, организуемих обучение;
+
+                        .services-l__block
+
+                            .career-services-bg.triangles
+                                img(src="assets/images/triangles-career-1.png", alt="bg")
+
+
+
+            .bottom-file
+                .container
+                    .service__download
+                        .file-link
+                            .link-icon
+                                +sprite('download')
+                            a(href="#" download) Экологическая политика компании
+                        .file-size PDF 23 МБ

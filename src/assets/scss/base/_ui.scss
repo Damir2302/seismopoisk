@@ -158,14 +158,17 @@ h2 {
 
     @include breakpoint(md) {
         font-size: 35px;
+        line-height: 39px;
     }
 
     @include breakpoint(lg) {
         font-size: 40px;
+        line-height: 44px;
     }
 
     @include breakpoint(xl) {
         font-size: 50px;
+        line-height: 55px;
     }
 }
 
