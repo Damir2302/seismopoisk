@@ -99,7 +99,7 @@ block main
                         p.projects__info-count 4
                         p.projects__info-text года на рынке
 
-                .projects__map-list
+                .projects__map-list.animate__animated.animate__fadeInRight
 
                     ul.map__list
                         li.map__list-item
@@ -117,6 +117,15 @@ block main
                         li.map__list-item
                             span.map__list-color(style="background-color: #555555;")
                             span.map__list-text Строительство площадок под буровые скважины
+
+        .map-container
+            #map
+            .popup
+                .popup__head
+                    +sprite('map-obj-1')
+                    span Полевые сейсморазведочные работы
+
+        .container
 
             .projects__about
 
