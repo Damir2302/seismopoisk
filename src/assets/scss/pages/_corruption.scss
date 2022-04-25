@@ -46,11 +46,70 @@
     margin: 190px 0 0;
 }
 
+.definition-section h2 {
+    margin-bottom: 32px;
+}
+
 .definition {
     display: flex;
+    align-items: flex-start;
     column-gap: 56px;
 }
 
 .definition p {
+    margin: 0 0 20px;
+    font-size: 22px;
+    line-height: 40px;
     color: #575E6A;
+}
+
+.definition small {
+    font-size: 16px;
+    line-height: 24px;
+    color: #575E6A;
+}
+
+.definition__text {
+    margin-top: -9px;
+    padding: 0 5px 5px;
+    width: 100%;
+}
+
+.definition__block {
+    padding: 40px 32px;
+    background: #115EA0;
+    width: 100%;
+    max-width: 417px;
+    box-sizing: border-box;
+}
+
+.definition__block h4 {
+    margin: 0 0 20px;
+    max-width: 260px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.definition__block p {
+    margin: 0 0 30px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.contact-item {
+    margin: 0 0 17px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-item svg {
+    margin-right: 12px;
+    width: 12px;
+    height: 12px;
+}
+
+.contact-item a {
+    line-height: 24px;
 }
