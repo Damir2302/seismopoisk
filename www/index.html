@@ -121,29 +121,17 @@
                     <p class="services-l__text">Выполнение полевых сейсморазведочных работ МОГТ 2D и МОГТ 3D осуществляется строго в соответствии с проектом на проведение работ.</p></a></div>
                 <div class="services-l__block"><a class="services-l__item" href="#">
                     <div class="services-l__image"><img src="assets/images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg" alt="img"></div>
-                    <div class="services-l__icon">
-                            <svg>
-                              <use xlink:href="assets/sprites/sprites.svg#plan-building"></use>
-                            </svg>
-                    </div>
+                    <div class="services-l__icon"><img src="assets/images/plan-building.svg" alt="svg"></div>
                     <p class="services-l__title">Камеральные работы</p>
                     <p class="services-l__text">Обработка и интерпретация геофизических данных. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit est eros, viverra magna lacinia.</p></a></div>
                 <div class="services-l__block"><a class="services-l__item" href="#">
                     <div class="services-l__image"><img src="assets/images/closeup-contractor-construction-site-pointing-plan-wooden-sleeper.jpg" alt="img"></div>
-                    <div class="services-l__icon">
-                            <svg>
-                              <use xlink:href="assets/sprites/sprites.svg#construction-project"></use>
-                            </svg>
-                    </div>
+                    <div class="services-l__icon"><img src="assets/images/construction-project.svg" alt="svg"></div>
                     <p class="services-l__title">Супервайзинг сейсморазведочных работ</p>
                     <p class="services-l__text">Необходимость супервайзерского контроля в современных условиях объясняется высокой стоимостью проведения геолого-разведочных работ</p></a></div>
                 <div class="services-l__block"><a class="services-l__item" href="#">
                     <div class="services-l__image"><img src="assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash_1.jpg" alt="img"></div>
-                    <div class="services-l__icon">
-                            <svg>
-                              <use xlink:href="assets/sprites/sprites.svg#ecologic"></use>
-                            </svg>
-                    </div>
+                    <div class="services-l__icon"><img src="assets/images/ecologic.svg" alt="svg"></div>
                     <p class="services-l__title">Экологическое проектирование</p>
                     <p class="services-l__text">Осуществляем разработку: паспортов отходов, проекта НДВ, водохозяйственного баланса, схем систем водоснабжения и водоотведения</p></a></div>
                 <div class="services-l__block">
@@ -177,7 +165,7 @@
                   <p class="projects__info-text">года на рынке</p>
                 </div>
               </div>
-              <div class="projects__map-list animate__animated animate__fadeInRight">
+              <div class="projects__map-list">
                 <ul class="map__list">
                   <li class="map__list-item"><span class="map__list-color" style="background-color: #E7DE16;"></span><span class="map__list-text">Полевые сейсморазведочные работы</span></li>
                   <li class="map__list-item"><span class="map__list-color" style="background-color: #33E93B;"></span><span class="map__list-text">Камеральные работы</span></li>
@@ -188,57 +176,59 @@
               </div>
             </div>
           </div>
-          <div class="map-container">
+          <div class="map-container" id="map_container">
             <div id="map"></div>
-            <div class="popup">
-              <div class="mobile-menu-close">
-                <div class="close-menu-btn" id="closeSideMenu">
+            <template id="map_popup">
+              <div class="popup animate__animated animate__fadeInRight" id="popup">
+                <div class="popup-close">
+                  <div class="popup-close-icon" id="popup_close">
+                          <svg>
+                            <use xlink:href="assets/sprites/sprites.svg#close-icon"></use>
+                          </svg>
+                  </div><img class="close-img" src="assets/images/close.png" alt="icon" style="z-index: 1">
+                </div>
+                <div class="popup__head">
                         <svg>
-                          <use xlink:href="assets/sprites/sprites.svg#close-icon"></use>
-                        </svg>
-                </div><img class="close-img" src="assets/images/close.png" alt="icon">
-              </div>
-              <div class="popup__head">
-                      <svg>
-                        <use xlink:href="assets/sprites/sprites.svg#placemark"></use>
-                      </svg><span>Полевые сейсморазведочные работы</span>
-              </div>
-              <div class="popup__body">
-                <div class="popup__item">
-                  <div class="item__icon">
-                          <svg>
-                            <use xlink:href="assets/sprites/sprites.svg#map-obj-1"></use>
-                          </svg>
-                  </div>
-                  <div class="item__desc">
-                    <p class="item__title">Название объекта</p>
-                    <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in eget orci eu elit. Viverra morbi mattis neque arcu, hendrerit</p>
-                  </div>
+                          <use xlink:href="assets/sprites/sprites.svg#placemark"></use>
+                        </svg><span id="text_category"></span>
                 </div>
-                <div class="popup__item">
-                  <div class="item__icon">
-                          <svg>
-                            <use xlink:href="assets/sprites/sprites.svg#map-obj-2"></use>
-                          </svg>
+                <div class="popup__body">
+                  <div class="popup__item">
+                    <div class="item__icon">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#map-obj-1"></use>
+                            </svg>
+                    </div>
+                    <div class="item__desc">
+                      <p class="item__title">Название объекта</p>
+                      <p class="item__text" id="text_name"></p>
+                    </div>
                   </div>
-                  <div class="item__desc">
-                    <p class="item__title">Объем работ</p>
-                    <p class="item__text">726 пог.км</p>
+                  <div class="popup__item">
+                    <div class="item__icon">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#map-obj-2"></use>
+                            </svg>
+                    </div>
+                    <div class="item__desc">
+                      <p class="item__title">Объем работ</p>
+                      <p class="item__text" id="text_square"></p>
+                    </div>
                   </div>
-                </div>
-                <div class="popup__item">
-                  <div class="item__icon">
-                          <svg>
-                            <use xlink:href="assets/sprites/sprites.svg#map-obj-3"></use>
-                          </svg>
-                  </div>
-                  <div class="item__desc">
-                    <p class="item__title">Регион</p>
-                    <p class="item__text">Красноярский край</p>
+                  <div class="popup__item">
+                    <div class="item__icon">
+                            <svg>
+                              <use xlink:href="assets/sprites/sprites.svg#map-obj-3"></use>
+                            </svg>
+                    </div>
+                    <div class="item__desc">
+                      <p class="item__title">Регион</p>
+                      <p class="item__text" id="text_region"></p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </template>
           </div>
           <div class="container">
             <div class="projects__about">

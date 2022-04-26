@@ -42,7 +42,7 @@ block main
                             .services-l__image
                                 img(src="assets/images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg", alt="img")
                             .services-l__icon
-                                +sprite('plan-building')
+                                img(src="assets/images/plan-building.svg", alt="svg")
                             p.services-l__title Камеральные работы
                             p.services-l__text Обработка и интерпретация геофизических данных. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit est eros, viverra magna lacinia.
 
@@ -51,7 +51,7 @@ block main
                             .services-l__image
                                 img(src="assets/images/closeup-contractor-construction-site-pointing-plan-wooden-sleeper.jpg", alt="img")
                             .services-l__icon
-                                +sprite('construction-project')
+                                img(src="assets/images/construction-project.svg", alt="svg")
                             p.services-l__title Супервайзинг сейсморазведочных работ
                             p.services-l__text Необходимость супервайзерского контроля в современных условиях объясняется высокой стоимостью проведения геолого-разведочных работ
 
@@ -60,7 +60,7 @@ block main
                             .services-l__image
                                 img(src="assets/images/raimond-klavins-ICNI2HX2Wvo-unsplash_1.jpg", alt="img")
                             .services-l__icon
-                                +sprite('ecologic')
+                                img(src="assets/images/ecologic.svg", alt="svg")
                             p.services-l__title Экологическое проектирование
                             p.services-l__text Осуществляем разработку: паспортов отходов, проекта НДВ, водохозяйственного баланса, схем систем водоснабжения и водоотведения
 
@@ -99,7 +99,7 @@ block main
                         p.projects__info-count 4
                         p.projects__info-text года на рынке
 
-                .projects__map-list.animate__animated.animate__fadeInRight
+                .projects__map-list
 
                     ul.map__list
                         li.map__list-item
@@ -118,40 +118,41 @@ block main
                             span.map__list-color(style="background-color: #555555;")
                             span.map__list-text Строительство площадок под буровые скважины
 
-        .map-container
+        #map_container.map-container
             #map
-            .popup
+            template#map_popup
+                #popup.popup.animate__animated.animate__fadeInRight
 
-                .mobile-menu-close
-                    #closeSideMenu.close-menu-btn
-                        +sprite('close-icon')
-                    img.close-img(src="assets/images/close.png", alt="icon")
+                    .popup-close
+                        #popup_close.popup-close-icon
+                            +sprite('close-icon')
+                        img.close-img(src="assets/images/close.png", alt="icon" style="z-index: 1")
 
-                .popup__head
-                    +sprite('placemark')
-                    span Полевые сейсморазведочные работы
-                .popup__body
+                    .popup__head
+                        +sprite('placemark')
+                        span#text_category
+                    .popup__body
 
-                    .popup__item
-                        .item__icon
-                            +sprite('map-obj-1')
-                        .item__desc
-                            p.item__title Название объекта
-                            p.item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in eget orci eu elit. Viverra morbi mattis neque arcu, hendrerit
+                        .popup__item
+                            .item__icon
+                                +sprite('map-obj-1')
+                            .item__desc
+                                p.item__title Название объекта
+                                p#text_name.item__text
 
-                    .popup__item
-                        .item__icon
-                            +sprite('map-obj-2')
-                        .item__desc
-                            p.item__title Объем работ
-                            p.item__text 726 пог.км
+                        .popup__item
+                            .item__icon
+                                +sprite('map-obj-2')
+                            .item__desc
+                                p.item__title Объем работ
+                                p#text_square.item__text
 
-                    .popup__item
-                        .item__icon
-                            +sprite('map-obj-3')
-                        .item__desc
-                            p.item__title Регион
-                            p.item__text Красноярский край
+                        .popup__item
+                            .item__icon
+                                +sprite('map-obj-3')
+                            .item__desc
+                                p.item__title Регион
+                                p#text_region.item__text
 
         .container
 

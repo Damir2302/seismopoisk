@@ -1,9 +1,26 @@
+.map-container {
+    margin: 48px 0 68px;
+    position: relative;
+
+    @include breakpoint(md) {
+        margin: 200px 0 0;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0;
+    }
+}
+
 #map {
-    padding: 0 0 130px;
+    padding: 0 0 70px;
     width: 100%;
     height: 100%;
     min-height: 484px;
     box-sizing: content-box;
+
+    @include breakpoint(md) {
+        padding: 0 0 130px;
+    }
 }
 
 #map ymaps[class$="-copyright"] {
@@ -11,10 +28,60 @@
 }
 
 .popup {
-    padding: 40px;
+    padding: 0 0 20px;
     background: #115EA0;
-    width: 453px;
-    height: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 453px;
+
+    @include breakpoint(md) {
+        padding: 40px;
+        top: 10px;
+        right: 40px;
+        height: auto;
+    }
+
+    @include breakpoint(lg) {
+        top: 66px;
+        left: calc(100vw - 574px);
+        right: unset;
+    }
+
+    @include breakpoint(hd) {
+        top: 0;
+        left: calc(100vw - 630px);
+    }
+}
+
+.popup__head {
+    padding: 0 20px;
+}
+
+.popup__body {
+    padding: 0 20px;
+}
+
+.popup-close {
+    margin-left: auto;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.popup-close img {
+    top: -32px;
+    right: -32px;
+}
+
+.popup-close-icon {
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .popup svg {
@@ -24,14 +91,23 @@
 
 .popup__head {
     margin: 0 0 30px;
-    padding: 22px 21px;
+    padding: 15px 21px;
     background: #136DBA;
     display: flex;
     align-items: center;
+
+    @include breakpoint(md) {
+        padding: 22px 21px;
+    }
 }
 
 .popup__head span {
-    margin-left: 6px;
+    margin-left: 8px;
+    max-width: 215px;
+
+    @include breakpoint(md) {
+        max-width: unset;
+    }
 }
 
 .popup__item {
@@ -48,4 +124,14 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+}
+
+.item__text {
+    font-size: 15px;
+    line-height: 22px;
+
+    @include breakpoint(md) {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }

@@ -207,10 +207,26 @@ function init() {
             openHintOnHover: false
         });
 
+        // Выводим POPUP при клике на точку
         placemark.events.add('click', function(e) {
             let placemark = e.get('target')
-            console.log('placemark info: ', placemark.properties.getAll())
-        })
+            console.log('placemark info: ', placemark.properties.getAll());
+            $('#popup').remove();
+            $('#map_container').append($('#map_popup').html());
+
+            $('#text_category').html(placemark.properties.get('hintContent'));
+            $('#text_name').html(placemark.properties.get('balloonContentHeader'));
+            $('#text_square').html(placemark.properties.get('balloonContentBody'));
+            $('#text_region').html(placemark.properties.get('balloonContentFooter'));
+
+
+            // Закрываем POPUP
+            $('#popup_close').on('click', function() {
+                $('#popup').remove();
+            });
+        });
+
+
 
         myMap.geoObjects.add(placemark);
     }
