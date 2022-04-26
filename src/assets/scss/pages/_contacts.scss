@@ -1,0 +1,80 @@
+.contacts-inner .container {
+
+    @include breakpointMax(md) {
+        padding: 0;
+    }
+
+    @include breakpoint(md) {
+        position: relative;
+    }
+}
+
+#googleMap {
+    height: 320px;
+
+    @include breakpoint(md) {
+        height: 534px;
+    }
+}
+
+#googleMap img {
+    object-fit: cover;
+}
+
+.contacts {
+    padding: 40px 20px;
+    background: #115EA0;
+
+    @include breakpoint(md) {
+        position: absolute;
+        top: 50px;
+        max-width: calc(100% / 2.4);
+    }
+}
+
+.contacts a {
+    font-size: 18px;
+    line-height: 33px;
+
+    @include breakpoint(lgx) {
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
+
+.contacts span {
+    font-size: 16px;
+    line-height: 29px;
+
+    @include breakpoint(lgx) {
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
+
+.contacts__phone a {
+    font-size: 18px;
+    line-height: 33px;
+}
+
+.contacts svg {
+    margin-top: 5px;
+    margin-right: 10px;
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.contacts div {
+    margin: 0 0 20px;
+    display: flex;
+}
+
+.contacts div.contacts__email {
+    margin: 0;
+}
+
+.contacts__phone svg,
+.contacts__email svg {
+    margin-top: 7px;
+}

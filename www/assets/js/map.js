@@ -103,6 +103,14 @@ ymaps.ready(init);
 // Переменная для сдвига спрайт картинки
 let iconImageClipRect = '';
 
+let centerMap;
+
+if ($(window).width() < 768) {
+    centerMap = 100;
+} else {
+    centerMap = 125;
+}
+
 function init() {
     // Меняем зум для мобильной версии
     // let zoom;
@@ -115,7 +123,7 @@ function init() {
     myMap = new ymaps.Map(
         'map', {
             // center: [65, 105],
-            center: [65, 125],
+            center: [65, centerMap],
             // zoom: zoom,
             zoom: 3,
             // type: null,
@@ -210,7 +218,10 @@ function init() {
         // Выводим POPUP при клике на точку
         placemark.events.add('click', function(e) {
             let placemark = e.get('target')
-            console.log('placemark info: ', placemark.properties.getAll());
+            // console.log('placemark info: ', placemark.properties.getAll());
+            // placemark.options.set({
+            //     iconImageSize: [40, 50],
+            //     iconImageOffset: [0, 0]});
             $('#popup').remove();
             $('#map_container').append($('#map_popup').html());
 

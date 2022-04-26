@@ -1,0 +1,46 @@
+---
+title: Сейсмопоиск | Контакты
+---
+
+extends includes/_page
+
+block main
+
+    #contact-page
+
+        section.contacts-header
+
+            include components/_breadcrumbs
+            +breadcrumbs('Контакты')
+
+            .container
+
+                .page-title
+                    h1 Контакты
+
+        section.contacts-inner
+
+            .contacts__wrap
+
+                .container
+
+                    .contacts
+
+                        .contacts__phone
+                            +sprite('phone')
+                            a(href="tel:83912001285") 8 (391) 200-12-85
+
+                        .contacts__address
+                            +sprite('placemark')
+                            span 660075, Россия, Красноярский край, г.&nbspКрасноярск, ул.&nbspЖелезнодорожников, д.17, помещение 18, комната 11
+
+                        .contacts__address
+                            +sprite('placemark')
+                            span 660075, Россия, Красноярский край, г.&nbspКрасноярск, ул.&nbspМаерчака, д.10, 6 этаж БЦ "Баланс"
+
+                        .contacts__email
+                            +sprite('mail')
+                            a(href="mailto:office@seismopoisk.ru") office@seismopoisk.ru
+
+            #googleMap
+                img(src="assets/images/snazzy-image.jpg", alt="img")

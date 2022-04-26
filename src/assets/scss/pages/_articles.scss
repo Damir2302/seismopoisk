@@ -177,29 +177,30 @@
 
 .pagination-list li {
     display: flex;
+    align-items: center;
 }
 
-.pagination-list a,
-.pagination-list span {
-    padding: 4px 12px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 27px;
-    color: #83898E;
+// .pagination-list a,
+// .pagination-list span {
+//     padding: 4px 12px;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 27px;
+//     color: #83898E;
 
-    @include breakpoint(xs) {
-        padding: 7px 16px 6px;
-    }
-}
+//     @include breakpoint(xs) {
+//         padding: 7px 16px 6px;
+//     }
+// }
 
-.pagination-list li.active a {
-    color: #115EA0;
-}
+// .pagination-list li.active a {
+//     color: #115EA0;
+// }
 
-.pagination-list a:hover {
-    color: #115EA0;
-}
+// .pagination-list a:hover {
+//     color: #115EA0;
+// }
 
-.pagination-list span {
-    align-self: flex-end;
-}
+// .pagination-list span {
+//     align-self: flex-end;
+// }

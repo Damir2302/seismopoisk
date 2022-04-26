@@ -6943,8 +6943,25 @@ div.breadcrumbs-item {
     }
 }
 
+.map-container {
+    margin: 48px 0 68px;
+    position: relative
+}
+
+@media (min-width: 768px) {
+    .map-container {
+        margin: 200px 0 0
+    }
+}
+
+@media (min-width: 1024px) {
+    .map-container {
+        margin: 0
+    }
+}
+
 #map {
-    padding: 0 0 130px;
+    padding: 0 0 70px;
     width: 100%;
     height: 100%;
     min-height: 484px;
@@ -6952,15 +6969,77 @@ div.breadcrumbs-item {
     box-sizing: content-box
 }
 
+@media (min-width: 768px) {
+    #map {
+        padding: 0 0 130px
+    }
+}
+
 #map ymaps[class$="-copyright"] {
     display: none
 }
 
 .popup {
-    padding: 40px;
+    padding: 0 0 20px;
     background: #115EA0;
-    width: 453px;
-    height: 450px
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 453px
+}
+
+@media (min-width: 768px) {
+    .popup {
+        padding: 40px;
+        top: 10px;
+        right: 40px;
+        height: auto
+    }
+}
+
+@media (min-width: 1024px) {
+    .popup {
+        top: 66px;
+        left: calc(100vw - 574px);
+        right: unset
+    }
+}
+
+@media (min-width: 1400px) {
+    .popup {
+        top: 0;
+        left: calc(100vw - 630px)
+    }
+}
+
+.popup__head {
+    padding: 0 20px
+}
+
+.popup__body {
+    padding: 0 20px
+}
+
+.popup-close {
+    margin-left: auto;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px
+}
+
+.popup-close img {
+    top: -32px;
+    right: -32px
+}
+
+.popup-close-icon {
+    position: relative;
+    cursor: pointer;
+    z-index: 2
 }
 
 .popup svg {
@@ -6970,7 +7049,7 @@ div.breadcrumbs-item {
 
 .popup__head {
     margin: 0 0 30px;
-    padding: 22px 21px;
+    padding: 15px 21px;
     background: #136DBA;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6980,8 +7059,21 @@ div.breadcrumbs-item {
     align-items: center
 }
 
+@media (min-width: 768px) {
+    .popup__head {
+        padding: 22px 21px
+    }
+}
+
 .popup__head span {
-    margin-left: 6px
+    margin-left: 8px;
+    max-width: 215px
+}
+
+@media (min-width: 768px) {
+    .popup__head span {
+        max-width: 230px
+    }
 }
 
 .popup__item {
@@ -7000,6 +7092,18 @@ div.breadcrumbs-item {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px
+}
+
+.item__text {
+    font-size: 15px;
+    line-height: 22px
+}
+
+@media (min-width: 768px) {
+    .item__text {
+        font-size: 16px;
+        line-height: 24px
+    }
 }
 
 .header {
@@ -8381,6 +8485,7 @@ div.breadcrumbs-item {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     height: 100%;
     opacity: 0;
     z-index: 0;
@@ -8684,7 +8789,7 @@ div.breadcrumbs-item {
         padding: 30px 44px;
         position: absolute;
         top: -45px;
-        left: 344px
+        right: 0
     }
 }
 
@@ -14781,34 +14886,10 @@ div.breadcrumbs-item {
 .pagination-list li {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
-}
-
-.pagination-list a,.pagination-list span {
-    padding: 4px 12px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 27px;
-    color: #83898E
-}
-
-@media (min-width: 470px) {
-    .pagination-list a,.pagination-list span {
-        padding: 7px 16px 6px
-    }
-}
-
-.pagination-list li.active a {
-    color: #115EA0
-}
-
-.pagination-list a:hover {
-    color: #115EA0
-}
-
-.pagination-list span {
-    -ms-flex-item-align: end;
-    align-self: flex-end
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .article {
