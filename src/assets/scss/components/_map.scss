@@ -9,3 +9,43 @@
 #map ymaps[class$="-copyright"] {
     display: none;
 }
+
+.popup {
+    padding: 40px;
+    background: #115EA0;
+    width: 453px;
+    height: 450px;
+}
+
+.popup svg {
+    width: 30px;
+    height: 30px;
+}
+
+.popup__head {
+    margin: 0 0 30px;
+    padding: 22px 21px;
+    background: #136DBA;
+    display: flex;
+    align-items: center;
+}
+
+.popup__head span {
+    margin-left: 6px;
+}
+
+.popup__item {
+    margin: 0 0 20px;
+    display: flex;
+}
+
+.item__desc {
+    margin-left: 9px;
+}
+
+.item__title {
+    margin: 0 0 5px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}

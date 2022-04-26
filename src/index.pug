@@ -121,9 +121,37 @@ block main
         .map-container
             #map
             .popup
+
+                .mobile-menu-close
+                    #closeSideMenu.close-menu-btn
+                        +sprite('close-icon')
+                    img.close-img(src="assets/images/close.png", alt="icon")
+
                 .popup__head
-                    +sprite('map-obj-1')
+                    +sprite('placemark')
                     span Полевые сейсморазведочные работы
+                .popup__body
+
+                    .popup__item
+                        .item__icon
+                            +sprite('map-obj-1')
+                        .item__desc
+                            p.item__title Название объекта
+                            p.item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in eget orci eu elit. Viverra morbi mattis neque arcu, hendrerit
+
+                    .popup__item
+                        .item__icon
+                            +sprite('map-obj-2')
+                        .item__desc
+                            p.item__title Объем работ
+                            p.item__text 726 пог.км
+
+                    .popup__item
+                        .item__icon
+                            +sprite('map-obj-3')
+                        .item__desc
+                            p.item__title Регион
+                            p.item__text Красноярский край
 
         .container
 
