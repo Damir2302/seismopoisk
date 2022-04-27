@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
 
 html {
     line-height: 1.15;
@@ -7776,7 +7776,8 @@ div.breadcrumbs-item {
     .header-search-form {
         margin-top: 0;
         top: 0;
-        right: 40px
+        right: 40px;
+        z-index: 1
     }
 }
 
@@ -9813,7 +9814,7 @@ div.breadcrumbs-item {
 
 @media (min-width: 1260px) {
     .news__wrapper.swiper-wrapper {
-        margin-left: 40px
+        margin-left: 80px
     }
 }
 
@@ -15578,4 +15579,129 @@ div.breadcrumbs-item {
 
 .contact-item a {
     line-height: 24px
+}
+
+@media (max-width: 767px) {
+    .contacts-inner .container {
+        padding: 0
+    }
+}
+
+@media (min-width: 768px) {
+    .contacts-inner .container {
+        position: relative
+    }
+}
+
+.contacts {
+    padding: 40px 20px;
+    background: #115EA0;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    z-index: 1
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        background: rgba(17,94,160,0.8);
+        position: absolute;
+        top: 50px;
+        max-width: calc(100% / 2.4)
+    }
+}
+
+@media (min-width: 1200px) {
+    .contacts {
+        padding: 50px;
+        top: 100px;
+        max-width: 570px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+}
+
+.contacts a {
+    font-size: 18px;
+    line-height: 33px
+}
+
+@media (min-width: 1200px) {
+    .contacts a {
+        font-size: 22px;
+        line-height: 40px
+    }
+}
+
+.contacts span {
+    display: block;
+    font-size: 16px;
+    line-height: 29px
+}
+
+@media (min-width: 1200px) {
+    .contacts span {
+        font-size: 22px;
+        line-height: 40px
+    }
+}
+
+.contacts__phone a {
+    font-size: 18px;
+    line-height: 33px
+}
+
+.contacts svg {
+    margin-top: 5px;
+    margin-right: 10px;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px
+}
+
+@media (min-width: 1200px) {
+    .contacts svg {
+        margin-top: 8px;
+        width: 20px;
+        height: 20px
+    }
+}
+
+.contacts div {
+    margin: 0 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.contacts div.contacts__email {
+    margin: 0
+}
+
+.contacts__phone svg,.contacts__email svg {
+    margin-top: 7px
+}
+
+#yandexMap {
+    height: 320px
+}
+
+@media (min-width: 768px) {
+    #yandexMap {
+        height: 534px
+    }
+}
+
+@media (min-width: 1200px) {
+    #yandexMap {
+        height: 834px
+    }
+}
+
+#yandexMap>ymaps>ymaps>ymaps>ymaps:nth-child(2) {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
 }

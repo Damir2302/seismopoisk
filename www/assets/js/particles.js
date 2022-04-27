@@ -1,4 +1,4 @@
-if ($(window).width() > 1023) {
+if ($(window).width() > 1023 && $('#map').length) {
 
     (function() {
 

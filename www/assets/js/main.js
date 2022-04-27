@@ -58,9 +58,14 @@ $(document).ready(function() {
             spaceBetween: 15,
           },
 
-          1260: {
+          1200: {
             slidesPerView: 2.122,
             spaceBetween: 20,
+          },
+
+          1400: {
+            slidesPerView: 2.122,
+            spaceBetween: 24,
           }
 
         },

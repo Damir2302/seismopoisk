@@ -28,19 +28,14 @@ block main
 
                         .contacts__phone
                             +sprite('phone')
-                            a(href="tel:83912001285") 8 (391) 200-12-85
+                            a(href="tel:+73912001641") +7 (391) 200-16-41
 
                         .contacts__address
                             +sprite('placemark')
-                            span 660075, Россия, Красноярский край, г.&nbspКрасноярск, ул.&nbspЖелезнодорожников, д.17, помещение 18, комната 11
-
-                        .contacts__address
-                            +sprite('placemark')
-                            span 660075, Россия, Красноярский край, г.&nbspКрасноярск, ул.&nbspМаерчака, д.10, 6 этаж БЦ "Баланс"
+                            span 660015, п.Солонцы, ул.Братьев Непомнящих, д.17
 
                         .contacts__email
                             +sprite('mail')
                             a(href="mailto:office@seismopoisk.ru") office@seismopoisk.ru
 
-            #googleMap
-                img(src="assets/images/snazzy-image.jpg", alt="img")
+            #yandexMap(style="width: 100%;")

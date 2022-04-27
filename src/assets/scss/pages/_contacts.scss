@@ -9,26 +9,24 @@
     }
 }
 
-#googleMap {
-    height: 320px;
-
-    @include breakpoint(md) {
-        height: 534px;
-    }
-}
-
-#googleMap img {
-    object-fit: cover;
-}
-
 .contacts {
     padding: 40px 20px;
     background: #115EA0;
+    backdrop-filter: blur(12px);
+    z-index: 1;
 
     @include breakpoint(md) {
+        background: rgba(17, 94, 160, 0.8);
         position: absolute;
         top: 50px;
         max-width: calc(100% / 2.4);
+    }
+
+    @include breakpoint(lgx) {
+        padding: 50px;
+        top: 100px;
+        max-width: 570px;
+        box-sizing: border-box;
     }
 }
 
@@ -43,6 +41,7 @@
 }
 
 .contacts span {
+    display: block;
     font-size: 16px;
     line-height: 29px;
 
@@ -60,9 +59,16 @@
 .contacts svg {
     margin-top: 5px;
     margin-right: 10px;
-    flex: 0 0 16px;
+    flex-grow: 0;
+    flex-shrink: 0;
     width: 16px;
     height: 16px;
+
+    @include breakpoint(lgx) {
+        margin-top: 8px;
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .contacts div {
@@ -77,4 +83,20 @@
 .contacts__phone svg,
 .contacts__email svg {
     margin-top: 7px;
+}
+
+#yandexMap {
+    height: 320px;
+
+    @include breakpoint(md) {
+        height: 534px;
+    }
+
+    @include breakpoint(lgx) {
+        height: 834px;
+    }
+}
+
+#yandexMap > ymaps > ymaps > ymaps > ymaps:nth-child(2) {
+    filter: grayscale(100%);
 }

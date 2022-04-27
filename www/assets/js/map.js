@@ -1,4 +1,5 @@
-// Заносим в массив координаты
+if ($('#map').length) {
+    // Заносим в массив координаты
 let custom_points = [
     {
         name: 'Митино',
@@ -175,25 +176,31 @@ function init() {
         myMap.geoObjects.add(seaPlacemark);
     }
 
+    // Создаём разметку для меток
+    MyPointLayout = ymaps.templateLayoutFactory.createClass(
+        `<div class="fef"></div>`
+    )
+
     // ДОБАВЛЯЕМ ПОЛЬЗОВАТЕЛЬСКИЕ ТОЧКИ НА КАРТУ
     for (let point in custom_points){
         switch (custom_points[point].color) {
             case 'green':
-                iconImageClipRect = [[0, 0], [37, 49]]
+                iconImageLink = 'assets/images/point-green.svg';
                 break;
             case 'blue':
-                iconImageClipRect = [[37, 49], [73, 98]]
+                iconImageLink = 'assets/images/point-blue.svg';
                 break;
             case 'yellow':
-                iconImageClipRect = [[73, 98], [110, 147]]
+                iconImageLink = 'assets/images/point-yellow.svg';
                 break;
             case 'grey':
-                iconImageClipRect = [[110, 147], [147, 196]]
+                iconImageLink = 'assets/images/point-grey.svg';
                 break;
             case 'black':
-                iconImageClipRect = [[147, 196], [183, 245]]
+                iconImageLink = 'assets/images/point-black.svg';
                 break;
         }
+
         // Добавляем море на карту
         placemark = new ymaps.Placemark(custom_points[point].coordinates , {
             hintContent: custom_points[point].category,
@@ -203,13 +210,11 @@ function init() {
         }, {
             // Опции.
             // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
+            iconLayout: MyPointLayout,
             // Изображение спрайт
-            iconImageHref: 'assets/images/sprite_new.png',
-            // Сдвиг спрайта
-            iconImageClipRect: iconImageClipRect,
+            iconImageHref: iconImageLink,
             // Размеры метки.
-            iconImageSize: [20, 25],
+            iconImageSize: [25, 25],
             iconImageOffset: [0, 0],
             openBalloonOnClick: false,
             openHintOnHover: false
@@ -236,8 +241,6 @@ function init() {
                 $('#popup').remove();
             });
         });
-
-
 
         myMap.geoObjects.add(placemark);
     }
@@ -320,4 +323,51 @@ function init() {
     // zoomMargin - отступы от края карты до метки, then - установка оптимального масштаба для одиночных меток
     // myMap.setBounds(myMap.geoObjects.getBounds(), { checkZoomRange: true, zoomMargin:100 }).then(function(){ if(myMap.getZoom() > 16) myMap.setZoom(16)});
     ymapsTouchScroll(myMap, {preventScroll: true, preventTouch: true});
+}
+}
+
+
+/// CONTACTS PAGE
+
+if ($('#yandexMap').length) {
+    var myYandexMap;
+
+    ymaps.ready(init);
+
+    function init () {
+        let centered;
+
+        if ($(window).width() < 768) {
+            centerX = 92.851431;
+            centerY = 56.100000;
+        } else {
+            centerX = 92.556642;
+            centerY = 56.135875;
+        }
+
+        myYandexMap = new ymaps.Map('yandexMap', {
+            center: [centerY, centerX],
+            zoom: 10,
+            controls: []
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        myPlacemark = new ymaps.Placemark([56.085957, 92.851431], {
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'assets/images/point-blue.svg',
+            // Размеры метки.
+            iconImageSize: [50, 45],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        }),
+
+        myYandexMap.geoObjects.add(myPlacemark);
+        myYandexMap.behaviors.disable('scrollZoom');
+    }
 }
