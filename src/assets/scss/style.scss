@@ -31,3 +31,58 @@
 @import 'pages/occupational ';
 @import 'pages/corruption';
 @import 'pages/contacts';
+
+.page404 {
+    height: 100%;
+    text-align: center;
+}
+
+.page404 p {
+    margin: 12% 0 0;
+    font-weight: 600;
+    font-size: 135px;
+    line-height: 200px;
+    opacity: 0.3;
+
+    @include breakpoint(md) {
+        font-size: 282px;
+        line-height: 334px;
+    }
+}
+
+.page404 span {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 107.5%;
+
+    @include breakpoint(md) {
+        font-size: 30px;
+    }
+}
+
+.page404 button {
+    margin: 100px auto 0;
+    padding: 12px 24px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+
+    @include breakpoint(md) {
+        padding: 26px 24px;
+    }
+}
+
+.page404 button span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.page404 svg {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+}

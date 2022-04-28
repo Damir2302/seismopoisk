@@ -311,32 +311,12 @@ select:focus {
 }
 
 #page {
+    background: linear-gradient(105.66deg, #074D89 1.71%, #115EA0 95.81%);
     position: relative;
-    background-image: url("../images/bg-320px.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     min-width: 320px;
     min-height: 100%;
     max-width: 100%;
     overflow: hidden
-}
-
-@media (min-width: 768px) {
-    #page {
-        background-image: url("../images/bg-768px.jpg")
-    }
-}
-
-@media (min-width: 1024px) {
-    #page {
-        background-image: url("../images/bg-1024px.jpg")
-    }
-}
-
-@media (min-width: 1260px) {
-    #page {
-        background-image: url("../images/bg-1260px.jpg")
-    }
 }
 
 .container {
@@ -545,6 +525,44 @@ h2 {
 @media (min-width: 1400px) {
     .left-line {
         left: 80px
+    }
+}
+
+.head-section {
+    position: relative
+}
+
+.radial-background {
+    background: radial-gradient(57.28% 57.28% at 50% 86.92%, #1A869C 0%, #084E89 100%);
+    height: 137px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0
+}
+
+@media (min-width: 768px) {
+    .radial-background {
+        height: 158px
+    }
+}
+
+@media (min-width: 1200px) {
+    .radial-background {
+        height: 258px
+    }
+}
+
+@media (min-width: 1260px) {
+    .radial-background {
+        height: 242px
+    }
+}
+
+@media (min-width: 1400px) {
+    .radial-background {
+        height: 268px
     }
 }
 
@@ -6685,12 +6703,19 @@ div.breadcrumbs-item {
 
 @media (min-width: 1260px) {
     .canvas {
+        margin: 60px 0 0;
         position: absolute;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
         display: block
+    }
+}
+
+@media (min-width: 1400px) {
+    .canvas {
+        margin: 80px 0 0
     }
 }
 
@@ -7107,6 +7132,7 @@ div.breadcrumbs-item {
 }
 
 .header {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7114,7 +7140,8 @@ div.breadcrumbs-item {
     -ms-flex-align: center;
     align-items: center;
     height: 50px;
-    border-bottom: 1px solid rgba(75,159,183,0.2)
+    border-bottom: 1px solid rgba(75,159,183,0.2);
+    z-index: 1
 }
 
 @media (min-width: 768px) {
@@ -8862,7 +8889,7 @@ div.breadcrumbs-item {
 
 @media (min-width: 1024px) {
     .projects__about {
-        min-height: 716px
+        min-height: 634px
     }
 }
 
@@ -8885,7 +8912,7 @@ div.breadcrumbs-item {
 
 @media (min-width: 768px) {
     .projects__about-title {
-        padding: 0
+        padding: 0 0 50px
     }
 }
 
@@ -8997,9 +9024,6 @@ div.breadcrumbs-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     font-size: 16px;
     line-height: 28px
 }
@@ -9011,9 +9035,11 @@ div.breadcrumbs-item {
 }
 
 .activity-item .strokes-icon {
+    margin-top: 7px;
     margin-right: 8px;
-    width: 17px;
-    height: 17px
+    width: 100%;
+    height: 17px;
+    max-width: 17px
 }
 
 .activity-more {
@@ -9072,12 +9098,14 @@ div.breadcrumbs-item {
 
 .projects__image {
     margin: 16px 0 0;
+    padding: 0 0 60px;
     position: relative
 }
 
 @media (min-width: 768px) {
     .projects__image {
         margin: 0 15px 0 0;
+        padding: 0;
         height: 100%;
         min-width: 329px
     }
@@ -9143,7 +9171,7 @@ div.breadcrumbs-item {
 .text-about {
     position: absolute;
     left: 20px;
-    bottom: -20px;
+    bottom: 54px;
     width: 576px;
     height: auto
 }
@@ -9164,9 +9192,9 @@ div.breadcrumbs-item {
 
 @media (min-width: 1400px) {
     .text-about {
-        top: calc(100% + -25px);
+        top: calc(100% + -32px);
         display: block;
-        width: auto
+        width: 1125px
     }
 }
 
@@ -9306,6 +9334,9 @@ div.breadcrumbs-item {
 }
 
 .benefits__main-bg--mobile {
+    position: absolute;
+    top: 160px;
+    left: 0;
     display: block
 }
 
@@ -9717,8 +9748,9 @@ div.breadcrumbs-item {
 
 @media (min-width: 1400px) {
     .news-text {
-        left: 130px;
-        bottom: -106px
+        left: 175px;
+        bottom: -106px;
+        width: 1725px
     }
 }
 
@@ -9743,14 +9775,14 @@ div.breadcrumbs-item {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: calc(100% + 40px);
+        width: 100%;
         z-index: 9
     }
 }
 
 @media (min-width: 1400px) {
     .news__swiper-arrows {
-        right: -95px;
+        right: -85px;
         width: 100%
     }
 }
@@ -9761,12 +9793,6 @@ div.breadcrumbs-item {
         width: 28px;
         height: 28px;
         cursor: pointer
-    }
-}
-
-@media (min-width: 1400px) {
-    .swiper-arrow {
-        right: 50px
     }
 }
 
@@ -9793,6 +9819,12 @@ div.breadcrumbs-item {
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
+    }
+}
+
+@media (min-width: 1400px) {
+    .swiper-arrow-next {
+        right: calc((((100vw - 1200px) / 2) - 175px) * (-1))
     }
 }
 
@@ -15704,4 +15736,69 @@ div.breadcrumbs-item {
 #yandexMap>ymaps>ymaps>ymaps>ymaps:nth-child(2) {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%)
+}
+
+.page404 {
+    height: 100%;
+    text-align: center
+}
+
+.page404 p {
+    margin: 12% 0 0;
+    font-weight: 600;
+    font-size: 135px;
+    line-height: 200px;
+    opacity: 0.3
+}
+
+@media (min-width: 768px) {
+    .page404 p {
+        font-size: 282px;
+        line-height: 334px
+    }
+}
+
+.page404 span {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 107.5%
+}
+
+@media (min-width: 768px) {
+    .page404 span {
+        font-size: 30px
+    }
+}
+
+.page404 button {
+    margin: 100px auto 0;
+    padding: 12px 24px;
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #FFFFFF
+}
+
+@media (min-width: 768px) {
+    .page404 button {
+        padding: 26px 24px
+    }
+}
+
+.page404 button span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff
+}
+
+.page404 svg {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px
 }

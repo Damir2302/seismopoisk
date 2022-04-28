@@ -51,26 +51,12 @@ select {
 }
 
 #page {
+    background: linear-gradient(105.66deg, #074D89 1.71%, #115EA0 95.81%);
     position: relative;
-    background-image: url('../images/bg-320px.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     min-width: 320px;
     min-height: 100%;
     max-width: 100%;
     overflow: hidden;
-
-    @include breakpoint(md) {
-        background-image: url('../images/bg-768px.jpg');
-    }
-
-    @include breakpoint(lg) {
-        background-image: url('../images/bg-1024px.jpg');
-    }
-
-    @include breakpoint(xl) {
-        background-image: url('../images/bg-1260px.jpg');
-    }
 }
 
 .container {
@@ -244,5 +230,35 @@ h2 {
 
     @include breakpoint(hd) {
         left: 80px;
+    }
+}
+
+.head-section {
+    position: relative;
+}
+
+.radial-background {
+    background: radial-gradient(57.28% 57.28% at 50% 86.92%, #1A869C 0%, #084E89 100%);
+    height: 137px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+
+    @include breakpoint(md) {
+        height: 158px;
+    }
+
+    @include breakpoint(lgx) {
+        height: 258px;
+    }
+
+    @include breakpoint(xl) {
+        height: 242px;
+    }
+
+    @include breakpoint(hd) {
+        height: 268px;
     }
 }

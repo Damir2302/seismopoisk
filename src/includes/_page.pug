@@ -20,6 +20,13 @@ html(lang="ru")
 
         #page
 
+            .filters-bg
+                .filter-bg
+                .filter-bg
+                .filter-bg
+                .filter-bg
+                .filter-bg
+
             // Header::Start
             block header
                 include _header
@@ -31,10 +38,11 @@ html(lang="ru")
                 .left-line
             // Main::End
 
-            // Footer::Start
-            block footer
-                include _footer
-            // Footer::End
+            if noFooter != false
+                // Footer::Start
+                block footer
+                    include _footer
+                // Footer::End
 
         // Scripts::Start
         include _loadScripts

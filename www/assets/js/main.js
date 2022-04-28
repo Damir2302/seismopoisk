@@ -133,6 +133,12 @@ $(document).ready(function() {
       $('.success-modal').remove();
     });
 
+    $('html').on('click', function() {
+      if (!$(this).closest('.success-container')) {
+        $('.success-modal').remove();
+      };
+    })
+
     // VACANCIES PAGE PRACTICE FORM
     $('.input-date input').on('mouseout', function() {
       if ($(this).val().length == 0) {

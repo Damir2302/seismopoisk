@@ -427,7 +427,7 @@
     }
 
     @include breakpoint(lg) {
-        min-height: 716px;
+        min-height: 634px;
     }
 }
 
@@ -444,7 +444,7 @@
     padding: 0 20px;
 
     @include breakpoint(md) {
-        padding: 0;
+        padding: 0 0 50px;
     }
 }
 
@@ -533,7 +533,6 @@
 
 .activity-item {
     display: flex;
-    align-items: center;
     font-size: 16px;
     line-height: 28px;
 
@@ -543,9 +542,11 @@
 }
 
 .activity-item .strokes-icon {
+    margin-top: 7px;
     margin-right: 8px;
-    width: 17px;
+    width: 100%;
     height: 17px;
+    max-width: 17px;
 }
 
 .activity-more {
@@ -594,10 +595,12 @@
 
 .projects__image {
     margin: 16px 0 0;
+    padding: 0 0 60px;
     position: relative;
 
     @include breakpoint(md) {
         margin: 0 15px 0 0;
+        padding: 0;
         height: 100%;
         min-width: 329px;
     }
@@ -653,7 +656,7 @@
 .text-about {
     position: absolute;
     left: 20px;
-    bottom: -20px;
+    bottom: 54px;
     width: 576px;
     height: auto;
 
@@ -668,9 +671,9 @@
     }
 
     @include breakpoint(hd) {
-        top: calc(100% + -25px);
+        top: calc(100% + -32px);
         display: block;
-        width: auto;
+        width: 1125px;
     }
 }
 
@@ -784,6 +787,9 @@
 }
 
 .benefits__main-bg--mobile {
+    position: absolute;
+    top: 160px;
+    left: 0;
     display: block;
 
     @include breakpoint(md) {
@@ -1125,8 +1131,9 @@ $blue: #E2F1FF;
     }
 
     @include breakpoint(hd) {
-        left: 130px;
+        left: 175px;
         bottom: -106px;
+        width: 1725px;
     }
 }
 
@@ -1146,12 +1153,12 @@ $blue: #E2F1FF;
         right: -80px;
         justify-content: space-between;
         display: flex;
-        width: calc(100% + 40px);
+        width: 100%;
         z-index: 9;
     }
 
     @include breakpoint(hd) {
-        right: -95px;
+        right: -85px;
         width: 100%;
     }
 }
@@ -1163,10 +1170,6 @@ $blue: #E2F1FF;
         width: 28px;
         height: 28px;
         cursor: pointer;
-    }
-
-    @include breakpoint(hd) {
-        right: 50px;
     }
 }
 
@@ -1184,6 +1187,13 @@ $blue: #E2F1FF;
 
 @keyframes arrow-btn {
     100% { transform: rotate(360deg) }
+}
+
+.swiper-arrow-next {
+
+    @include breakpoint(hd) {
+        right: calc((((100vw - 1200px) / 2) - 175px) * (-1));
+    }
 }
 
 .news__wrapper.swiper-wrapper {

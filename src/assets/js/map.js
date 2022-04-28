@@ -176,11 +176,6 @@ function init() {
         myMap.geoObjects.add(seaPlacemark);
     }
 
-    // Создаём разметку для меток
-    MyPointLayout = ymaps.templateLayoutFactory.createClass(
-        `<div class="fef"></div>`
-    )
-
     // ДОБАВЛЯЕМ ПОЛЬЗОВАТЕЛЬСКИЕ ТОЧКИ НА КАРТУ
     for (let point in custom_points){
         switch (custom_points[point].color) {
@@ -210,7 +205,7 @@ function init() {
         }, {
             // Опции.
             // Необходимо указать данный тип макета.
-            iconLayout: MyPointLayout,
+            iconLayout: 'default#imageWithContent',
             // Изображение спрайт
             iconImageHref: iconImageLink,
             // Размеры метки.
