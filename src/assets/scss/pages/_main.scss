@@ -1,3 +1,9 @@
+#particlesWrapper {
+    background: url('../images/BG.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .services-l-section {
     padding: 0 0 60px;
     position: relative;
@@ -561,6 +567,11 @@
     margin-left: 10px;
     width: 24px;
     height: 24px;
+    transition: all .5s ease;
+}
+
+.activity-more:hover .arrow-right-link {
+    transform: translateX(10px);
 }
 
 .projects__about-activity-bg {
@@ -635,10 +646,15 @@
 }
 
 .benefits-section {
-    background: url('../images/benefits-bg.jpg');
+    background: url('../images/BG-2.jpg') no-repeat;
+    background-position-x: right;
     background-size: cover;
     position: relative;
     z-index: 1;
+
+    @include breakpoint(lg) {
+        background-position-x: unset;
+    }
 }
 
 .benefits-section .container {

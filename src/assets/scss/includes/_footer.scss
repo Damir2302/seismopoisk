@@ -1,7 +1,6 @@
 .footer {
     padding: 40px 0 56px;
-    background: url('../images/footer-bg.jpg') no-repeat;
-    background-size: cover;
+    background: linear-gradient(105deg, #074D89 1.69%, #115EA0 64.99%, #2998AC 94.2%);
     position: relative;
 
     @include breakpoint(md) {

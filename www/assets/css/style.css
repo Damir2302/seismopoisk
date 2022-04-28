@@ -8010,8 +8010,7 @@ div.breadcrumbs-item {
 
 .footer {
     padding: 40px 0 56px;
-    background: url("../images/footer-bg.jpg") no-repeat;
-    background-size: cover;
+    background: linear-gradient(105deg, #074D89 1.69%, #115EA0 64.99%, #2998AC 94.2%);
     position: relative
 }
 
@@ -8357,6 +8356,12 @@ div.breadcrumbs-item {
     .footer-developer {
         margin: 0
     }
+}
+
+#particlesWrapper {
+    background: url("../images/BG.jpg") no-repeat;
+    background-size: cover;
+    background-position: center
 }
 
 .services-l-section {
@@ -9057,7 +9062,15 @@ div.breadcrumbs-item {
 .activity-more .arrow-right-link {
     margin-left: 10px;
     width: 24px;
-    height: 24px
+    height: 24px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.activity-more:hover .arrow-right-link {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px)
 }
 
 .projects__about-activity-bg {
@@ -9146,10 +9159,17 @@ div.breadcrumbs-item {
 }
 
 .benefits-section {
-    background: url("../images/benefits-bg.jpg");
+    background: url("../images/BG-2.jpg") no-repeat;
+    background-position-x: right;
     background-size: cover;
     position: relative;
     z-index: 1
+}
+
+@media (min-width: 1024px) {
+    .benefits-section {
+        background-position-x: unset
+    }
 }
 
 .benefits-section .container {
@@ -15744,7 +15764,7 @@ div.breadcrumbs-item {
 }
 
 .page404 p {
-    margin: 12% 0 0;
+    margin: calc(100% / 20) 0 0;
     font-weight: 600;
     font-size: 135px;
     line-height: 200px;
