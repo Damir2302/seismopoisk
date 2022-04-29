@@ -181,6 +181,7 @@
 
     @include breakpoint(hd) {
         min-height: 753px;
+        z-index: 0;
     }
 }
 

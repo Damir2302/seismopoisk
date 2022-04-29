@@ -27,8 +27,12 @@
 
 .form-wrapper p {
     width: 47.7%;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 40px;
+
+    @include breakpoint(lg) {
+        font-size: 24px;
+    }
 }
 
 #services-page .vacancy-form {

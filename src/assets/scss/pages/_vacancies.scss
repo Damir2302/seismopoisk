@@ -115,6 +115,10 @@
     }
 }
 
+.vac__wrapper {
+	border-top: 1px solid #4B9FB7;
+}
+
 .vac__row {
     padding: 16px 0;
     border-bottom: 1px solid #4B9FB7;
@@ -129,6 +133,7 @@
 }
 
 .vac__row:first-child {
+	border-top: none;
     border-top: 1px solid #4B9FB7;
 }
 
@@ -225,7 +230,9 @@
 
 .vacancies-form__container {
     padding: 50px 20px;
-    background: linear-gradient(105.66deg, #074D89 1.71%, #115EA0 95.81%);
+    background: url('../images/BG-2.jpg') no-repeat;
+    background-position-x: right;
+    background-size: cover;
 
     @include breakpoint(md) {
         padding: 80px 40px;
@@ -295,6 +302,7 @@
 }
 
 .vac-form__input {
+    backdrop-filter: blur(10px);
     margin: 0 0 20px;
 
     @include breakpoint(md) {

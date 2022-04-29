@@ -6656,6 +6656,31 @@ div.breadcrumbs-item {
     cursor: default
 }
 
+.breadcrumbs-item span {
+    text-overflow: ellipsis;
+    max-width: 260px;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+@media (min-width: 1024px) {
+    .breadcrumbs-item span {
+        max-width: 95px
+    }
+}
+
+@media (min-width: 1200px) {
+    .breadcrumbs-item span {
+        max-width: 175px
+    }
+}
+
+@media (min-width: 1400px) {
+    .breadcrumbs-item span {
+        max-width: 260px
+    }
+}
+
 .breadcrumbs-separator {
     margin: 0 18px;
     display: -webkit-box;
@@ -6889,7 +6914,8 @@ div.breadcrumbs-item {
 
 @media (min-width: 1400px) {
     .hero__image {
-        min-height: 753px
+        min-height: 753px;
+        z-index: 0
     }
 }
 
@@ -7141,7 +7167,7 @@ div.breadcrumbs-item {
     align-items: center;
     height: 50px;
     border-bottom: 1px solid rgba(75,159,183,0.2);
-    z-index: 1
+    z-index: 4
 }
 
 @media (min-width: 768px) {
@@ -7172,7 +7198,8 @@ div.breadcrumbs-item {
 @media (min-width: 1400px) {
     .header {
         padding: 16px 0;
-        height: 47px
+        height: 47px;
+        z-index: 1
     }
 }
 
@@ -7299,6 +7326,7 @@ div.breadcrumbs-item {
     background: #115EA0;
     z-index: 9;
     overflow-y: scroll;
+    overflow-x: hidden;
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
@@ -7321,6 +7349,11 @@ div.breadcrumbs-item {
         -ms-transform: unset;
         transform: unset
     }
+}
+
+.header__nav::-webkit-scrollbar {
+    width: 0;
+    height: 0
 }
 
 .header__nav.opened {
@@ -7461,7 +7494,7 @@ div.breadcrumbs-item {
 
 @media (min-width: 1670px) {
     .navbar__menu-link {
-        font-size: 20px
+        font-size: 19px
     }
 }
 
@@ -8076,6 +8109,7 @@ div.breadcrumbs-item {
 
 @media (min-width: 1024px) {
     .footer__top {
+        padding-bottom: 40px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -8102,13 +8136,19 @@ div.breadcrumbs-item {
 
 @media (min-width: 1024px) {
     .footer__logo {
-        display: block
+        width: 41.666%
     }
 }
 
 .footer__logo img {
     max-width: 200px;
     max-height: 50px
+}
+
+@media (min-width: 768px) {
+    .footer__logo img {
+        margin-top: -10px
+    }
 }
 
 .footer__logo p {
@@ -8128,24 +8168,23 @@ div.breadcrumbs-item {
 
 @media (min-width: 1024px) {
     .footer__logo p {
-        margin: 12px 0 0;
         max-width: 315px
     }
 }
 
 @media (min-width: 768px) {
     .footer__contacts {
-        margin: 50px 0 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex
+        margin: 50px 0 0
     }
 }
 
 @media (min-width: 1024px) {
     .footer__contacts {
         margin: 0;
-        width: 100%
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 58.333%
     }
 }
 
@@ -8155,13 +8194,13 @@ div.breadcrumbs-item {
 
 @media (min-width: 768px) {
     .footer__address {
-        margin: 0 0 12px
+        margin: 0
     }
 }
 
 @media (min-width: 1024px) {
     .footer__address {
-        margin-left: 70px;
+        margin-left: 50px;
         margin-right: auto
     }
 }
@@ -8175,14 +8214,7 @@ div.breadcrumbs-item {
 
 @media (min-width: 768px) {
     .footer__address-block {
-        margin: 0 0 28px;
-        max-width: 320px
-    }
-}
-
-@media (min-width: 1024px) {
-    .footer__address-block {
-        max-width: 100%
+        margin: 0 0 28px
     }
 }
 
@@ -8197,7 +8229,6 @@ div.breadcrumbs-item {
 
 @media (min-width: 768px) {
     .footer__communication {
-        margin-left: 115px;
         border: none
     }
 }
@@ -8786,6 +8817,10 @@ div.breadcrumbs-item {
     }
 }
 
+.projects__info-pretitle {
+    color: #575E6A
+}
+
 .projects__info-count {
     font-size: 30px;
     line-height: 1;
@@ -8907,7 +8942,7 @@ div.breadcrumbs-item {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        z-index: 1
+        z-index: 2
     }
 }
 
@@ -8971,7 +9006,7 @@ div.breadcrumbs-item {
 
 @media (min-width: 768px) {
     .projects__about-activity {
-        margin: 48px 0 0;
+        margin: auto 0 0;
         padding: 30px 28px;
         position: relative
     }
@@ -8979,7 +9014,6 @@ div.breadcrumbs-item {
 
 @media (min-width: 1024px) {
     .projects__about-activity {
-        margin: auto 0 0;
         padding: 30px 25px
     }
 }
@@ -9074,38 +9108,24 @@ div.breadcrumbs-item {
 }
 
 .projects__about-activity-bg {
-    display: none
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    display: block;
+    width: 153px;
+    height: 46px
 }
 
 @media (min-width: 768px) {
     .projects__about-activity-bg {
-        position: absolute;
         top: 100%;
-        bottom: 0;
-        right: 0;
-        display: block;
-        width: 153px;
-        height: 46px
+        bottom: unset
     }
 }
 
 @media (min-width: 1200px) {
     .projects__about-activity-bg {
-        top: unset;
-        bottom: -85px;
-        right: 248px;
-        width: 430px;
-        height: 125px;
-        z-index: 0
-    }
-}
-
-@media (min-width: 1400px) {
-    .projects__about-activity-bg {
-        bottom: -120px;
-        right: 65px;
-        width: 803px;
-        height: 233px
+        display: none
     }
 }
 
@@ -9138,6 +9158,13 @@ div.breadcrumbs-item {
     }
 }
 
+@media (min-width: 768px) {
+    .projects__about-image {
+        position: relative;
+        z-index: 1
+    }
+}
+
 @media (min-width: 1200px) {
     .projects__about-image {
         -o-object-fit: cover;
@@ -9146,15 +9173,27 @@ div.breadcrumbs-item {
 }
 
 .projects__about-bg {
-    margin-left: auto;
-    display: block;
-    width: 153px;
-    height: 46px
+    display: none
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .projects__about-bg {
-        display: none
+        position: absolute;
+        left: 205px;
+        bottom: -110px;
+        display: block;
+        width: 430px;
+        height: 125px;
+        z-index: 0
+    }
+}
+
+@media (min-width: 1400px) {
+    .projects__about-bg {
+        bottom: -195px;
+        left: 30px;
+        width: 803px;
+        height: 233px
     }
 }
 
@@ -10960,25 +10999,33 @@ div.breadcrumbs-item {
     }
 }
 
+.management__info {
+    text-align: center
+}
+
+@media (min-width: 768px) {
+    .management__info {
+        text-align: unset
+    }
+}
+
 .management__title {
     margin: 0 0 2px;
     font-size: 22px;
-    line-height: 37px;
+    line-height: 26px;
     color: #808896
 }
 
 @media (min-width: 768px) {
     .management__title {
-        font-size: 18px;
-        line-height: 33px
+        font-size: 18px
     }
 }
 
 @media (min-width: 1024px) {
     .management__title {
         margin: 20px 0 0;
-        font-size: 22px;
-        line-height: 37px
+        font-size: 22px
     }
 }
 
@@ -10995,6 +11042,7 @@ div.breadcrumbs-item {
 }
 
 .management__name {
+    margin: 10px 0 0;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
@@ -13952,6 +14000,10 @@ div.breadcrumbs-item {
     }
 }
 
+.vac__wrapper {
+    border-top: 1px solid #4B9FB7
+}
+
 .vac__row {
     padding: 16px 0;
     border-bottom: 1px solid #4B9FB7
@@ -13970,6 +14022,7 @@ div.breadcrumbs-item {
 }
 
 .vac__row:first-child {
+    border-top: none;
     border-top: 1px solid #4B9FB7
 }
 
@@ -14084,7 +14137,9 @@ div.breadcrumbs-item {
 
 .vacancies-form__container {
     padding: 50px 20px;
-    background: linear-gradient(105.66deg, #074D89 1.71%, #115EA0 95.81%)
+    background: url("../images/BG-2.jpg") no-repeat;
+    background-position-x: right;
+    background-size: cover
 }
 
 @media (min-width: 768px) {
@@ -14188,6 +14243,8 @@ div.breadcrumbs-item {
 }
 
 .vac-form__input {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     margin: 0 0 20px
 }
 
@@ -14973,7 +15030,7 @@ div.breadcrumbs-item {
 }
 
 .article__wrapper p {
-    margin: 0 0 30px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 24px;
     color: #575E6A
@@ -14981,7 +15038,7 @@ div.breadcrumbs-item {
 
 @media (min-width: 768px) {
     .article__wrapper p {
-        margin: 0 0 40px;
+        margin-bottom: 40px;
         font-size: 18px;
         line-height: 33px
     }
@@ -15095,13 +15152,6 @@ div.breadcrumbs-item {
     }
 }
 
-@media (min-width: 1024px) {
-    #articles-page .news-section p {
-        font-size: 22px;
-        line-height: 39px
-    }
-}
-
 #services-page .hero__text p {
     max-width: 576px
 }
@@ -15135,8 +15185,14 @@ div.breadcrumbs-item {
 
 .form-wrapper p {
     width: 47.7%;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 40px
+}
+
+@media (min-width: 1024px) {
+    .form-wrapper p {
+        font-size: 24px
+    }
 }
 
 #services-page .vacancy-form {
@@ -15167,6 +15223,14 @@ div.breadcrumbs-item {
     max-width: 178px
 }
 
+@media (min-width: 1200px) {
+    #services-page .vac-form__bg {
+        top: 100px;
+        left: -180px;
+        width: 250px
+    }
+}
+
 .service-inner__wrap {
     padding: 50px 0;
     background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%)
@@ -15192,6 +15256,7 @@ div.breadcrumbs-item {
 
 .service__content h3 {
     margin: 0 0 20px;
+    max-width: 1000px;
     font-weight: 500;
     font-size: 24px;
     line-height: 31px;
@@ -15214,7 +15279,7 @@ div.breadcrumbs-item {
     counter-increment: counter
 }
 
-.service__content ul li::before {
+.service__content ul li:nth-child(-n+9)::before {
     content: '0';
     position: absolute;
     top: 0;
@@ -15227,11 +15292,18 @@ div.breadcrumbs-item {
     color: #115EA0
 }
 
+.service__content ul li:nth-child(-n+9)::after {
+    content: counter(counter);
+    position: absolute;
+    top: 0;
+    left: 20px
+}
+
 .service__content ul li::after {
     content: counter(counter);
     position: absolute;
     top: 0;
-    left: 20px;
+    left: 0;
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
     font-size: 30px;
@@ -15386,6 +15458,22 @@ div.breadcrumbs-item {
 .evolution-section-3 {
     padding: 150px 0 400px;
     background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%)
+}
+
+.evolution-section-2 .projects__about-bg {
+    top: -80px;
+    left: unset;
+    right: -150px;
+    bottom: unset;
+    width: 224px;
+    height: 240px
+}
+
+.evolution-section-3 .projects__about-bg {
+    width: 398px;
+    height: 494px;
+    bottom: -50px;
+    left: -170px
 }
 
 #environmental-page .hero__text {

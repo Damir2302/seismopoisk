@@ -20,13 +20,13 @@
 }
 
 .article__wrapper p {
-    margin: 0 0 30px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 24px;
     color: #575E6A;
 
     @include breakpoint(md) {
-        margin: 0 0 40px;
+        margin-bottom: 40px;
         font-size: 18px;
         line-height: 33px;
     }
@@ -114,13 +114,5 @@
         margin: 0 0 30px;
         font-size: 50px;
         line-height: 55px;
-    }
-}
-
-#articles-page .news-section p {
-
-    @include breakpoint(lg) {
-        font-size: 22px;
-        line-height: 39px;
     }
 }

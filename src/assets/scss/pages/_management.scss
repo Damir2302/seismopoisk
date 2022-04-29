@@ -85,21 +85,27 @@
     }
 }
 
+.management__info {
+    text-align: center;
+
+    @include breakpoint(md) {
+        text-align: unset;
+    }
+}
+
 .management__title {
     margin: 0 0 2px;
     font-size: 22px;
-    line-height: 37px;
+    line-height: 26px;
     color: #808896;
 
     @include breakpoint(md) {
         font-size: 18px;
-        line-height: 33px;
     }
 
     @include breakpoint(lg) {
         margin: 20px 0 0;
         font-size: 22px;
-        line-height: 37px;
     }
 }
 
@@ -115,6 +121,7 @@
 }
 
 .management__name {
+    margin: 10px 0 0;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;

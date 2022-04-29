@@ -10,6 +10,15 @@
     max-width: 178px;
 }
 
+#services-page .vac-form__bg {
+
+    @include breakpoint(lgx) {
+        top: 100px;
+        left: -180px;
+        width: 250px;
+    }
+}
+
 .service-inner__wrap {
     padding: 50px 0;
     background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
@@ -29,6 +38,7 @@
 
 .service__content h3 {
     margin: 0 0 20px;
+    max-width: 1000px;
     font-weight: 500;
     font-size: 24px;
     line-height: 31px;
@@ -51,7 +61,7 @@
     counter-increment: counter;
 }
 
-.service__content ul li::before {
+.service__content ul li:nth-child(-n+9)::before {
     content: '0';
     position: absolute;
     top: 0;
@@ -64,11 +74,18 @@
     color: #115EA0;
 }
 
-.service__content ul li::after {
+.service__content ul li:nth-child(-n+9)::after {
     content: counter(counter);
     position: absolute;
     top: 0;
     left: 20px;
+}
+
+.service__content ul li::after {
+    content: counter(counter);
+    position: absolute;
+    top: 0;
+    left: 0;
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
     font-size: 30px;

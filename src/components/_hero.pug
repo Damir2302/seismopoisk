@@ -19,9 +19,9 @@ mixin hero(title, subtitle, media, link, button, anchor)
 
             .container
 
-                .hero__logo
+                .hero__logo.wow.animate__animated.animate__fadeInUp(data-wow-delay=".3s")
                     img(src="assets/images/logo-text.png", alt="logo")
-                .hero__text
+                .hero__text.wow.animate__animated.animate__fadeInUp(data-wow-delay=".5s")
                     h1= title
                     p.text-medium=subtitle
 
@@ -30,7 +30,7 @@ mixin hero(title, subtitle, media, link, button, anchor)
                         a.hero__button-link(href=anchor)=button
 
         if media == 'video'
-            .hero__image
+            .hero__image.wow.animate__animated.animate__fadeIn(data-wow-delay=".5s")
                 video(src="assets/images/" + link oncontextmenu="return false;" muted loop autoplay)
 
         else

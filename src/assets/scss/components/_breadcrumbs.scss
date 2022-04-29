@@ -28,6 +28,25 @@ div.breadcrumbs-item {
     cursor: default;
 }
 
+.breadcrumbs-item span {
+    text-overflow: ellipsis;
+    max-width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    @include breakpoint(lg) {
+        max-width: 95px;
+    }
+
+    @include breakpoint(lgx) {
+        max-width: 175px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 260px;
+    }
+}
+
 .breadcrumbs-separator {
     margin: 0 18px;
     display: flex;

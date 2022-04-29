@@ -347,6 +347,10 @@
     }
 }
 
+.projects__info-pretitle {
+    color: #575E6A;
+}
+
 .projects__info-count {
     font-size: 30px;
     line-height: 1;
@@ -442,7 +446,7 @@
     @include breakpoint(lg) {
         display: flex;
         flex-direction: column;
-        z-index: 1;
+        z-index: 2;
     }
 }
 
@@ -495,13 +499,12 @@
     background: #115EA0;
 
     @include breakpoint(md) {
-        margin: 48px 0 0;
+        margin: auto 0 0;
         padding: 30px 28px;
         position: relative;
     }
 
     @include breakpoint(lg) {
-        margin: auto 0 0;
         padding: 30px 25px;
     }
 
@@ -575,32 +578,20 @@
 }
 
 .projects__about-activity-bg {
-    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    display: block;
+    width: 153px;
+    height: 46px;
 
     @include breakpoint(md) {
-        position: absolute;
         top: 100%;
-        bottom: 0;
-        right: 0;
-        display: block;
-        width: 153px;
-        height: 46px;
+        bottom: unset;
     }
 
     @include breakpoint(lgx) {
-        top: unset;
-        bottom: -85px;
-        right: 248px;
-        width: 430px;
-        height: 125px;
-        z-index: 0;
-    }
-
-    @include breakpoint(hd) {
-        bottom: -120px;
-        right: 65px;
-        width: 803px;
-        height: 233px;
+        display: none;
     }
 }
 
@@ -629,19 +620,34 @@
 
 .projects__about-image {
 
+    @include breakpoint(md) {
+        position: relative;
+        z-index: 1;
+    }
+
     @include breakpoint(lgx) {
         object-fit: cover;
     }
 }
 
 .projects__about-bg {
-    margin-left: auto;
-    display: block;
-    width: 153px;
-    height: 46px;
+    display: none;
 
-    @include breakpoint(md) {
-        display: none;
+    @include breakpoint(lgx) {
+        position: absolute;
+        left: 205px;
+        bottom: -110px;
+        display: block;
+        width: 430px;
+        height: 125px;
+        z-index: 0;
+    }
+
+    @include breakpoint(hd) {
+        bottom: -195px;
+        left: 30px;
+        width: 803px;
+        height: 233px;
     }
 }
 

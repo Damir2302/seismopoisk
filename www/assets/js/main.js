@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    // INIT WOW.JS
+    new WOW().init();
+
     // MOBILE BURGER MENU
     $('#sideMenu').on('click', function() {
       $('body').addClass('overflow-hidden');
@@ -8,6 +11,12 @@ $(document).ready(function() {
     $('#closeSideMenu').on('click', function() {
       $('body').removeClass('overflow-hidden');
       $('.header__nav').removeClass('opened');
+    });
+
+    $('html').click(function(e) {
+      if (!$(e.target).closest('.header__nav.opened').length && !$(e.target).closest('#sideMenu').length) {
+          $(this).removeClass('opened');
+        }
     });
 
     // HOVER DROPDOWN MENU
