@@ -230,12 +230,13 @@
 
 .vacancies-form__container {
     padding: 50px 20px;
-    background: url('../images/BG-2.jpg') no-repeat;
-    background-position-x: right;
-    background-size: cover;
+    background: linear-gradient(105.66deg, #074D89 1.71%, #115EA0 95.81%);
 
     @include breakpoint(md) {
         padding: 80px 40px;
+        background: url('../images/BG-3.jpg') no-repeat;
+        background-position-x: right;
+        background-size: cover;
     }
 
     @include breakpoint(lg) {
@@ -260,6 +261,10 @@
     }
 
     @include breakpoint(lg) {
+        max-width: 556px;
+    }
+
+    @include breakpoint(lgx) {
         max-width: 636px;
     }
 
@@ -302,7 +307,6 @@
 }
 
 .vac-form__input {
-    backdrop-filter: blur(10px);
     margin: 0 0 20px;
 
     @include breakpoint(md) {
@@ -358,6 +362,7 @@
     position: relative;
     z-index: 1;
     cursor: pointer;
+    backdrop-filter: none;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -421,6 +426,7 @@
     color: #fff;
     border: none;
     box-sizing: border-box;
+    backdrop-filter: blur(10px);
 
     @include breakpoint(md) {
         padding: 18px 25px 17px;
@@ -440,6 +446,7 @@
     border: none;
     resize: none;
     box-sizing: border-box;
+    backdrop-filter: blur(10px);
 
     @include breakpoint(md) {
         height: 134px;

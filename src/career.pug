@@ -9,60 +9,62 @@ block main
 
     #career-page
 
-        section.hero-section
-            include components/_hero
-            +hero('Карьера',
-                  'Мы стремимся создать условия, способствующие повышению эффективности деятельности работников, их вовлеченности в реализацию корпоративных целей.',
-                   media='image',
-                  'career.jpg',
-                  'Присоединиться к команде')
+        section.career-wrapper
 
-        section.services-l-section
+            section.hero-section
+                include components/_hero
+                +hero('Карьера',
+                    'Мы стремимся создать условия, способствующие повышению эффективности деятельности работников, их вовлеченности в реализацию корпоративных целей.',
+                    media='image',
+                    'career.jpg',
+                    'Присоединиться к команде')
 
-            .container
+            section.services-l-section
 
-                .services-l__wrapper#content
+                .container
 
-                    .services-l__block
+                    .services-l__wrapper#content
 
-                        h3 Все условия<br> для развития<br> профессионалов
+                        .services-l__block
 
-                    .services-l__block
+                            h3 Все условия<br> для развития<br> профессионалов
 
-                        .services-l__item
-                            .services-l__icon
-                                +sprite('arrows-up')
-                            p.services-l__title Современные методики повышения квалификации
-                            p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
+                        .services-l__block
 
-                    .services-l__block
+                            .services-l__item
+                                .services-l__icon
+                                    +sprite('arrows-up')
+                                p.services-l__title Современные методики повышения квалификации
+                                p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
 
-                        .services-l__item
-                            .services-l__icon
-                                +sprite('wash-hand')
-                            p.services-l__title Внедрение и развитие культуры непрерывных улучшений
-                            p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
+                        .services-l__block
 
-                    .services-l__block
+                            .services-l__item
+                                .services-l__icon
+                                    +sprite('wash-hand')
+                                p.services-l__title Внедрение и развитие культуры непрерывных улучшений
+                                p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
 
-                        .services-l__item
-                            .services-l__icon
-                                +sprite('arm-muscle')
-                            p.services-l__title Социальные гарантии и уверенность в завтрашнем дне
-                            p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
+                        .services-l__block
 
-                    .services-l__block
+                            .services-l__item
+                                .services-l__icon
+                                    +sprite('arm-muscle')
+                                p.services-l__title Социальные гарантии и уверенность в завтрашнем дне
+                                p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
 
-                        .services-l__item
-                            .services-l__icon
-                                +sprite('book-thin')
-                            p.services-l__title Соблюдение норм трудового законодательства
-                            p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
+                        .services-l__block
 
-                    .services-l__block
+                            .services-l__item
+                                .services-l__icon
+                                    +sprite('book-thin')
+                                p.services-l__title Соблюдение норм трудового законодательства
+                                p.services-l__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate convallis nulla bibendum sit pretium vulputate velit.
 
-                        .career-services-bg.triangles
-                            img(src="assets/images/triangles-career-1.png", alt="bg")
+                        .services-l__block
+
+                            .career-services-bg.triangles
+                                img(src="assets/images/triangles-career-1.png", alt="bg")
 
         section.career-works
 

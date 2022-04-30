@@ -59,6 +59,7 @@
     display: none;
 
     @include breakpoint(lg) {
+        position: relative;
         display: block;
         width: 100%;
         max-width: 403px;
@@ -151,19 +152,28 @@
 }
 
 .about-info-text {
-    margin: 5px 0 0;
     position: absolute;
     top: 100%;
-    right: -100px;
-    max-width: 160px;
-    max-height: 372px;
+    right: -120px;
+    width: 196px;
+    height: 364px;
 
     @include breakpoint(md) {
-        top: -255px;
-        right: -325px;
-        height: auto;
-        max-width: 384px;
-        max-height: 707px;
+        top: unset;
+        right: -42vw;
+        bottom: 0;
+        width: 384px;
+        height: 707px;
+    }
+
+    @include breakpoint(lgx) {
+        top: calc(100% + 85px);
+        left: -37vw;
+        bottom: unset;
+    }
+
+    @include breakpoint(hd) {
+        left: -620px;
     }
 }
 
@@ -218,11 +228,10 @@
     }
 
     @include breakpoint(lg) {
-        margin: 68px auto 0;
+        margin: 100px auto 0;
     }
 
     @include breakpoint(hd) {
-        margin: 100px auto 0;
         padding-bottom: 150px;
     }
 }

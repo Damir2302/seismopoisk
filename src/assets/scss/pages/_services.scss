@@ -8,46 +8,118 @@
 }
 
 #services-page .services-l-section {
-    padding: 100px 0 0;
-}
+    padding: 0;
 
-#services-page .vacancies-form {
-    padding: 100px 0;
-}
-
-#services-page .vacancies-form__title {
-    max-width: 100%;
-}
-
-.form-wrapper {
-    margin: 72px 0 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.form-wrapper p {
-    width: 47.7%;
-    font-size: 18px;
-    line-height: 40px;
-
-    @include breakpoint(lg) {
-        font-size: 24px;
+    @include breakpoint(md) {
+        padding: 100px 0 0;
     }
 }
 
-#services-page .vacancy-form {
-    width: 47.7%;
+#services-page .vacancies-form,
+#service-page .vacancies-form {
+    padding: 50px 0;
+
+    @include breakpoint(md) {
+        padding: 100px 0;
+    }
 }
 
-#services-page .vac-form__btn {
+#services-page .vacancies-form__title,
+#service-page .vacancies-form__title {
+    margin: 0 0 20px;
+    max-width: 500px;
+    font-size: 24px;
+    line-height: 26px;
+
+    @include breakpoint(md) {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 100%;
+        font-size: 35px;
+        line-height: 39px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 42px;
+        line-height: 46px;
+    }
+}
+
+.form-wrapper {
+
+    @include breakpoint(md) {
+        margin: 72px 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.form-wrapper p {
+    font-size: 16px;
+    line-height: 24px;
+
+    @include breakpoint(md) {
+        width: 44%;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    @include breakpoint(lgx) {
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
+
+#services-page .vacancy-form,
+#service-page .vacancy-form {
+    margin: 35px 0 0;
+
+    @include breakpointMax(md) {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    @include breakpoint(md) {
+        width: 47.7%;
+    }
+}
+
+#services-page .vacancies-form__container,
+#service-page .vacancies-form__container {
+
+    @include breakpoint(md) {
+        padding: 60px 40px;
+    }
+
+    @include breakpoint(lgx) {
+        padding: 80px 50px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 100px 105px;
+    }
+}
+
+#services-page .vac-form__btn,
+#service-page .vac-form__btn {
     margin: 40px 0 0;
+    align-items: flex-end;
 }
 
-#services-page .vac-form__btn button {
+#services-page .vac-form__btn button,
+#service-page .vac-form__btn button {
     margin: 0;
+    font-size: 16px;
+    line-height: 16px;
 }
 
-#services-page .btn-notify {
-    margin: 0;
-}
+#services-page .vac-form__bg,
+#service-page .vac-form__bg {
 
+    @include breakpointMax(lg) {
+        left: -35vw;
+    }
+}
