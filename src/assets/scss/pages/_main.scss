@@ -608,11 +608,13 @@
     }
 
     @include breakpoint(lgx) {
+        margin-right: 20px;
         min-width: 512px;
         z-index: 1;
     }
 
     @include breakpoint(hd) {
+        margin-right: 24px;
         min-width: 600px;
         max-height: 716px;
     }
@@ -627,6 +629,10 @@
 
     @include breakpoint(lgx) {
         object-fit: cover;
+    }
+
+    @include breakpoint(hd) {
+        height: 715px;
     }
 }
 

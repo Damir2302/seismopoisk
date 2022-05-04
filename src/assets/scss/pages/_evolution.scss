@@ -1,10 +1,33 @@
+#evolution-page .hero-section .triangles {
+    display: none;
+}
+
 #evolution-page .hero__text p {
     max-width: 576px;
 }
 
+[class^="evolution-section-"] .container {
+
+    @include breakpointMax(md) {
+        padding: 0;
+    }
+}
+
 .evolution-section-1 {
-    padding: 150px 0 300px;
+    padding: 60px 0;
     background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+
+    @include breakpoint(md) {
+        padding: 80px 0 100px;
+    }
+
+    @include breakpoint(lgx) {
+        padding: 145px 0 190px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 150px 0 300px;
+    }
 }
 
 .evolution-section-1 .projects__about-title h2 {
@@ -13,10 +36,45 @@
 
 .evolution-section-1 .projects__about-activity {
     background: #0ECAB3;
+
+    @include breakpoint(md) {
+        z-index: 1;
+    }
+}
+
+.evolution-section-1 .text-about {
+    bottom: -60px;
+    width: 993px;
+
+    @include breakpoint(md) {
+        height: 196px;
+    }
+
+    @include breakpoint(lgx) {
+        top: calc(100% + (-60px));
+        display: block;
+        width: 1937px;
+        height: 290px;
+    }
 }
 
 .evolution-section-2 {
-    padding: 150px 0 220px;
+    padding: 60px 0 30px;
+    background: url('../images/BG-4.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: center;
+
+    @include breakpoint(md) {
+        padding: 100px 0;
+    }
+
+    @include breakpoint(lgx) {
+        padding: 120px 0 150px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 150px 0 220px;
+    }
 }
 
 .evolution-section-2 .projects__about-title h2 {
@@ -29,27 +87,107 @@
 }
 
 .evolution-section-2 .projects__about-activity {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(15px);
+    padding: 0;
+    background: none;
+    position: relative;
 }
 
-.evolution-section-3 {
-    padding: 150px 0 400px;
-    background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+.evolution-section-2 .projects__about-activity-wrapper {
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint(md) {
+        padding: 30px 28px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 30px 25px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 40px 48px;
+    }
 }
 
 .evolution-section-2 .projects__about-bg {
-    top: -80px;
+    position: absolute;
+    top: -115px;
     left: unset;
-    right: -150px;
+    right: -52px;
     bottom: unset;
-    width: 224px;
-    height: 240px;
+    display: block;
+    width: 178px;
+    height: 190px;
+
+    @include breakpoint(lgx) {
+        top: -150px;
+        right: -110px;
+        width: 224px;
+        height: 240px;
+    }
+}
+
+.evolution-section-2 .text-about {
+    bottom: 15px;
+    width: 658px;
+
+    @include breakpoint(md) {
+        height: 80px;
+    }
+
+    @include breakpoint(lgx) {
+        display: block;
+        width: 1284px;
+        height: 140px;
+    }
+}
+
+.evolution-section-3 {
+    padding: 60px 0 110px;
+    background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+
+    @include breakpoint(lgx) {
+        padding: 120px 0 250px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 150px 0 350px;
+    }
 }
 
 .evolution-section-3 .projects__about-bg {
-    width: 398px;
-    height: 494px;
-    bottom: -50px;
-    left: -170px;
+    display: none;
+
+    @include breakpoint(lgx) {
+        left: -135px;
+        bottom: -50px;
+        display: block;
+        width: 398px;
+        height: 494px;
+    }
+
+    @include breakpoint(hd) {
+        left: -165px;
+    }
+}
+
+.evolution-section-3 .text-about {
+    bottom: -100px;
+    width: 880px;
+    z-index: 1;
+
+    @include breakpoint(md) {
+        height: 196px;
+    }
+
+    @include breakpoint(lgx) {
+        top: calc(100% + -80px);
+        display: block;
+        width: 1720px;
+        height: 310px;
+        z-index: 0;
+    }
 }

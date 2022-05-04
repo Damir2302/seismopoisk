@@ -15,6 +15,7 @@ $(document).ready(function() {
 
     $('html').click(function(e) {
       if (!$(e.target).closest('.header__nav.opened').length && !$(e.target).closest('#sideMenu').length) {
+          $('body').removeClass('overflow-hidden');
           $('.header__nav.opened').removeClass('opened');
         }
     });

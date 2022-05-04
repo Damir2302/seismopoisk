@@ -15,24 +15,95 @@
 }
 
 #occupational-page .services-l__icon {
+    margin: 0 0 30px;
     background: #3A77B7;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 29px;
-    line-height: 29px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 18px;
     border-radius: 50%;
+
+    @include breakpoint(md) {
+        margin: 0;
+        width: 57px;
+        height: 57px;
+        font-size: 29px;
+        line-height: 29px;
+    }
+}
+
+#occupational-page .services-l-section h2 {
+    margin: 0 0 30px;
+    padding: 0 20px;
+    font-size: 25px;
+    line-height: 28px;
+
+    @include breakpoint(md) {
+        padding-right: 30px;
+        font-size: 35px;
+        line-height: 39px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 50px;
+        line-height: 55px;
+    }
 }
 
 #occupational-page .services-l__text {
     margin: auto 0 0;
-    font-size: 22px;
-    line-height: 40px;
+    font-size: 15px;
+    line-height: 22px;
+
+    @include breakpoint(lg) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 22px;
+        line-height: 40px;
+    }
 }
 
 #occupational-page .career-services-bg {
-    top: -145px;
-    left: -370px;
-    right: unset;
-    transform: rotate(-35deg);
+    display: none;
+
+    @include breakpoint(md) {
+        left: -220px;
+        right: unset;
+        display: block;
+        transform: rotate(-35deg);
+    }
+
+    @include breakpoint(lg) {
+        top: -90px;
+        left: -220px;
+    }
+
+    @include breakpoint(lgx) {
+        top: -145px;
+        left: -330px;
+    }
+
+    @include breakpoint(hd) {
+        top: -145px;
+        left: -370px;
+    }
+}
+
+#occupational-page .service__download {
+
+    @include breakpointMax(md) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

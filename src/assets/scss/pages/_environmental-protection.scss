@@ -3,25 +3,62 @@
 }
 
 .e-inner-page {
-    padding: 150px 0 220px;
+    padding: 80px 0 90px;
     background: linear-gradient(147.3deg, #C1DDFF 0%, #ECF5FF 71.52%);
+
+    @include breakpoint(md) {
+        padding: 150px 0 220px;
+    }
+}
+
+.e-inner-page .container {
+
+    @include breakpointMax(md) {
+        padding: 0;
+    }
 }
 
 .enviro-sec {
-    margin: 0 0 75px;
-    display: flex;
-    column-gap: 78px;
-    min-height: 583px;
     color: #575E6A;
+
+    @include breakpoint(md) {
+        margin: 0 0 75px;
+        display: flex;
+        align-items: flex-start;
+        column-gap: 30px;
+    }
+
+    @include breakpoint(lg) {
+        column-gap: 48px;
+    }
+
+    @include breakpoint(hd) {
+        column-gap: 78px;
+    }
 }
 
 .enviro-sec:last-child {
-    margin-top: 100px;
-    flex-direction: row-reverse;
+    margin-top: 70px;
+
+    @include breakpoint(md) {
+        margin-top: 100px;
+        flex-direction: row-reverse;
+    }
 }
 
 .enviro-sec__img {
-    min-width: 520px;
+
+    @include breakpoint(md) {
+        min-width: 300px;
+    }
+
+    @include breakpoint(lg) {
+        min-width: 350px;
+    }
+
+    @include breakpoint(lgx) {
+        min-width: 520px;
+    }
 }
 
 .enviro-sec__img img {
@@ -29,18 +66,96 @@
 }
 
 .enviro-sec__text {
+    padding: 0 20px;
     width: 100%;
+
+    @include breakpoint(md) {
+        padding: 0;
+    }
 }
 
 .enviro-sec__text h2 {
-    margin-bottom: 28px;
+    margin: 28px 0;
+    font-size: 24;
+    line-height: 26px;
+
+    @include breakpoint(md) {
+        margin: 0 0 28px;
+        font-size: 35px;
+        line-height: 39px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 50px;
+        line-height: 55px;
+    }
 }
 
 .enviro-sec__text p {
-    font-size: 22px;
-    line-height: 40px;
+    font-size: 15px;
+    line-height: 27px;
+
+    @include breakpoint(md) {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+        line-height: 39px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 22px;
+        line-height: 40px;
+    }
 }
 
 #environmental-page .activity__wrapper {
     padding: 70px 0;
+}
+
+#environmental-page .activity-bg {
+    bottom: -40px;
+}
+
+#environmental-page .activity__info {
+
+    @include breakpoint(md) {
+        margin: 96px 0 0;
+    }
+}
+
+#environmental-page .activity__title {
+
+    @include breakpoint(lg) {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+#environmental-page .activity-info-bottom-text {
+    display: none;
+}
+
+#environmental-page .service__download {
+
+    @include breakpointMax(md) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#environmental-page .file-size {
+    margin-top: 0;
 }
