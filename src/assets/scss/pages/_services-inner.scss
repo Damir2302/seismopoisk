@@ -13,7 +13,7 @@
 #services-page .vac-form__bg,
 #service-page .vac-form__bg {
 
-    @include breakpoint(lgx) {
+    @include breakpoint(lg) {
         top: 100px;
         left: -180px;
         width: 250px;
@@ -117,9 +117,6 @@
 .service__download {
     margin: 50px 0 0;
     padding: 21px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     font-size: 22px;
     line-height: 40px;
     color: #575E6A;
@@ -128,6 +125,9 @@
 
     @include breakpoint(md) {
         margin: 60px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     @include breakpoint(lgx) {
@@ -140,7 +140,8 @@
 }
 
 .link-icon {
-    margin-right: 12px;
+    float: left;
+    margin-right: 23px;
     background: linear-gradient(107.43deg, #115EA0 1.01%, #1C65B9 42.15%, #2A9BC3 77.5%, #38CEAC 112.26%);
     display: flex;
     align-items: center;
@@ -148,17 +149,35 @@
     width: 52px;
     height: 52px;
     border-radius: 50%;
+
+    @include breakpoint(md) {
+        margin-right: 12px;
+    }
 }
 
 .file-link {
-    display: flex;
-    align-items: center;
+
+    @include breakpoint(md) {
+        display: flex;
+        align-items: center;
+    }
 }
 
-.file-link a {
+.file-link a,
+.file-size {
     max-width: 700px;
-    font-size: 22px;
-    line-height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
+
+.file-size {
+    margin-top: 20px;
+    margin-left: 75px;
 }
 
 .file-link a:hover {
@@ -183,7 +202,18 @@
 }
 
 #service-page .services-l-section {
-    padding: 150px 0;
+
+    @include breakpoint(md) {
+        padding: 50px 0 100px;
+    }
+
+    @include breakpoint(lgx) {
+        padding: 50px 0 120px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 150px 0;
+    }
 }
 
 #service-page .services-l__wrapper {
@@ -197,16 +227,41 @@
 }
 
 #service-page .services-l__block-bg {
-    left: unset;
-    right: -425px;
-    bottom: -160px;
+
+    @include breakpoint(md) {
+        left: unset;
+        right: -370px;
+        bottom: -160px;
+    }
+
+    @include breakpoint(lg) {
+        right: -425px;
+    }
 }
 
 #service-page .service-block__title {
+    margin: 0 0 30px;
     font-weight: 500;
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 25px;
+    line-height: 28px;
     color: #273A4A;
+
+    @include breakpoint(md) {
+        margin: 0;
+        font-size: 35px;
+        line-height: 39px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 330px;
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 50px;
+        line-height: 55px;
+    }
 }
 
 #service-page .projects-section {
@@ -215,5 +270,5 @@
 }
 
 #service-page .projects__title h2 {
-    margin: 0;
+    margin-top: 0;
 }

@@ -26,6 +26,7 @@
 
 #services-page .vacancies-form__title,
 #service-page .vacancies-form__title {
+    display: none;
     margin: 0 0 20px;
     max-width: 500px;
     font-size: 24px;
@@ -37,6 +38,7 @@
     }
 
     @include breakpoint(lg) {
+        display: block;
         max-width: 100%;
         font-size: 35px;
         line-height: 39px;
@@ -48,12 +50,32 @@
     }
 }
 
+#services-page .vacancies-form__title--mobile,
+#service-page .vacancies-form__title--mobile {
+    display: block;
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
+
 .form-wrapper {
+    margin: 0 auto;
+    max-width: 375px;
 
     @include breakpoint(md) {
-        margin: 72px 0 0;
         display: flex;
         justify-content: space-between;
+        column-gap: 30px;
+        max-width: 100%;
+    }
+
+    @include breakpoint(lg) {
+        margin: 60px 0 0;
+    }
+
+    @include breakpoint(hd) {
+        column-gap: 48px;
     }
 }
 
@@ -62,7 +84,6 @@
     line-height: 24px;
 
     @include breakpoint(md) {
-        width: 44%;
         font-size: 18px;
         line-height: 32px;
     }
@@ -73,17 +94,11 @@
     }
 }
 
-#services-page .vacancy-form,
-#service-page .vacancy-form {
-    margin: 35px 0 0;
-
-    @include breakpointMax(md) {
-        font-size: 24px;
-        line-height: 26px;
-    }
+#services-page .vacancy-form-text,
+#service-page .vacancy-form-text {
 
     @include breakpoint(md) {
-        width: 47.7%;
+        width: 50%;
     }
 }
 
@@ -100,6 +115,20 @@
 
     @include breakpoint(hd) {
         padding: 100px 105px;
+    }
+}
+
+#services-page .vacancy-form,
+#service-page .vacancy-form {
+
+    @include breakpointMax(md) {
+        margin: 35px 0 0;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    @include breakpoint(md) {
+        width: 50%;
     }
 }
 
@@ -120,6 +149,6 @@
 #service-page .vac-form__bg {
 
     @include breakpointMax(lg) {
-        left: -35vw;
+        left: -200px;
     }
 }

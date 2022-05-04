@@ -15,18 +15,20 @@ $(document).ready(function() {
 
     $('html').click(function(e) {
       if (!$(e.target).closest('.header__nav.opened').length && !$(e.target).closest('#sideMenu').length) {
-          $(this).removeClass('opened');
+          $('.header__nav.opened').removeClass('opened');
         }
     });
 
     // HOVER DROPDOWN MENU
-    $('.navbar__submenu').parent().on('mouseenter', function() {
-      $('#header').css('background', 'rgba(255, 255, 255, 0.26)')
-    });
+    if ($(window).width() > 1259) {
+      $('.navbar__submenu').parent().on('mouseenter', function() {
+        $('#header').css('background', 'rgba(255, 255, 255, 0.26)')
+      });
 
-    $('.navbar__submenu').parent().on('mouseleave', function() {
-      $('.header').css('background', 'transparent');
-    });
+      $('.navbar__submenu').parent().on('mouseleave', function() {
+        $('.header').css('background', 'transparent');
+      });
+    }
 
     // SHOW SEARCH INPUT
     $('#searchInput').on('click', function(e) {
