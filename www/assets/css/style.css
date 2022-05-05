@@ -16690,11 +16690,6 @@ div.breadcrumbs-item {
     }
 }
 
-#yandexMap>ymaps>ymaps>ymaps>ymaps:nth-child(2) {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%)
-}
-
 .page404 {
     height: 100%;
     text-align: center
