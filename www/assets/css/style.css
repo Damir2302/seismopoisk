@@ -7024,6 +7024,10 @@ div.breadcrumbs-item {
     }
 }
 
+.map-container .animate__animated {
+    visibility: initial
+}
+
 #map {
     padding: 0 0 70px;
     width: 100%;
