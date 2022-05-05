@@ -158,6 +158,14 @@ h2 {
     }
 }
 
+img {
+    transition: all 0.5s ease;
+}
+
+img.after-reveal {
+    opacity: 0;
+}
+
 .text-medium {
     font-size: 15px;
     line-height: 24px;

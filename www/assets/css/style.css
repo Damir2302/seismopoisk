@@ -206,7 +206,11 @@ h1,h2,h3,h4,h5,h6 {
 img {
     width: 100%;
     height: 100%;
-    vertical-align: middle
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
 }
 
 svg {
@@ -434,6 +438,15 @@ h2 {
         font-size: 50px;
         line-height: 55px
     }
+}
+
+img {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease
+}
+
+img.after-reveal {
+    opacity: 0
 }
 
 .text-medium {
@@ -8107,7 +8120,7 @@ div.breadcrumbs-item {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .footer__top {
         padding-bottom: 40px;
         display: -webkit-box;
@@ -8134,7 +8147,7 @@ div.breadcrumbs-item {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .footer__logo {
         width: 41.666%
     }
@@ -8166,7 +8179,7 @@ div.breadcrumbs-item {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .footer__logo p {
         max-width: 315px
     }
@@ -8178,7 +8191,7 @@ div.breadcrumbs-item {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .footer__contacts {
         margin: 0;
         display: -webkit-box;
@@ -8198,7 +8211,7 @@ div.breadcrumbs-item {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .footer__address {
         margin-left: 50px;
         margin-right: auto
@@ -8233,7 +8246,7 @@ div.breadcrumbs-item {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .footer__communication {
         margin: 0;
         margin-left: 60px
@@ -8270,7 +8283,7 @@ div.breadcrumbs-item {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .footer__main {
         margin: 20px 0 0;
         padding: 0 0 45px
@@ -8292,7 +8305,7 @@ div.breadcrumbs-item {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .footer__menu-list {
         max-width: 930px;
         max-height: 240px;
@@ -8318,7 +8331,7 @@ div.breadcrumbs-item {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .footer__menu-item {
         max-width: unset
     }
@@ -8330,7 +8343,7 @@ div.breadcrumbs-item {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .footer__menu-item:nth-child(3) {
         margin: 20px 0 0
     }
@@ -8342,7 +8355,7 @@ div.breadcrumbs-item {
     line-height: 31px
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .footer__submenu {
         max-width: 250px
     }
@@ -16741,4 +16754,8 @@ div.breadcrumbs-item {
     margin-right: 5px;
     width: 24px;
     height: 24px
+}
+
+.animate__animated {
+    visibility: hidden
 }
