@@ -354,7 +354,7 @@ if ($('#yandexMap').length) {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: 'assets/images/point-blue.svg',
+            iconImageHref: '/local/templates/seismopoisk/images/point-blue.svg',
             // Размеры метки.
             iconImageSize: [50, 45],
             // Смещение левого верхнего угла иконки относительно
