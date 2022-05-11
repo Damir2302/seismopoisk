@@ -408,7 +408,7 @@ h1 {
 @media (min-width: 1024px) {
     h1 {
         font-size: 40px;
-        line-height: 70px
+        line-height: 107%
     }
 }
 
@@ -430,13 +430,6 @@ h2 {
     h2 {
         font-size: 40px;
         line-height: 44px
-    }
-}
-
-@media (min-width: 1260px) {
-    h2 {
-        font-size: 50px;
-        line-height: 55px
     }
 }
 
@@ -6850,17 +6843,17 @@ div.breadcrumbs-item {
     max-width: 400px
 }
 
-@media (min-width: 768px) {
-    .hero__text {
-        max-width: 600px
-    }
-}
-
 @media (min-width: 1024px) {
     .hero__text {
         position: relative;
-        max-width: 784px;
+        max-width: 420px;
         z-index: 1
+    }
+}
+
+@media (min-width: 1400px) {
+    .hero__text {
+        max-width: 595px
     }
 }
 
@@ -10031,26 +10024,6 @@ div.breadcrumbs-item {
     .news__desc {
         font-size: 20px;
         line-height: 28px
-    }
-}
-
-@media (min-width: 1400px) {
-    #about-page .hero__text {
-        max-width: 955px
-    }
-}
-
-@media (min-width: 1024px) {
-    #about-page .hero__text h1 {
-        font-size: 50px;
-        line-height: 55px
-    }
-}
-
-@media (min-width: 1400px) {
-    #about-page .hero__text h1 {
-        font-size: 60px;
-        line-height: 65px
     }
 }
 
@@ -15382,10 +15355,6 @@ div.breadcrumbs-item {
     }
 }
 
-#service-page .hero__text h1 {
-    max-width: 782px
-}
-
 #service-page .hero__text p {
     max-width: 576px
 }
@@ -15949,10 +15918,6 @@ div.breadcrumbs-item {
         height: 310px;
         z-index: 0
     }
-}
-
-#environmental-page .hero__text {
-    max-width: 678px
 }
 
 .e-inner-page {

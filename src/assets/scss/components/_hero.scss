@@ -119,14 +119,14 @@
 .hero__text {
     max-width: 400px;
 
-    @include breakpoint(md) {
-        max-width: 600px;
-    }
-
     @include breakpoint(lg) {
         position: relative;
-        max-width: 784px;
+        max-width: 420px;
         z-index: 1;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 595px;
     }
 }
 

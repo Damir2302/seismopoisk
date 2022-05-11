@@ -100,6 +100,34 @@ const sea_array = [
         coordinates: [79.115107, 82.958251]
     }
 ]
+// Массив регионов
+const region_array = [
+    {
+        name: 'Южный<br>округ',
+        coordinates: [47.222078, 38.202999]
+    },
+    {
+        name: 'Северо-Западный<br>округ',
+        coordinates: [64.938951, 47.315635]
+    },
+    {
+        name: 'Приволжский<br>округ',
+        coordinates: [56.326887, 49.005986]
+    },
+    {
+        name: 'Уральский<br>округ',
+        coordinates: [62.838011, 65.597465]
+    },
+    {
+        name: 'Сибирский<br>округ',
+        coordinates: [65.560808, 90.826632]
+    },
+    {
+        name: 'Дальневосточный округ',
+        coordinates: [65.115536, 125.885485]
+    }
+]
+
 ymaps.ready(init);
 // Переменная для сдвига спрайт картинки
 let iconImageClipRect = '';
@@ -174,6 +202,30 @@ function init() {
             iconContentLayout: MyIconContentLayout
         });
         myMap.geoObjects.add(seaPlacemark);
+    }
+
+    // Создаём макет содержимого для Моря
+    MyIconContentLayoutRegion = ymaps.templateLayoutFactory.createClass(
+        `<div style="font-family:Rubik, sans-serif; font-size: 14px; color:#fff; font-weight:500; word-break: break-word; text-align:center; min-width: 130px;">$[properties.iconContent]</div>`
+    )
+
+    // ДОБАВЛЯЕМ РЕГИОНЫ НА КАРТУ
+    for (let region in region_array){
+        // Добавляем море на карту
+        regionPlacemark = new ymaps.Placemark(region_array[region].coordinates , {
+            iconContent: region_array[region].name,
+            openBalloonOnClick: false
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Размеры метки.
+            iconImageSize: [1, 1],
+            iconImageOffset: [-40, -10],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayoutRegion
+        });
+        myMap.geoObjects.add(regionPlacemark);
     }
 
     // ДОБАВЛЯЕМ ПОЛЬЗОВАТЕЛЬСКИЕ ТОЧКИ НА КАРТУ
