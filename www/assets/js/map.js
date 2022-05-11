@@ -125,6 +125,10 @@ const region_array = [
     {
         name: 'Дальневосточный округ',
         coordinates: [65.115536, 125.885485]
+    },
+    {
+        name: 'Монголия',
+        coordinates: [45.560808, 98.826632]
     }
 ]
 
@@ -204,7 +208,7 @@ function init() {
         myMap.geoObjects.add(seaPlacemark);
     }
 
-    // Создаём макет содержимого для Моря
+    // Создаём макет содержимого для Региона
     MyIconContentLayoutRegion = ymaps.templateLayoutFactory.createClass(
         `<div style="font-family:Rubik, sans-serif; font-size: 14px; color:#fff; font-weight:500; word-break: break-word; text-align:center; min-width: 130px;">$[properties.iconContent]</div>`
     )
