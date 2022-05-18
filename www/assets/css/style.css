@@ -456,7 +456,8 @@ img.after-reveal {
 }
 
 .page-title {
-    padding: 40px 0 20px
+    padding: 40px 0 20px;
+    position: relative
 }
 
 @media (min-width: 1024px) {
@@ -538,38 +539,15 @@ img.after-reveal {
     position: relative
 }
 
-.radial-background {
+.head-section::before {
+    content: '';
     background: radial-gradient(57.28% 57.28% at 50% 86.92%, #1A869C 0%, #084E89 100%);
     height: 137px;
     position: absolute;
-    top: 0;
+    top: -80px;
     left: 0;
     width: 100%;
-    z-index: 0
-}
-
-@media (min-width: 768px) {
-    .radial-background {
-        height: 158px
-    }
-}
-
-@media (min-width: 1200px) {
-    .radial-background {
-        height: 258px
-    }
-}
-
-@media (min-width: 1260px) {
-    .radial-background {
-        height: 242px
-    }
-}
-
-@media (min-width: 1400px) {
-    .radial-background {
-        height: 268px
-    }
+    height: calc(100% + 80px)
 }
 
 @font-face {
@@ -6627,6 +6605,7 @@ button.swiper-pagination-bullet {
 @media (min-width: 1024px) {
     .breadcrumbs {
         padding: 24px 0 35px;
+        position: relative;
         display: block
     }
 }
